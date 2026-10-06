@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,combine.urbanairship.com,reject
+DOMAIN-SUFFIX,urbanairship.com,reject
+host-suffix,combine.urbanairship.com,reject
+host-suffix,urbanairship.com,reject
