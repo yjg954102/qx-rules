@@ -1,0 +1,4 @@
+DOMAIN,advertising.yandex.ru,reject
+DOMAIN,metrika.yandex.ru,reject
+DOMAIN-SUFFIX,an.yandex.ru,reject
+DOMAIN-SUFFIX,mc.yandex.ru,reject
