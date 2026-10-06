@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,31.media.tumblr.com,reject
+DOMAIN-SUFFIX,92x.tumblr.com,reject
+DOMAIN-SUFFIX,its-dori.tumblr.com,reject
+host-suffix,31.media.tumblr.com,reject
+host-suffix,92x.tumblr.com,reject
+host-suffix,its-dori.tumblr.com,reject
