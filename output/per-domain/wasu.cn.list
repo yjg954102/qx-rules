@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,acsystem.wasu.cn,reject
+DOMAIN-SUFFIX,afp.wasu.cn,reject
+DOMAIN-SUFFIX,afpcreative.wasu.cn,reject
+DOMAIN-SUFFIX,collector.wasu.cn,reject
+DOMAIN-SUFFIX,delivery.wasu.cn,reject
+DOMAIN-SUFFIX,delivery-pc.wasu.cn,reject
+host-suffix,acsystem.wasu.cn,reject
+host-suffix,afp.wasu.cn,reject
+host-suffix,afpcreative.wasu.cn,reject
+host-suffix,collector.wasu.cn,reject
+host-suffix,delivery.wasu.cn,reject
+host-suffix,delivery-pc.wasu.cn,reject
