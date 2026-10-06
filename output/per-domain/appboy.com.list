@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,appboy.com,reject
+DOMAIN-SUFFIX,iad.appboy.com,reject
+DOMAIN-SUFFIX,iad-03.appboy.com,reject
+host-suffix,iad.appboy.com,reject
+host-suffix,iad-03.appboy.com,reject
