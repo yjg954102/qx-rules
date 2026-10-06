@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,meitubeauty.meitudata.com,reject
+DOMAIN-SUFFIX,xiuxiu.mobile.meitudata.com,reject
+host-suffix,meitubeauty.meitudata.com,reject
+host-suffix,xiuxiu.mobile.meitudata.com,reject
