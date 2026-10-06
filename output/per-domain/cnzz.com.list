@@ -1,0 +1,5 @@
+DOMAIN,cnzz.com,reject
+DOMAIN-SUFFIX,cnzz.com,reject
+DOMAIN-SUFFIX,s96.cnzz.com,reject
+host-suffix,cnzz.com,reject
+host-suffix,s96.cnzz.com,reject
