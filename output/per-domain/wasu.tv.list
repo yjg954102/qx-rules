@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,adsc.wasu.tv,reject
+DOMAIN-SUFFIX,adsystem.wasu.tv,reject
+DOMAIN-SUFFIX,adwasu.wasu.tv,reject
+host-suffix,adsystem.wasu.tv,reject
