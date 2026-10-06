@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,pub.mop.com,reject
+DOMAIN-SUFFIX,union.mop.com,reject
+host-suffix,pub.mop.com,reject
+host-suffix,union.mop.com,reject
