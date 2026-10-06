@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,patriot.cs.pp.cn,reject
+DOMAIN-SUFFIX,server.m.pp.cn,reject
+host-suffix,log.cs.pp.cn,reject
+host-suffix,server.m.pp.cn,reject
