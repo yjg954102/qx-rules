@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,app01.nodes.gslb.mi-idc.com,reject
+DOMAIN-SUFFIX,app02.nodes.gslb.mi-idc.com,reject
+DOMAIN-SUFFIX,f3.mi-stat.gslb.mi-idc.com,reject
+DOMAIN-SUFFIX,resolver.gslb.mi-idc.com,reject
+host-suffix,app01.nodes.gslb.mi-idc.com,reject
+host-suffix,app02.nodes.gslb.mi-idc.com,reject
+host-suffix,f3.mi-stat.gslb.mi-idc.com,reject
+host-suffix,resolver.gslb.mi-idc.com,reject
