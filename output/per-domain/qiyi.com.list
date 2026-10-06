@@ -1,0 +1,7 @@
+DOMAIN-SUFFIX,api.cupid.qiyi.com,reject
+DOMAIN-SUFFIX,msg.video.qiyi.com,reject
+DOMAIN-SUFFIX,msg2.video.qiyi.com,reject
+host-suffix,afp.qiyi.com,reject
+host-suffix,api.cupid.qiyi.com,reject
+host-suffix,msg.video.qiyi.com,reject
+host-suffix,msg2.video.qiyi.com,reject
