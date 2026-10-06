@@ -1,0 +1,3 @@
+DOMAIN,static.ads-twitter.com,reject
+DOMAIN-SUFFIX,ads-twitter.com,reject
+host-suffix,ads-twitter.com,reject
