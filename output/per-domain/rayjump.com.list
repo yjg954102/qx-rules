@@ -1,0 +1,7 @@
+DOMAIN,analytics.rayjump.com,reject
+DOMAIN-SUFFIX,net.rayjump.com,reject
+DOMAIN-SUFFIX,rayjump.com,reject
+DOMAIN-SUFFIX,setting.rayjump.com,reject
+host-suffix,net.rayjump.com,reject
+host-suffix,rayjump.com,reject
+host-suffix,setting.rayjump.com,reject
