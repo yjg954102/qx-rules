@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,lm.souid.com,reject
+DOMAIN-SUFFIX,nv.souid.com,reject
+DOMAIN-SUFFIX,souid.com,reject
+DOMAIN-SUFFIX,vi1.souid.com,reject
