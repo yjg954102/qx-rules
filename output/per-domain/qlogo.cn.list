@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,gu.qlogo.cn,reject
+DOMAIN-SUFFIX,py.qlogo.cn,reject
+DOMAIN-SUFFIX,py2.qlogo.cn,reject
+host-suffix,gu.qlogo.cn,reject
+host-suffix,py.qlogo.cn,reject
+host-suffix,py2.qlogo.cn,reject
