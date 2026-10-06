@@ -1,0 +1,11 @@
+DOMAIN-SUFFIX,i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spad.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spapi.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spcdnpc.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spcnv.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spdeliver.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spdmg.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spdmg-backend.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spnet2-1.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,spnet33.i-mobile.co.jp,reject
+DOMAIN-SUFFIX,ssp-bidder.i-mobile.co.jp,reject
