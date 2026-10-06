@@ -1,0 +1,4 @@
+DOMAIN,data-sdk-uuid-log.d.meituan.net,reject
+host-suffix,analytics.meituan.net,reject
+host-suffix,d.meituan.net,reject
+host-suffix,dreport.meituan.net,reject
