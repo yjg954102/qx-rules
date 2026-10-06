@@ -1,0 +1,4 @@
+DOMAIN,tdsdk.xdrig.com,reject
+DOMAIN-SUFFIX,adt.xdrig.com,reject
+DOMAIN-SUFFIX,xdrig.com,reject
+host-KEYWORD,av1.xdrig.com,reject
