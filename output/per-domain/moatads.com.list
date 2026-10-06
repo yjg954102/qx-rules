@@ -1,0 +1,11 @@
+DOMAIN,moatads.com,reject
+DOMAIN-SUFFIX,geo.moatads.com,reject
+DOMAIN-SUFFIX,js.moatads.com,reject
+DOMAIN-SUFFIX,moatads.com,reject
+DOMAIN-SUFFIX,px.moatads.com,reject
+DOMAIN-SUFFIX,z.moatads.com,reject
+host-suffix,geo.moatads.com,reject
+host-suffix,js.moatads.com,reject
+host-suffix,moatads.com,reject
+host-suffix,px.moatads.com,reject
+host-suffix,z.moatads.com,reject
