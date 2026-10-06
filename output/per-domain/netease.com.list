@@ -1,0 +1,11 @@
+DOMAIN,ad.bn.netease.com,reject
+DOMAIN-SUFFIX,mr.da.netease.com,reject
+DOMAIN-SUFFIX,pr.da.netease.com,reject
+DOMAIN-SUFFIX,rd.da.netease.com,reject
+DOMAIN-SUFFIX,wr.da.netease.com,reject
+host,ad.bn.netease.com,reject
+host-suffix,ad.bn.netease.com,reject
+host-suffix,mr.da.netease.com,reject
+host-suffix,pr.da.netease.com,reject
+host-suffix,rd.da.netease.com,reject
+host-suffix,wr.da.netease.com,reject
