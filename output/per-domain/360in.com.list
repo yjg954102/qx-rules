@@ -1,0 +1,7 @@
+DOMAIN,ad.360in.com,reject
+DOMAIN,dispatcher.360in.com,reject
+DOMAIN,exp.360in.com,reject
+host,ad.360in.com,reject
+host,dispatcher.360in.com,reject
+host,exp.360in.com,reject
+host-suffix,ad.360in.com,reject
