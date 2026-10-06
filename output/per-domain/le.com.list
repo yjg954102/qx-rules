@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,api.push.le.com,reject
+DOMAIN-SUFFIX,cn.api.push.le.com,reject
+host-suffix,api.push.le.com,reject
+host-suffix,cn.api.push.le.com,reject
