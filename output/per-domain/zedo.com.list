@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,d8.zedo.com,reject
+DOMAIN-SUFFIX,z1.zedo.com,reject
+DOMAIN-SUFFIX,zedo.com,reject
+host-suffix,d8.zedo.com,reject
+host-suffix,z1.zedo.com,reject
+host-suffix,zedo.com,reject
