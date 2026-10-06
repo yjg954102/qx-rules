@@ -1,17 +1,22 @@
 #!/usr/bin/env pwsh
 <#
 .SYNOPSIS
-  从已合并的规则生成「带 APP / 域名注释」的版本，可直接作为 QX 订阅引用。
+  生成带 APP / 域名注释的规则版本，并按 APP、按域名拆分出独立订阅文件。
 
 .DESCRIPTION
-  · QX-AllInOne-Rewrite-Annotated.conf —— 重写规则，按 APP 分组，行尾附 ;域名
-    远程订阅可用：格式为 <正则> url <动作> [参数]，多余字段被忽略，官方远程样例同样含 ; 注释
-  · QX-AllInOne-Filter-Annotated.conf  —— 分流规则（参考版，每条后附 ;主域名）
-    ⚠️ 分流规则格式固定为 <type>,<value>,<policy>，没有注释字段，
-       这个文件可用作【本地】分流规则，但【不可】作为 filter_remote 订阅（会 INVALID LINE）
+  QX 解析远程资源时【不支持行尾注释】—— `规则  ;注释` 会被当作 url 动作的参数而报
+  「Invalid Line」。因此本脚本的注释一律【独立成行】（以 ; 开头），QX 会正常忽略。
+
+  输出：
+    output/QX-AllInOne-Rewrite-Annotated.conf  重写，按 APP 分组 + 规则上方标注域名（可作订阅）
+    output/QX-AllInOne-Filter-Annotated.conf   分流，注释独立成行（仅供本地粘贴）
+    output/per-app/<APP>.conf                  按 APP 拆分（订阅 tag 写 APP 名即可显示）
+    output/per-domain/<域名>.list              按主域名拆分（≥3 条规则）
+    output/per-app-订阅清单.txt                 可直接复制的订阅行
+    output/per-domain-订阅清单.txt              可直接复制的订阅行
 
 .PARAMETER RepoRoot
-  仓库根目录。留空时自动推断。
+  仓库根目录，留空自动推断。
 #>
 [CmdletBinding()]
 param([string]$RepoRoot)
@@ -26,23 +31,33 @@ if (-not $RepoRoot) {
               elseif (Test-Path (Join-Path (Get-Location).Path 'output')) { (Get-Location).Path }
               else { $cand }
 }
-$outDir  = Join-Path $RepoRoot 'output'
-$srcDir  = Join-Path $scriptDir 'sources'
-$enc     = [System.Text.UTF8Encoding]::new($false)
-$sep     = ';' * 58
+$srcDir = Join-Path $scriptDir 'sources'
+$outDir = Join-Path $RepoRoot 'output'
+$appDir = Join-Path $outDir 'per-app'
+$domDir = Join-Path $outDir 'per-domain'
+$enc    = [System.Text.UTF8Encoding]::new($false)
+$sep    = ';' + ('=' * 58)
 
-# ---------- 域名提取工具 ----------
+foreach ($d in @($appDir, $domDir)) {
+  if (Test-Path $d) { Remove-Item $d -Recurse -Force -ErrorAction SilentlyContinue }
+  New-Item -ItemType Directory -Force -Path $d | Out-Null
+}
+New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+
+# ---------------- 工具 ----------------
 $FileExt = @('php','html','htm','js','json','jpg','jpeg','png','gif','webp','css','txt','xml',
              'apk','ipa','zip','mp4','m3u8','ts','svg','ico','woff','woff2','ttf','map')
+$MultiTld = @('com.cn','net.cn','org.cn','gov.cn','edu.cn','ac.cn','com.hk','com.tw','com.au',
+              'co.uk','co.jp','co.kr','co.nz','co.in','com.br','com.mx','com.sg','com.my','com.vn',
+              'org.uk','net.uk','gov.hk','edu.hk','org.hk','com.ru','com.tr','com.sa','com.ar')
 
 function Get-Hosts {
-  param([string]$Text,[int]$Limit = 3)
+  param([string]$Text, [int]$Limit = 4)
   $t = $Text -replace '\\',''
   $found = [System.Collections.Generic.List[string]]::new()
   foreach ($m in [regex]::Matches($t, '(?:\*\.)?(?:[A-Za-z0-9_\-]+\.)+[A-Za-z]{2,}')) {
     $h = $m.Value.Trim('*','.')
-    $last = $h.Split('.')[-1].ToLowerInvariant()
-    if ($FileExt -contains $last) { continue }
+    if ($FileExt -contains $h.Split('.')[-1].ToLowerInvariant()) { continue }
     $found.Add($h)
   }
   foreach ($m in [regex]::Matches($t, '\b\d{1,3}(?:\.\d{1,3}){3}\b')) { $found.Add($m.Value) }
@@ -55,28 +70,35 @@ function Get-Hosts {
   return @($out | Select-Object -Unique | Select-Object -First $Limit)
 }
 
-$MultiTld = @('com.cn','net.cn','org.cn','gov.cn','edu.cn','ac.cn','com.hk','com.tw','com.au',
-              'co.uk','co.jp','co.kr','co.nz','co.in','com.br','com.mx','com.sg','com.my','com.vn',
-              'org.uk','net.uk','gov.hk','edu.hk','org.hk','com.ru','com.tr','com.sa','com.ar')
 function Get-Root {
   param([string]$V)
   $v = $V.Trim().TrimStart('*','.').TrimStart('-')
   if ($v -match '^\d{1,3}(\.\d{1,3}){3}$') { return $v }
-  $p = $v.Split('.') | Where-Object { $_ }
+  $p = @($v.Split('.') | Where-Object { $_ })
   if ($p.Count -lt 2) { return $v }
   $last2 = ($p[-2..-1] -join '.')
   if ($MultiTld -contains $last2 -and $p.Count -ge 3) { return ($p[-3..-1] -join '.') }
   return $last2
 }
 
-# ---------- 1. 收集重写规则并按 APP 分组 ----------
+function Get-SafeName {
+  param([string]$Name)
+  $s = $Name -replace [char]0x2605, 'unlock-'           # ★ -> unlock-
+  foreach ($ch in [System.IO.Path]::GetInvalidFileNameChars()) { $s = $s.Replace($ch, '_') }
+  $s = $s -replace '[\s/\\]+', '_'
+  $s = $s.Trim('_','.')
+  if (-not $s) { $s = 'unknown' }
+  if ($s.Length -gt 80) { $s = $s.Substring(0, 80) }
+  return $s
+}
+
+# ---------------- 收集重写规则，按 APP 分组 ----------------
 $appRules = [ordered]@{}
-function Add-Rule([string]$App,[string]$Rule){
+function Add-Rule([string]$App, [string]$Rule) {
   if (-not $appRules.Contains($App)) { $appRules[$App] = [System.Collections.Generic.List[string]]::new() }
   if (-not $appRules[$App].Contains($Rule)) { $appRules[$App].Add($Rule) }
 }
 
-# fmz200 主合集：'# > App名' 标记分组
 $snip = Join-Path $srcDir 'fmz200-rewrite.snippet'
 if (Test-Path $snip) {
   $cur = '(未分组)'
@@ -89,7 +111,6 @@ if (Test-Path $snip) {
   }
 }
 
-# 其余来源按文件归属
 $map = @(
   @{ App='Spotify(解锁Premium)'; File='spotify.conf' }
   @{ App='哔哩哔哩';              File='bilibili.conf' }
@@ -113,40 +134,106 @@ foreach ($m in $map) {
   }
 }
 
-# ---------- 2. 写重写注释版（可作为 rewrite_remote 订阅） ----------
-$totalRules = 0; foreach ($v in $appRules.Values) { $totalRules += $v.Count }
+# ---------------- 1. 重写注释版（注释独立成行） ----------------
 $rw = [System.Collections.Generic.List[string]]::new()
-$rw.Add('; QX 重写规则 —— 已按 APP 分组标注（可作为重写订阅直接引用）')
-$rw.Add('; 每行末尾的 ;域名 为注释，QX 会忽略；分组标题标明 APP 名称')
-$rw.Add("; 共 $totalRules 条，覆盖 $($appRules.Count) 个 APP/来源")
+$rw.Add('; QX 重写规则 —— 已按 APP 分组标注')
+$rw.Add('; 注释一律独立成行（QX 不支持行尾注释，会报 Invalid Line）')
+$rw.Add('; 用法：可作为 rewrite_remote 订阅，或粘贴到本地重写规则')
 $rw.Add('; 仍需在 风车 → 重写 → MITM → 主机名 填入主机名（见 MITM-hostnames.txt）')
+$total = 0
+$appMeta = [ordered]@{}
 foreach ($app in ($appRules.Keys | Sort-Object { -$appRules[$_].Count }, { $_ })) {
   $rules = $appRules[$app]
+  $total += $rules.Count
   $hs = [System.Collections.Generic.List[string]]::new()
   foreach ($r in $rules) {
     $sp = $r.IndexOf(' url ')
     $pat = if ($sp -gt 0) { $r.Substring(0, $sp) } else { $r }
-    foreach ($h in (Get-Hosts -Text $pat -Limit 3)) { if (-not $hs.Contains($h)) { $hs.Add($h) } }
+    foreach ($h in (Get-Hosts -Text $pat -Limit 4)) { if (-not $hs.Contains($h)) { $hs.Add($h) } }
   }
-  $tag = if ($hs.Count) { ' | ' + (($hs | Select-Object -First 3) -join ', ') } else { '' }
-  
+  $appMeta[$app] = @{ Count = $rules.Count; Hosts = @($hs) }
   $rw.Add($sep)
-  $rw.Add((";【{0}】{1} 条规则{2}" -f $app, $rules.Count, $tag))
+  $tag = ''
+  if ($hs.Count -gt 0) { $tag = ' | ' + (($hs | Select-Object -First 4) -join ', ') }
+  $rw.Add(';【' + $app + '】' + $rules.Count + ' 条' + $tag)
   $rw.Add($sep)
   foreach ($r in $rules) {
     $sp = $r.IndexOf(' url ')
     $pat = if ($sp -gt 0) { $r.Substring(0, $sp) } else { $r }
-    $d = Get-Hosts -Text $pat -Limit 2
-    $note = if ($d.Count) { '  ;' + ($d -join ',') } else { '' }
-    $rw.Add($r + $note)
+    $d = Get-Hosts -Text $pat -Limit 3
+    if ($d.Count) { $rw.Add(';   ' + ($d -join ', ')) }
+    $rw.Add($r)
   }
   $rw.Add('')
 }
 [System.IO.File]::WriteAllLines((Join-Path $outDir 'QX-AllInOne-Rewrite-Annotated.conf'), $rw, $enc)
 
-# ---------- 3. 写分流注释版（仅适合本地使用） ----------
-$fl = Join-Path $outDir 'QX-AllInOne-Filter.conf'
-if (Test-Path $fl) {
+# ---------------- 2. 按 APP 拆分 + 清单 ----------------
+foreach ($app in $appRules.Keys) {
+  $fn = (Get-SafeName $app) + '.conf'
+  [System.IO.File]::WriteAllLines((Join-Path $appDir $fn), @($appRules[$app]), $enc)
+}
+$ib = [System.Collections.Generic.List[string]]::new()
+$ib.Add('; ============================================================')
+$ib.Add('; 按 APP 拆分的重写订阅清单')
+$ib.Add('; 用法：QX → 重写 → 规则资源 → + → 路径填下方网址，资源标签填方括号中的 APP 名')
+$ib.Add('; 每个 APP 独立订阅 = 可单独启停，且自动跟随仓库更新')
+$ib.Add('; ============================================================')
+$ib.Add('')
+$ib.Add("; 共 $($appRules.Count) 个 APP，按规则数排序：")
+$ib.Add('')
+foreach ($app in ($appRules.Keys | Sort-Object { -$appRules[$_].Count }, { $_ })) {
+  $meta = $appMeta[$app]
+  $fn = (Get-SafeName $app) + '.conf'
+  $ib.Add("; --- $app  （$($meta.Count) 条）")
+  $ib.Add(";     标签: $app")
+  $ib.Add(";     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/$fn")
+  if ($meta.Hosts.Count) { $ib.Add(';     域名: ' + (($meta.Hosts | Select-Object -First 6) -join ', ')) }
+  $ib.Add('')
+}
+[System.IO.File]::WriteAllLines((Join-Path $outDir 'per-app-订阅清单.txt'), $ib, $enc)
+
+# ---------------- 3. 分流按主域名拆分 ----------------
+$flPath = Join-Path $outDir 'QX-AllInOne-Filter.conf'
+$byRoot = [ordered]@{}
+$all = @()
+if (Test-Path $flPath) {
+  $all = @([System.IO.File]::ReadAllLines($flPath, [System.Text.Encoding]::UTF8) | Where-Object { $_.Trim() })
+  foreach ($l in $all) {
+    $parts = $l.Split(',')
+    $val = ($parts[1..($parts.Count-2)] -join ',').Trim()
+    $root = Get-Root -V $val
+    if (-not $byRoot.Contains($root)) { $byRoot[$root] = [System.Collections.Generic.List[string]]::new() }
+    $byRoot[$root].Add($l)
+  }
+}
+$big = @($byRoot.Keys | Where-Object { $byRoot[$_].Count -ge 3 } | Sort-Object { -$byRoot[$_].Count }, { $_ })
+foreach ($root in $big) {
+  [System.IO.File]::WriteAllLines((Join-Path $domDir ((Get-SafeName $root) + '.list')), @($byRoot[$root]), $enc)
+}
+$db = [System.Collections.Generic.List[string]]::new()
+$db.Add('; ============================================================')
+$db.Add('; 按主域名拆分的分流订阅清单（仅含规则数 ≥3 的域名）')
+$db.Add('; 用法：QX → 分流 → 规则资源 → + → 路径填下方网址，资源标签填域名')
+$db.Add('; ============================================================')
+$db.Add('')
+$db.Add("; 共 $($big.Count) 个域名，覆盖 $((($big | ForEach-Object { $byRoot[$_].Count }) | Measure-Object -Sum).Sum) 条规则")
+$db.Add('')
+foreach ($root in $big) {
+  $db.Add("; --- $root  （$($byRoot[$root].Count) 条）")
+  $db.Add(";     标签: $root")
+  $db.Add(";     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-domain/$((Get-SafeName $root)).list")
+  $db.Add('')
+}
+[System.IO.File]::WriteAllLines((Join-Path $outDir 'per-domain-订阅清单.txt'), $db, $enc)
+
+# ---------------- 4. 分流注释版（本地用） ----------------
+if (Test-Path $flPath) {
+  $fo = [System.Collections.Generic.List[string]]::new()
+  $fo.Add('; QX 分流规则 —— 注释独立成行')
+  $fo.Add('; ⚠️ 分流格式为 <type>,<value>,<policy> 三元组，无注释字段，')
+  $fo.Add(';    本文件仅供【本地分流规则】粘贴，勿作 filter_remote 订阅')
+  $fo.Add("; 共 $($all.Count) 条")
   $groups = [ordered]@{
     '后缀匹配（拦截该域名及其全部子域名）' = @('domain-suffix','host-suffix')
     '精确匹配（仅拦截该域名本身）'         = @('domain','host')
@@ -154,12 +241,6 @@ if (Test-Path $fl) {
     '通配符匹配'                          = @('domain-wildcard','host-wildcard')
     'IP 段 / 地区 / UA'                   = @('ip-cidr','ip6-cidr','ip-asn','geoip','user-agent')
   }
-  $all = [System.IO.File]::ReadAllLines($fl, [System.Text.Encoding]::UTF8) | Where-Object { $_.Trim() }
-  $fo = [System.Collections.Generic.List[string]]::new()
-  $fo.Add('; QX 分流规则 —— 每条后附 ;主域名 注释')
-  $fo.Add('; ⚠️ 分流规则格式为 <type>,<value>,<policy>，没有注释字段。')
-  $fo.Add(';    本文件适用于【本地分流规则】，请勿作为 filter_remote 订阅（会 INVALID LINE）')
-  $fo.Add("; 共 $($all.Count) 条")
   foreach ($g in $groups.Keys) {
     $rows = @($all | Where-Object { $groups[$g] -contains ($_.Split(',')[0].Trim().ToLowerInvariant()) })
     if (-not $rows.Count) { continue }
@@ -170,14 +251,15 @@ if (Test-Path $fl) {
     foreach ($l in $rows) {
       $parts = $l.Split(',')
       $val = ($parts[1..($parts.Count-2)] -join ',').Trim()
-      $fo.Add("$l  ;$(Get-Root -V $val)")
+      $fo.Add("; $(Get-Root -V $val)")
+      $fo.Add($l)
     }
   }
   [System.IO.File]::WriteAllLines((Join-Path $outDir 'QX-AllInOne-Filter-Annotated.conf'), $fo, $enc)
 }
 
-Write-Host '== 注释版输出 =='
-Write-Host ("   重写 $totalRules 条 / APP $($appRules.Count) 个")
-Get-ChildItem (Join-Path $outDir '*-Annotated.conf') | ForEach-Object {
-  Write-Host ("   {0}  {1} KB" -f $_.Name, [math]::Round($_.Length/1KB,1))
-}
+Write-Host '== 注释版与拆分文件 =='
+Write-Host ("   重写 $total 条 / APP $($appRules.Count) 个")
+Write-Host ("   分流 $($all.Count) 条 / 主域名 $($byRoot.Count) 个（≥3 条的 $($big.Count) 个）")
+Write-Host ("   output/per-app/    $($appRules.Count) 个文件")
+Write-Host ("   output/per-domain/ $($big.Count) 个文件")
