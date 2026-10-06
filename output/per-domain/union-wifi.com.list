@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,js.union-wifi.com,reject
+DOMAIN-SUFFIX,rcv.union-wifi.com,reject
+DOMAIN-SUFFIX,union-wifi.com,reject
+host-suffix,js.union-wifi.com,reject
