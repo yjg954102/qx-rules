@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,1.qtmojo.cn,reject
+DOMAIN-SUFFIX,creatim.qtmojo.cn,reject
+DOMAIN-SUFFIX,qtmojo.cn,reject
+DOMAIN-SUFFIX,wmcdn.qtmojo.cn,reject
+host-suffix,1.qtmojo.cn,reject
+host-suffix,creatim.qtmojo.cn,reject
+host-suffix,qtmojo.cn,reject
+host-suffix,wmcdn.qtmojo.cn,reject
