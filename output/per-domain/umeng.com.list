@@ -1,0 +1,17 @@
+DOMAIN,aaid.umeng.com,reject
+DOMAIN,alog.umeng.com,reject
+DOMAIN,alogus.umeng.com,reject
+DOMAIN,aspect-upush.umeng.com,reject
+DOMAIN,audid.umeng.com,reject
+DOMAIN,ccs.umeng.com,reject
+DOMAIN,cnlogs.umeng.com,reject
+DOMAIN,plbslog.umeng.com,reject
+DOMAIN,resolve.umeng.com,reject
+DOMAIN,ulogs.umeng.com,reject
+DOMAIN,utoken.umeng.com,reject
+DOMAIN-SUFFIX,ulogs.umeng.com,reject
+DOMAIN-SUFFIX,umeng.com,reject
+host,errlog.umeng.com,reject
+host,sec.umeng.com,reject
+host,ulogs.umeng.com,reject
+host-KEYWORD,uop.umeng.com,reject
