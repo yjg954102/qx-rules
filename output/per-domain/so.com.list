@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,mbrowser.news.so.com,reject
+DOMAIN-SUFFIX,spro.so.com,reject
+DOMAIN-SUFFIX,tran.news.so.com,reject
+host-suffix,mbrowser.news.so.com,reject
+host-suffix,spro.so.com,reject
+host-suffix,tran.news.so.com,reject
