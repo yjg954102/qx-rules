@@ -1,0 +1,4 @@
+DOMAIN,log.tagtic.cn,reject
+DOMAIN,tagtic.cn,reject
+DOMAIN-SUFFIX,g1.tagtic.cn,reject
+DOMAIN-SUFFIX,log.tagtic.cn,reject
