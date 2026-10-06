@@ -1,0 +1,11 @@
+DOMAIN,appcloud2.in.zhihu.com,reject
+DOMAIN,crash2.zhihu.com,reject
+DOMAIN,mqtt.zhihu.com,reject
+DOMAIN,sugar.zhihu.com,reject
+DOMAIN,zhihu-web-analytics.zhihu.com,reject
+DOMAIN-SUFFIX,udd1i5.zhihu.com,reject
+host,appcloud.zhihu.com,reject
+host,appcloud2.in.zhihu.com,reject
+host,crash2.zhihu.com,reject
+host,mqtt.zhihu.com,reject
+host,sugar.zhihu.com,reject
