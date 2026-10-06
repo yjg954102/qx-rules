@@ -1,0 +1,3 @@
+DOMAIN,crashlyticsreports-pa.googleapis.com,reject
+DOMAIN,firebaselogging-pa.googleapis.com,reject
+host,safebrowsing.googleapis.com,reject
