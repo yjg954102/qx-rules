@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,gaandroid.talkingdata.net,reject
+DOMAIN-SUFFIX,talkingdata.net,reject
+DOMAIN-SUFFIX,tdcv3.talkingdata.net,reject
+DOMAIN-SUFFIX,u.talkingdata.net,reject
+host-suffix,gaandroid.talkingdata.net,reject
+host-suffix,talkingdata.net,reject
+host-suffix,tdcv3.talkingdata.net,reject
+host-suffix,u.talkingdata.net,reject
