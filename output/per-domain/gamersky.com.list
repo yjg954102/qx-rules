@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,ab3de9.gamersky.com,reject
+DOMAIN-SUFFIX,ja*.gamersky.com,reject
+DOMAIN-SUFFIX,ja.gamersky.com,reject
+DOMAIN-SUFFIX,ja1.gamersky.com,reject
+DOMAIN-SUFFIX,pc-util.gamersky.com,reject
+DOMAIN-SUFFIX,wmbd.gamersky.com,reject
+host-suffix,ja.gamersky.com,reject
+host-suffix,ja1.gamersky.com,reject
