@@ -1,0 +1,5 @@
+DOMAIN,adx.yiche.com,reject
+DOMAIN,log.ycapp.yiche.com,reject
+DOMAIN-SUFFIX,d2.yiche.com,reject
+host,adx.yiche.com,reject
+host,log.ycapp.yiche.com,reject
