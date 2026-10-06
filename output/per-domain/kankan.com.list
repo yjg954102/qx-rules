@@ -1,0 +1,14 @@
+DOMAIN-SUFFIX,biz5.kankan.com,reject
+DOMAIN-SUFFIX,count.cpm.cm.kankan.com,reject
+DOMAIN-SUFFIX,cpm.cm.kankan.com,reject
+DOMAIN-SUFFIX,distf.kankan.com,reject
+DOMAIN-SUFFIX,float.kankan.com,reject
+DOMAIN-SUFFIX,kkpgv.kankan.com,reject
+DOMAIN-SUFFIX,kkpgv2.kankan.com,reject
+host-suffix,biz5.kankan.com,reject
+host-suffix,count.cpm.cm.kankan.com,reject
+host-suffix,cpm.cm.kankan.com,reject
+host-suffix,distf.kankan.com,reject
+host-suffix,float.kankan.com,reject
+host-suffix,kkpgv.kankan.com,reject
+host-suffix,kkpgv2.kankan.com,reject
