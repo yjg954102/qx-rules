@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,icon.cnmo.com,reject
+DOMAIN-SUFFIX,js.cnmo.com,reject
+host-suffix,icon.cnmo.com,reject
+host-suffix,js.cnmo.com,reject
