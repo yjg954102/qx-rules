@@ -1,0 +1,5 @@
+DOMAIN,glitter.services.disqus.com,reject
+DOMAIN,juggler.services.disqus.com,reject
+DOMAIN,tempest.services.disqus.com,reject
+DOMAIN-SUFFIX,links.services.disqus.com,reject
+DOMAIN-SUFFIX,referrer.disqus.com,reject
