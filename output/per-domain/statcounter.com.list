@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,c.statcounter.com,reject
+DOMAIN-SUFFIX,c1.statcounter.com,reject
+DOMAIN-SUFFIX,c2.statcounter.com,reject
+DOMAIN-SUFFIX,secure.statcounter.com,reject
+DOMAIN-SUFFIX,statcounter.com,reject
+host-suffix,c.statcounter.com,reject
+host-suffix,c1.statcounter.com,reject
+host-suffix,c2.statcounter.com,reject
+host-suffix,secure.statcounter.com,reject
+host-suffix,statcounter.com,reject
