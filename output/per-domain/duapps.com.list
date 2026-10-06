@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,ad.duapps.com,reject
+DOMAIN-SUFFIX,api.mobula.sdk.duapps.com,reject
+DOMAIN-SUFFIX,duapps.com,reject
+host-suffix,duapps.com,reject
