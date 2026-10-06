@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,lxcdn.dl.files.xiaomi.net,reject
+DOMAIN-SUFFIX,migrate.driveapi.micloud.xiaomi.net,reject
+DOMAIN-SUFFIX,mlog.search.xiaomi.net,reject
+DOMAIN-SUFFIX,pdc.micloud.xiaomi.net,reject
+DOMAIN-SUFFIX,resolver.msg.xiaomi.net,reject
+host-suffix,lxcdn.dl.files.xiaomi.net,reject
+host-suffix,migrate.driveapi.micloud.xiaomi.net,reject
+host-suffix,mlog.search.xiaomi.net,reject
+host-suffix,pdc.micloud.xiaomi.net,reject
+host-suffix,resolver.msg.xiaomi.net,reject
