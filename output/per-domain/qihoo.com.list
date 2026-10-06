@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,haostat.qihoo.com,reject
+DOMAIN-SUFFIX,s.sh.qihoo.com,reject
+DOMAIN-SUFFIX,sh.qihoo.com,reject
+host-suffix,haostat.qihoo.com,reject
+host-suffix,s.sh.qihoo.com,reject
+host-suffix,sh.qihoo.com,reject
