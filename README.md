@@ -24,12 +24,18 @@ QX 没有官方支持「单个 URL 同时作为分流 + 重写订阅」的资源
 .
 ├── output/                              # ★ 订阅文件（QX 引用这两个）
 │   ├── QX-AllInOne-Filter.conf          #   分流：放 [filter_remote]
-│   └── QX-AllInOne-Rewrite.conf          #   重写：放 [rewrite_remote]
+│   ├── QX-AllInOne-Rewrite.conf         #   重写：放 [rewrite_remote]
+│   └── MITM-hostnames.txt               #   MITM 主机名，需手动填进 QX（977 个）
 ├── scripts/
 │   ├── merge.ps1                        # 合并脚本（唯一需要维护的文件）
+│   ├── fix-upload.ps1                   # 一键上传修正版到本仓库
 │   └── sources/                         # 上游源文件缓存（local 模式离线复现用）
 └── .github/workflows/update.yml          # 每日自动重建
 ```
+
+> ⚠️ **订阅文件的格式要求**：远程订阅必须是「一行一条规则」的纯净列表。
+> 不能包含 `#!name=` 之类的 Loon/Surge 元数据行，也不能包含 `[filter_local]`、`[rewrite_local]`、`[MITM]` 段头
+> —— QX 会把它们判为 `INVALID LINE` 并拒绝整个订阅。`merge.ps1` 已按此规则生成。
 
 ---
 
@@ -80,14 +86,26 @@ https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/QX-AllInOn
 
 添加后**右滑该条目点更新图标**，无报错即成功。
 
-### MITM 证书必做四步（漏任何一步，重写全部静默失效）
+### MITM 证书必做（漏任何一步，重写全部静默失效）
 
 1. 风车 → **MITM** → 生成证书
 2. 按引导安装描述文件
 3. iOS **设置 → 通用 → VPN与设备管理** → 信任该证书
 4. iOS **设置 → 通用 → 关于本机 → 证书信任设置** → 打开完全信任
 
-> 重写订阅已内置 `[MITM]` 段，**主机名无需手动填**。这是本仓库相比手拼配置的主要优势之一。
+### MITM 主机名需要手动填（重要）
+
+远程订阅文件里**不能**包含 `[MITM]` 段 —— QX 会报 `INVALID LINE`。
+而这些主机名在 fmz200 的源文件里本身也是**注释状态**（`# hostname = ...`），QX 不会自动应用。
+
+所以订阅只提供规则，主机名要手填（只需做一次）：
+
+1. 打开 [`output/MITM-hostnames.txt`](output/MITM-hostnames.txt)
+2. 全选复制（17 行，共 977 个主机名）
+3. QX → 风车 → **重写** → **MITM** → **主机名** → 右上角 `+`
+4. 把内容粘贴进去保存（QX 会自动按逗号拆分；若粘贴不进去，就逐行分 17 次添加）
+
+> 不填主机名 → 去广告完全无效；填错/填少 → 对应 App 无效。只有分流规则（拦截域名）不需要 MITM。
 
 ---
 
