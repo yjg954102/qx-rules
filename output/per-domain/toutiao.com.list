@@ -1,0 +1,16 @@
+DOMAIN,ad.toutiao.com,reject
+DOMAIN,dm.toutiao.com,reject
+DOMAIN,dsp.toutiao.com,reject
+DOMAIN,monsetting.toutiao.com,reject
+DOMAIN-SUFFIX,ad.toutiao.com,reject
+DOMAIN-SUFFIX,dm.toutiao.com,reject
+DOMAIN-SUFFIX,dsp.toutiao.com,reject
+DOMAIN-SUFFIX,nativeapp.toutiao.com,reject
+DOMAIN-SUFFIX,partner.toutiao.com,reject
+host-KEYWORD,adshare.toutiao.com,reject
+host-suffix,ad.toutiao.com,reject
+host-suffix,dm.toutiao.com,reject
+host-suffix,dsp.toutiao.com,reject
+host-suffix,nativeapp.toutiao.com,reject
+host-suffix,partner.toutiao.com,reject
+host-suffix,track.toutiao.com,reject
