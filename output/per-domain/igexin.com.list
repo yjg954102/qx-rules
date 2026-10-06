@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,api.gi.igexin.com,reject
+DOMAIN-SUFFIX,api.y.igexin.com,reject
+DOMAIN-SUFFIX,igexin.com,reject
+DOMAIN-SUFFIX,sdk.conf.igexin.com,reject
+DOMAIN-SUFFIX,sdk.open.amp.igexin.com,reject
+DOMAIN-SUFFIX,sdk.open.lbs.igexin.com,reject
+DOMAIN-SUFFIX,sdk.open.phone.igexin.com,reject
+DOMAIN-SUFFIX,sdk.open.talk.igexin.com,reject
+DOMAIN-SUFFIX,talk.nz.igexin.com,reject
+host-suffix,igexin.com,reject
