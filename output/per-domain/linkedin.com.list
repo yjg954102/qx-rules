@@ -1,0 +1,3 @@
+DOMAIN,ads.linkedin.com,reject
+DOMAIN,analytics.pointdrive.linkedin.com,reject
+host-suffix,ads.linkedin.com,reject
