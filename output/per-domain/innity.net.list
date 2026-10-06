@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,cdn.innity.net,reject
+DOMAIN-SUFFIX,cdn.media.innity.net,reject
+DOMAIN-SUFFIX,innity.net,reject
+DOMAIN-SUFFIX,ssl-cdn.media.innity.net,reject
+host-suffix,cdn.innity.net,reject
+host-suffix,cdn.media.innity.net,reject
+host-suffix,innity.net,reject
+host-suffix,ssl-cdn.media.innity.net,reject
