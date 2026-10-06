@@ -1,0 +1,4 @@
+DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net,reject
+DOMAIN,apd-pcdnwxnat.teg.tencent-cloud.net,reject
+DOMAIN,apd-pcdnwxstat.teg.tencent-cloud.net,reject
+host,apd-pcdnwxlogin.teg.tencent-cloud.net,reject
