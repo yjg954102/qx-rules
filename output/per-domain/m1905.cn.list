@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,mlog.m1905.cn,reject
+DOMAIN-SUFFIX,vodlog.m1905.cn,reject
+host-suffix,mlog.m1905.cn,reject
+host-suffix,vodlog.m1905.cn,reject
