@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,fe.lea.lycos.co.uk,reject
+DOMAIN-SUFFIX,hit.webcentre.lycos.co.uk,reject
+host-suffix,fe.lea.lycos.co.uk,reject
+host-suffix,hit.webcentre.lycos.co.uk,reject
