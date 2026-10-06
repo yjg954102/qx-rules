@@ -1,0 +1,8 @@
+DOMAIN,mobads-pre-config.cdn.bcebos.com,reject
+DOMAIN-SUFFIX,baiducom.bj.bcebos.com,reject
+DOMAIN-SUFFIX,dingbu.bj.bcebos.com,reject
+DOMAIN-SUFFIX,fc-feed.cdn.bcebos.com,reject
+DOMAIN-SUFFIX,gg88.bj.bcebos.com,reject
+DOMAIN-SUFFIX,tupian888.*.bcebos.com,reject
+DOMAIN-SUFFIX,ys2000.cdn.bcebos.com,reject
+host,mobads-pre-config.cdn.bcebos.com,reject
