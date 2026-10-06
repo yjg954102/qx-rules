@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,lp.startapp.com,reject
+DOMAIN-SUFFIX,startapp.com,reject
+host-suffix,lp.startapp.com,reject
+host-suffix,startapp.com,reject
