@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,gafxa.code.mytanwan.com,reject
+DOMAIN-SUFFIX,ldpgl.code.mytanwan.com,reject
+DOMAIN-SUFFIX,mytanwan.com,reject
+DOMAIN-SUFFIX,pop.code.mytanwan.com,reject
+DOMAIN-SUFFIX,sy.code.mytanwan.com,reject
+DOMAIN-SUFFIX,sy.flash.mytanwan.com,reject
+host-suffix,gafxa.code.mytanwan.com,reject
+host-suffix,ldpgl.code.mytanwan.com,reject
+host-suffix,mytanwan.com,reject
+host-suffix,pop.code.mytanwan.com,reject
+host-suffix,sy.code.mytanwan.com,reject
+host-suffix,sy.flash.mytanwan.com,reject
