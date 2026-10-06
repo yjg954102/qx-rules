@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,app.moji001.com,reject
+DOMAIN-SUFFIX,ugc.moji001.com,reject
+host-suffix,app.moji001.com,reject
+host-suffix,ugc.moji001.com,reject
