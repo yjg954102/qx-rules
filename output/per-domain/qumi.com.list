@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,apt.qumi.com,reject
+DOMAIN-SUFFIX,cut.qumi.com,reject
+DOMAIN-SUFFIX,exp.qumi.com,reject
+DOMAIN-SUFFIX,qumi.com,reject
+host-suffix,apt.qumi.com,reject
+host-suffix,cut.qumi.com,reject
+host-suffix,exp.qumi.com,reject
+host-suffix,qumi.com,reject
