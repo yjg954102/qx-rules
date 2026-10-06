@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,admx.baixing.com,reject
+DOMAIN-SUFFIX,d.admx.baixing.com,reject
+DOMAIN-SUFFIX,tu.baixing.com,reject
+host-suffix,admx.baixing.com,reject
+host-suffix,d.admx.baixing.com,reject
+host-suffix,tu.baixing.com,reject
