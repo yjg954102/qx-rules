@@ -1,0 +1,11 @@
+DOMAIN-SUFFIX,afpimages.eastday.com,reject
+DOMAIN-SUFFIX,df888.eastday.com,reject
+DOMAIN-SUFFIX,jiaoben.eastday.com,reject
+DOMAIN-SUFFIX,mini.eastday.com,reject
+DOMAIN-SUFFIX,tt123.eastday.com,reject
+DOMAIN-SUFFIX,tt321.eastday.com,reject
+host-suffix,afpimages.eastday.com,reject
+host-suffix,jiaoben.eastday.com,reject
+host-suffix,mini.eastday.com,reject
+host-suffix,tt123.eastday.com,reject
+host-suffix,tt321.eastday.com,reject
