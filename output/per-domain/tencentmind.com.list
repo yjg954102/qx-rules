@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,p.tencentmind.com,reject
+DOMAIN-SUFFIX,tencentmind.com,reject
+host-suffix,p.tencentmind.com,reject
+host-suffix,tencentmind.com,reject
