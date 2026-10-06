@@ -1,0 +1,3 @@
+DOMAIN,doubleclick-cn.net,reject
+DOMAIN,googleads.g.doubleclick-cn.net,reject
+host-suffix,doubleclick-cn.net,reject
