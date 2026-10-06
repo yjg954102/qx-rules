@@ -1,0 +1,3 @@
+DOMAIN,ad.bwton.com,reject
+DOMAIN,dlogs.bwton.com,reject
+host-suffix,ad.bwton.com,reject
