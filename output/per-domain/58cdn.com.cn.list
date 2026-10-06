@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,t1.58cdn.com.cn,reject
+DOMAIN-SUFFIX,t2.58cdn.com.cn,reject
+DOMAIN-SUFFIX,t3.58cdn.com.cn,reject
+host-suffix,t1.58cdn.com.cn,reject
+host-suffix,t2.58cdn.com.cn,reject
+host-suffix,t3.58cdn.com.cn,reject
