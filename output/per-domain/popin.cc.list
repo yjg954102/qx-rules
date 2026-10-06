@@ -1,0 +1,3 @@
+DOMAIN,log.popin.cc,reject
+DOMAIN,rlog.popin.cc,reject
+DOMAIN-SUFFIX,popin.cc,reject
