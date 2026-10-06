@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,ad.turn.com,reject
+DOMAIN-SUFFIX,d.turn.com,reject
+DOMAIN-SUFFIX,turn.com,reject
+host-suffix,ad.turn.com,reject
+host-suffix,d.turn.com,reject
+host-suffix,turn.com,reject
