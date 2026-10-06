@@ -186,3 +186,4 @@ Write-Host ("   分流规则 {0} 条   重写规则 {1} 条   MITM 主机名 {2}
 Get-ChildItem (Join-Path $outDir 'QX-AllInOne-*.conf') | ForEach-Object {
   Write-Host ("   {0}  {1} KB" -f $_.Name, [math]::Round($_.Length/1KB,1))
 }
+# (build trigger check)
