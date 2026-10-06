@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,ad.doubanio.com,reject
+DOMAIN-SUFFIX,at*.doubanio.com,reject
+host-suffix,ad.doubanio.com,reject
