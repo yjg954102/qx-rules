@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,drm.cmgame.com,reject
+DOMAIN-SUFFIX,sdk.cmgame.com,reject
+DOMAIN-SUFFIX,sdklog.cmgame.com,reject
+DOMAIN-SUFFIX,wap.cmgame.com,reject
+DOMAIN-SUFFIX,wtrace.cmgame.com,reject
