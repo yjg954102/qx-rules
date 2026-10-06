@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,juicyads.com,reject
+host-suffix,adserver.juicyads.com,reject
+host-suffix,juicyads.com,reject
