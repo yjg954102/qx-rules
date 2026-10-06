@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,browser.gwdang.com,reject
+DOMAIN-SUFFIX,router.gwdang.com,reject
+host-suffix,browser.gwdang.com,reject
+host-suffix,router.gwdang.com,reject
