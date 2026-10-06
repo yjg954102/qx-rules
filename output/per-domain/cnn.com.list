@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,cnn.dyn.cnn.com,reject
+DOMAIN-SUFFIX,customad.cnn.com,reject
+DOMAIN-SUFFIX,gdyn.cnn.com,reject
+DOMAIN-SUFFIX,metrics.cnn.com,reject
+host-suffix,cnn.dyn.cnn.com,reject
+host-suffix,customad.cnn.com,reject
+host-suffix,gdyn.cnn.com,reject
+host-suffix,metrics.cnn.com,reject
