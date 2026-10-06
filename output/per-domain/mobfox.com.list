@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,mobfox.com,reject
+DOMAIN-SUFFIX,my.mobfox.com,reject
+host-suffix,mobfox.com,reject
+host-suffix,my.mobfox.com,reject
