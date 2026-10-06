@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,intentiq.com,reject
+DOMAIN-SUFFIX,sync.intentiq.com,reject
+host-suffix,intentiq.com,reject
