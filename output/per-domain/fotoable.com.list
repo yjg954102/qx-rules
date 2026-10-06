@@ -1,0 +1,4 @@
+DOMAIN,cdn.adapi.fotoable.com,reject
+DOMAIN,regist.fotoable.com,reject
+host,cdn.adapi.fotoable.com,reject
+host,regist.fotoable.com,reject
