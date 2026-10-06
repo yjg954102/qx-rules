@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,client-dmp.suishenyun.cn,reject
+DOMAIN-SUFFIX,log-dmp.suishenyun.cn,reject
+host-keyword,client-dmp.suishenyun.cn,reject
+host-keyword,log-dmp.suishenyun.cn,reject
