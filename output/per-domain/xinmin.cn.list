@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,iads.xinmin.cn,reject
+DOMAIN-SUFFIX,total.xinmin.cn,reject
+DOMAIN-SUFFIX,www2.xinmin.cn,reject
+host-suffix,iads.xinmin.cn,reject
+host-suffix,total.xinmin.cn,reject
+host-suffix,www2.xinmin.cn,reject
