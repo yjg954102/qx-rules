@@ -1,0 +1,8 @@
+DOMAIN,fancyapi.com,reject
+DOMAIN,g.fancyapi.com,reject
+DOMAIN,l6.fancyapi.com,reject
+DOMAIN,lftxali.fancyapi.com,reject
+DOMAIN,t2.fancyapi.com,reject
+DOMAIN-SUFFIX,cm.fancyapi.com,reject
+DOMAIN-SUFFIX,fancyapi.com,reject
+host-suffix,fancyapi.com,reject
