@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,ad.leadboltmobile.net,reject
+DOMAIN-SUFFIX,leadboltmobile.net,reject
+host-suffix,ad.leadboltmobile.net,reject
+host-suffix,leadboltmobile.net,reject
