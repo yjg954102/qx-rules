@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,media.trafficfactory.biz,reject
+DOMAIN-SUFFIX,rpc-php.trafficfactory.biz,reject
+DOMAIN-SUFFIX,trafficfactory.biz,reject
+host-suffix,media.trafficfactory.biz,reject
+host-suffix,rpc-php.trafficfactory.biz,reject
+host-suffix,trafficfactory.biz,reject
