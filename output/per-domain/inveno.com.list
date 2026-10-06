@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,business.inveno.com,reject
+DOMAIN-SUFFIX,malacca.inveno.com,reject
+DOMAIN-SUFFIX,zuimeitianqi.inveno.com,reject
+host-suffix,business.inveno.com,reject
+host-suffix,malacca.inveno.com,reject
+host-suffix,zuimeitianqi.inveno.com,reject
