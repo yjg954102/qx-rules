@@ -1,0 +1,3 @@
+DOMAIN,g.koowo.com,reject
+DOMAIN-SUFFIX,koowo.com,reject
+host,g.koowo.com,reject
