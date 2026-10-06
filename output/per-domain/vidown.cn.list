@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,conf.vidown.cn,reject
+DOMAIN-SUFFIX,gg.vidown.cn,reject
+DOMAIN-SUFFIX,minisite.vidown.cn,reject
+DOMAIN-SUFFIX,rtlog.vidown.cn,reject
