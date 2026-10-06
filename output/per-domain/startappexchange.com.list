@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,dts.akamai.startappexchange.com,reject
+DOMAIN-SUFFIX,init.startappexchange.com,reject
+DOMAIN-SUFFIX,startappexchange.com,reject
+host-suffix,dts.akamai.startappexchange.com,reject
+host-suffix,init.startappexchange.com,reject
+host-suffix,startappexchange.com,reject
