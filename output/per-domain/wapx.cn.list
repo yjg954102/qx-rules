@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,app.wapx.cn,reject
+DOMAIN-SUFFIX,appcdn.wapx.cn,reject
+DOMAIN-SUFFIX,imgcdn.wapx.cn,reject
+DOMAIN-SUFFIX,push.wapx.cn,reject
+DOMAIN-SUFFIX,wapscdn.wapx.cn,reject
+DOMAIN-SUFFIX,wapx.cn,reject
+host-suffix,app.wapx.cn,reject
+host-suffix,appcdn.wapx.cn,reject
+host-suffix,imgcdn.wapx.cn,reject
+host-suffix,push.wapx.cn,reject
+host-suffix,wapscdn.wapx.cn,reject
+host-suffix,wapx.cn,reject
