@@ -1,0 +1,3 @@
+DOMAIN,sdk.ad.smaato.net,reject
+DOMAIN-SUFFIX,smaato.net,reject
+host-suffix,smaato.net,reject
