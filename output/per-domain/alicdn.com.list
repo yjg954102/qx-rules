@@ -1,0 +1,14 @@
+DOMAIN,baichuan-sdk.alicdn.com,reject
+DOMAIN,httpdns.alicdn.com,reject
+DOMAIN-SUFFIX,aecpm.alicdn.com,reject
+DOMAIN-SUFFIX,afp.alicdn.com,reject
+DOMAIN-SUFFIX,afpmm.alicdn.com,reject
+DOMAIN-SUFFIX,alimama.alicdn.com,reject
+DOMAIN-SUFFIX,asearch.alicdn.com,reject
+DOMAIN-SUFFIX,atanx.alicdn.com,reject
+DOMAIN-SUFFIX,atanx2.alicdn.com,reject
+DOMAIN-SUFFIX,gen.alicdn.com,reject
+DOMAIN-SUFFIX,gma.alicdn.com,reject
+DOMAIN-SUFFIX,strip.alicdn.com,reject
+DOMAIN-SUFFIX,unidesk.alicdn.com,reject
+host,baichuan-sdk.alicdn.com,reject
