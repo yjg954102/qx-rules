@@ -1,0 +1,5 @@
+DOMAIN,googleadservices.com,reject
+DOMAIN,pagead2.googleadservices.com,reject
+DOMAIN-SUFFIX,googleadservices.com,reject
+host-suffix,googleadservices.com,reject
+host-suffix,www.googleadservices.com,reject
