@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,p4psearch.china.alibaba.com,reject
+host,o2o-ad-log-gateway.alibaba.com,reject
+host,ssp-partner.alibaba.com,reject
