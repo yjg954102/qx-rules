@@ -1,0 +1,4 @@
+DOMAIN,counter.kingsoft.com,reject
+DOMAIN-SUFFIX,counter.kingsoft.com,reject
+host,counter.kingsoft.com,reject
+host-suffix,counter.kingsoft.com,reject
