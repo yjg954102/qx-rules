@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,b.scorecardresearch.com,reject
+DOMAIN-SUFFIX,sb.scorecardresearch.com,reject
+DOMAIN-SUFFIX,scorecardresearch.com,reject
+DOMAIN-SUFFIX,udm.scorecardresearch.com,reject
+host-suffix,b.scorecardresearch.com,reject
+host-suffix,sb.scorecardresearch.com,reject
+host-suffix,scorecardresearch.com,reject
+host-suffix,udm.scorecardresearch.com,reject
