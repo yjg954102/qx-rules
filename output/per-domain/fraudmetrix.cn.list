@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,fp.fraudmetrix.cn,reject
+DOMAIN-SUFFIX,fptest.fraudmetrix.cn,reject
+DOMAIN-SUFFIX,fraudmetrix.cn,reject
+DOMAIN-SUFFIX,statictest.fraudmetrix.cn,reject
+host-suffix,fp.fraudmetrix.cn,reject
+host-suffix,fptest.fraudmetrix.cn,reject
+host-suffix,fraudmetrix.cn,reject
+host-suffix,statictest.fraudmetrix.cn,reject
