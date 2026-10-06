@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,ark.cocounion.com,reject
+DOMAIN-SUFFIX,cocounion.com,reject
+DOMAIN-SUFFIX,config.cocounion.com,reject
+DOMAIN-SUFFIX,m.cocounion.com,reject
+DOMAIN-SUFFIX,res.cocounion.com,reject
+DOMAIN-SUFFIX,service.cocounion.com,reject
