@@ -1,0 +1,16 @@
+DOMAIN,ad.zijieapi.com,reject
+DOMAIN,ads3-normal.zijieapi.com,reject
+DOMAIN,ads3-normal-hl.zijieapi.com,reject
+DOMAIN,ads3-normal-lf.zijieapi.com,reject
+DOMAIN,ads3-normal-lq.zijieapi.com,reject
+DOMAIN,ads5-normal.zijieapi.com,reject
+DOMAIN,ads5-normal-hl.zijieapi.com,reject
+DOMAIN,ads5-normal-lf.zijieapi.com,reject
+DOMAIN,ads5-normal-lq.zijieapi.com,reject
+DOMAIN,applog.zijieapi.com,reject
+DOMAIN,log.zijieapi.com,reject
+DOMAIN,mssdk.zijieapi.com,reject
+DOMAIN,tnc0-bjlgy.zijieapi.com,reject
+host,ad.zijieapi.com,reject
+host,applog.zijieapi.com,reject
+host-suffix,-normal-lq.zijieapi.com,reject
