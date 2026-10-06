@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,gcdn.2mdn.net,reject
+DOMAIN-SUFFIX,s0.2mdn.net,reject
+DOMAIN-SUFFIX,s1.2mdn.net,reject
+host-suffix,gcdn.2mdn.net,reject
+host-suffix,s0.2mdn.net,reject
+host-suffix,s1.2mdn.net,reject
