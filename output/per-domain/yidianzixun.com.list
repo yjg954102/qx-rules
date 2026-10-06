@@ -1,0 +1,11 @@
+DOMAIN-SUFFIX,imagelx.yidianzixun.com,reject
+DOMAIN-SUFFIX,l.yidianzixun.com,reject
+DOMAIN-SUFFIX,lx-upload-log.yidianzixun.com,reject
+DOMAIN-SUFFIX,oppo.yidianzixun.com,reject
+DOMAIN-SUFFIX,s.yidianzixun.com,reject
+DOMAIN-SUFFIX,static-ssp.yidianzixun.com,reject
+host-suffix,imagelx.yidianzixun.com,reject
+host-suffix,l.yidianzixun.com,reject
+host-suffix,lx-upload-log.yidianzixun.com,reject
+host-suffix,oppo.yidianzixun.com,reject
+host-suffix,s.yidianzixun.com,reject
