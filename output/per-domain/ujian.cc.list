@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,api.ujian.cc,reject
+DOMAIN-SUFFIX,l.ujian.cc,reject
+DOMAIN-SUFFIX,t.ujian.cc,reject
+DOMAIN-SUFFIX,ujian.cc,reject
+DOMAIN-SUFFIX,v1.ujian.cc,reject
