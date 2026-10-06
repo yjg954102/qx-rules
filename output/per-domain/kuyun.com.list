@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,config.kuyun.com,reject
+DOMAIN-SUFFIX,logonext.tv.kuyun.com,reject
+host-suffix,config.kuyun.com,reject
+host-suffix,logonext.tv.kuyun.com,reject
