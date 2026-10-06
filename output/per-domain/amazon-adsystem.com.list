@@ -1,0 +1,3 @@
+DOMAIN,s.amazon-adsystem.com,reject
+DOMAIN-SUFFIX,amazon-adsystem.com,reject
+host-suffix,amazon-adsystem.com,reject
