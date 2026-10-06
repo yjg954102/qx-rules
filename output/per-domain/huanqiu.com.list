@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,17.huanqiu.com,reject
+DOMAIN-SUFFIX,32.huanqiu.com,reject
+DOMAIN-SUFFIX,boardx.huanqiu.com,reject
+DOMAIN-SUFFIX,interactive.huanqiu.com,reject
+DOMAIN-SUFFIX,ipengtai.huanqiu.com,reject
+host-suffix,boardx.huanqiu.com,reject
+host-suffix,interactive.huanqiu.com,reject
+host-suffix,ipengtai.huanqiu.com,reject
