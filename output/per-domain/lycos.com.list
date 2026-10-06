@@ -1,0 +1,16 @@
+DOMAIN-SUFFIX,adbuyer3.lycos.com,reject
+DOMAIN-SUFFIX,client.sidesearch.lycos.com,reject
+DOMAIN-SUFFIX,cm8.lycos.com,reject
+DOMAIN-SUFFIX,guestworld.tripod.lycos.com,reject
+DOMAIN-SUFFIX,install.sidesearch.lycos.com,reject
+DOMAIN-SUFFIX,oascentral.lycos.com,reject
+DOMAIN-SUFFIX,ratings.lycos.com,reject
+DOMAIN-SUFFIX,titan.guestworld.tripod.lycos.com,reject
+host-suffix,adbuyer3.lycos.com,reject
+host-suffix,client.sidesearch.lycos.com,reject
+host-suffix,cm8.lycos.com,reject
+host-suffix,guestworld.tripod.lycos.com,reject
+host-suffix,install.sidesearch.lycos.com,reject
+host-suffix,oascentral.lycos.com,reject
+host-suffix,ratings.lycos.com,reject
+host-suffix,titan.guestworld.tripod.lycos.com,reject
