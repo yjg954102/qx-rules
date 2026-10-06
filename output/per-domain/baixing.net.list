@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,bd-js.baixing.net,reject
+DOMAIN-SUFFIX,bd-s.baixing.net,reject
+DOMAIN-SUFFIX,script-bd.baixing.net,reject
+host-suffix,bd-js.baixing.net,reject
+host-suffix,bd-s.baixing.net,reject
+host-suffix,script-bd.baixing.net,reject
