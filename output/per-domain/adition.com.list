@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,ad8.adfarm1.adition.com,reject
+DOMAIN-SUFFIX,adition.com,reject
+DOMAIN-SUFFIX,dsp.adfarm1.adition.com,reject
+host-suffix,ad8.adfarm1.adition.com,reject
+host-suffix,dsp.adfarm1.adition.com,reject
