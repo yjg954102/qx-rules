@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,ads.exosrv.com,reject
+DOMAIN-SUFFIX,exosrv.com,reject
+host-suffix,ads.exosrv.com,reject
+host-suffix,exosrv.com,reject
