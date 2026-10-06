@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,dvs.china.com,reject
+DOMAIN-SUFFIX,dvsend.china.com,reject
+DOMAIN-SUFFIX,dvser.china.com,reject
+DOMAIN-SUFFIX,dvser02.china.com,reject
+DOMAIN-SUFFIX,rank.hit.china.com,reject
+DOMAIN-SUFFIX,sssvd.china.com,reject
+host-suffix,dvs.china.com,reject
+host-suffix,dvsend.china.com,reject
+host-suffix,dvser.china.com,reject
+host-suffix,dvser02.china.com,reject
+host-suffix,rank.hit.china.com,reject
+host-suffix,sssvd.china.com,reject
