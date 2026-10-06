@@ -1,0 +1,5 @@
+DOMAIN,syh.zybang.com,reject
+DOMAIN-SUFFIX,bu01.zybang.com,reject
+DOMAIN-SUFFIX,bu02.zybang.com,reject
+host-suffix,bu01.zybang.com,reject
+host-suffix,bu02.zybang.com,reject
