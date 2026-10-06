@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,bduserlog.eastmoney.com,reject
+DOMAIN-SUFFIX,cp2.eastmoney.com,reject
+DOMAIN-SUFFIX,emdcadvertise.eastmoney.com,reject
+DOMAIN-SUFFIX,js4.eastmoney.com,reject
+DOMAIN-SUFFIX,same.eastmoney.com,reject
+host-suffix,bduserlog.eastmoney.com,reject
+host-suffix,js4.eastmoney.com,reject
+host-suffix,same.eastmoney.com,reject
