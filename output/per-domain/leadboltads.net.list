@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,ad.leadboltads.net,reject
+DOMAIN-SUFFIX,leadboltads.net,reject
+host-suffix,ad.leadboltads.net,reject
+host-suffix,leadboltads.net,reject
