@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,media.trafficjunky.net,reject
+DOMAIN-SUFFIX,trafficjunky.net,reject
+DOMAIN-SUFFIX,vz-cdn.trafficjunky.net,reject
+host-suffix,media.trafficjunky.net,reject
+host-suffix,trafficjunky.net,reject
+host-suffix,vz-cdn.trafficjunky.net,reject
