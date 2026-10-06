@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,asia.marketo.com,reject
+DOMAIN-SUFFIX,marketo.com,reject
+DOMAIN-SUFFIX,pages2.marketo.com,reject
+host-suffix,asia.marketo.com,reject
+host-suffix,marketo.com,reject
+host-suffix,pages2.marketo.com,reject
