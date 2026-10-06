@@ -1,0 +1,9 @@
+DOMAIN-SUFFIX,ac.mmstat.com,reject
+DOMAIN-SUFFIX,go.mmstat.com,reject
+DOMAIN-SUFFIX,gxb.mmstat.com,reject
+DOMAIN-SUFFIX,hz.mmstat.com,reject
+DOMAIN-SUFFIX,p3p.mmstat.com,reject
+DOMAIN-SUFFIX,res.mmstat.com,reject
+DOMAIN-SUFFIX,wgo.mmstat.com,reject
+DOMAIN-SUFFIX,yt.mmstat.com,reject
+host-suffix,wgo.mmstat.com,reject
