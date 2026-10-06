@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,count.game.pps.tv,reject
+DOMAIN-SUFFIX,game.pps.tv,reject
+host-suffix,count.game.pps.tv,reject
