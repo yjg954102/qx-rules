@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,images.startappservice.com,reject
+DOMAIN-SUFFIX,req.startappservice.com,reject
+DOMAIN-SUFFIX,startappservice.com,reject
+host-suffix,images.startappservice.com,reject
+host-suffix,req.startappservice.com,reject
+host-suffix,startappservice.com,reject
