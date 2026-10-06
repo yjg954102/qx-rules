@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,adm.leju.com,reject
+DOMAIN-SUFFIX,src.leju.com,reject
+DOMAIN-SUFFIX,staticadm.leju.com,reject
+host-suffix,adm.leju.com,reject
+host-suffix,src.leju.com,reject
+host-suffix,staticadm.leju.com,reject
