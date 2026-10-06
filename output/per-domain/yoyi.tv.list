@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,d.yoyi.tv,reject
+DOMAIN-SUFFIX,g.d.yoyi.tv,reject
+DOMAIN-SUFFIX,js.yoyi.tv,reject
+DOMAIN-SUFFIX,t.d.yoyi.tv,reject
+DOMAIN-SUFFIX,yoyi.tv,reject
+host-suffix,d.yoyi.tv,reject
+host-suffix,g.d.yoyi.tv,reject
+host-suffix,js.yoyi.tv,reject
+host-suffix,t.d.yoyi.tv,reject
+host-suffix,yoyi.tv,reject
