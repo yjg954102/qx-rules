@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,app.jiuzhilan.com,reject
+DOMAIN-SUFFIX,cdn.jiuzhilan.com,reject
+DOMAIN-SUFFIX,img2.jiuzhilan.com,reject
+DOMAIN-SUFFIX,jmonitor.jiuzhilan.com,reject
+DOMAIN-SUFFIX,lp.jiuzhilan.com,reject
