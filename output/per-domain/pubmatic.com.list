@@ -1,0 +1,4 @@
+DOMAIN,ads.pubmatic.com,reject
+DOMAIN-SUFFIX,pubmatic.com,reject
+host-suffix,ads.pubmatic.com,reject
+host-suffix,pubmatic.com,reject
