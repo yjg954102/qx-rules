@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,g3.iqilu.com,reject
+DOMAIN-SUFFIX,g4.iqilu.com,reject
+host-suffix,g3.iqilu.com,reject
+host-suffix,g4.iqilu.com,reject
