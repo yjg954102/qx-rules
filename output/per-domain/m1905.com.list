@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,afp.m1905.com,reject
+DOMAIN-SUFFIX,counter.m1905.com,reject
+host-suffix,afp.m1905.com,reject
+host-suffix,counter.m1905.com,reject
