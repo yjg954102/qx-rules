@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,fastly.bench.cedexis.com,reject
+DOMAIN-SUFFIX,probes.cedexis.com,reject
+DOMAIN-SUFFIX,radar.cedexis.com,reject
+DOMAIN-SUFFIX,tumblrprobes.cedexis.com,reject
+DOMAIN-SUFFIX,tumblrreports.cedexis.com,reject
