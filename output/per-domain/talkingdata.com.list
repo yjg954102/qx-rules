@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,jic.talkingdata.com,reject
+DOMAIN-SUFFIX,talkingdata.com,reject
+host-suffix,talkingdata.com,reject
