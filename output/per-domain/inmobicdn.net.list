@@ -1,0 +1,5 @@
+DOMAIN,i.l.inmobicdn.net,reject
+DOMAIN,i.l-new.inmobicdn.net,reject
+DOMAIN,supply.inmobicdn.net,reject
+DOMAIN-SUFFIX,inmobicdn.net,reject
+host-suffix,inmobicdn.net,reject
