@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,avn.innity.com,reject
+DOMAIN-SUFFIX,cast.innity.com,reject
+DOMAIN-SUFFIX,innity.com,reject
+host-suffix,avn.innity.com,reject
+host-suffix,cast.innity.com,reject
+host-suffix,innity.com,reject
