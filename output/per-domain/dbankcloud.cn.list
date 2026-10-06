@@ -1,0 +1,7 @@
+DOMAIN,adx-drcn.op.dbankcloud.cn,reject
+DOMAIN,browsercfg-drcn.cloud.dbankcloud.cn,reject
+DOMAIN,events-drcn.op.dbankcloud.cn,reject
+DOMAIN,hwpub-s01-drcn.cloud.dbankcloud.cn,reject
+DOMAIN,recommend-drcn.hms.dbankcloud.cn,reject
+DOMAIN,rms-drcn.platform.dbankcloud.cn,reject
+DOMAIN,weather-community-drcn.weather.dbankcloud.cn,reject
