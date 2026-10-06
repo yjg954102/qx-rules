@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,ad1.nend.net,reject
+DOMAIN-SUFFIX,ad2.nend.net,reject
+DOMAIN-SUFFIX,img1.nend.net,reject
+DOMAIN-SUFFIX,js1.nend.net,reject
+DOMAIN-SUFFIX,nend.net,reject
+DOMAIN-SUFFIX,output.nend.net,reject
