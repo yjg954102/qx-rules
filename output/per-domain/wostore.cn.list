@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,appspromote.wostore.cn,reject
+DOMAIN-SUFFIX,secpay.wostore.cn,reject
+DOMAIN-SUFFIX,unilog.wostore.cn,reject
+DOMAIN-SUFFIX,unipaydl.wostore.cn,reject
+DOMAIN-SUFFIX,unipayupg.wostore.cn,reject
+host-suffix,appspromote.wostore.cn,reject
+host-suffix,secpay.wostore.cn,reject
+host-suffix,unilog.wostore.cn,reject
+host-suffix,unipaydl.wostore.cn,reject
+host-suffix,unipayupg.wostore.cn,reject
