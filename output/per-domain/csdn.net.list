@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,ad.csdn.net,reject
+DOMAIN-SUFFIX,counter.csdn.net,reject
+DOMAIN-SUFFIX,dc.csdn.net,reject
+DOMAIN-SUFFIX,dc2.csdn.net,reject
+DOMAIN-SUFFIX,medal.blog.csdn.net,reject
+host-suffix,ad.csdn.net,reject
+host-suffix,counter.csdn.net,reject
+host-suffix,dc.csdn.net,reject
+host-suffix,dc2.csdn.net,reject
+host-suffix,medal.blog.csdn.net,reject
