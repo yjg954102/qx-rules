@@ -1,0 +1,3 @@
+DOMAIN,cdn-ad.wtzw.com,reject
+DOMAIN-KEYWORD,-ad.wtzw.com,reject
+host,cdn-new-ad.wtzw.com,reject
