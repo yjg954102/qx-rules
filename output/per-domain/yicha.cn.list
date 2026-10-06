@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,adsmart.yicha.cn,reject
+DOMAIN-SUFFIX,tuiguang.yicha.cn,reject
+DOMAIN-SUFFIX,yicha.cn,reject
+host-suffix,adsmart.yicha.cn,reject
+host-suffix,tuiguang.yicha.cn,reject
+host-suffix,yicha.cn,reject
