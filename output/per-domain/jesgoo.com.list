@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,cdn.jesgoo.com,reject
+DOMAIN-SUFFIX,jesgoo.com,reject
+DOMAIN-SUFFIX,rcv.jesgoo.com,reject
+host-suffix,cdn.jesgoo.com,reject
+host-suffix,jesgoo.com,reject
+host-suffix,rcv.jesgoo.com,reject
