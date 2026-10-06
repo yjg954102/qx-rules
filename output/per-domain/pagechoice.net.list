@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,col.pagechoice.net,reject
+DOMAIN-SUFFIX,dap.pagechoice.net,reject
+DOMAIN-SUFFIX,images.pagechoice.net,reject
+DOMAIN-SUFFIX,motu.pagechoice.net,reject
+DOMAIN-SUFFIX,pagechoice.net,reject
+DOMAIN-SUFFIX,sit.pagechoice.net,reject
+host-suffix,col.pagechoice.net,reject
+host-suffix,dap.pagechoice.net,reject
+host-suffix,images.pagechoice.net,reject
+host-suffix,motu.pagechoice.net,reject
+host-suffix,pagechoice.net,reject
+host-suffix,sit.pagechoice.net,reject
