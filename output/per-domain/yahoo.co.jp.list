@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,ard.yahoo.co.jp,reject
+DOMAIN-SUFFIX,bc.geocities.yahoo.co.jp,reject
+DOMAIN-SUFFIX,im.ov.yahoo.co.jp,reject
+DOMAIN-SUFFIX,rd.ane.yahoo.co.jp,reject
+DOMAIN-SUFFIX,yads.yahoo.co.jp,reject
+DOMAIN-SUFFIX,yeas.yahoo.co.jp,reject
+host-suffix,ard.yahoo.co.jp,reject
+host-suffix,bc.geocities.yahoo.co.jp,reject
+host-suffix,im.ov.yahoo.co.jp,reject
+host-suffix,rd.ane.yahoo.co.jp,reject
+host-suffix,yads.yahoo.co.jp,reject
+host-suffix,yeas.yahoo.co.jp,reject
