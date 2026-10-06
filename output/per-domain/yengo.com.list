@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,st.yengo.com,reject
+DOMAIN-SUFFIX,yengo.com,reject
+host-suffix,st.yengo.com,reject
