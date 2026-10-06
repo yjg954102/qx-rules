@@ -1,0 +1,6 @@
+DOMAIN,ad.51wnl-cq.com,reject
+DOMAIN,adextra.51wnl-cq.com,reject
+DOMAIN,log.51wnl-cq.com,reject
+DOMAIN,r.51wnl-cq.com,reject
+host-suffix,ad.51wnl-cq.com,reject
+host-suffix,adextra.51wnl-cq.com,reject
