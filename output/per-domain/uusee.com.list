@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,g.uusee.com,reject
+DOMAIN-SUFFIX,pop.uusee.com,reject
+DOMAIN-SUFFIX,traffic.uusee.com,reject
+host-suffix,g.uusee.com,reject
+host-suffix,pop.uusee.com,reject
+host-suffix,traffic.uusee.com,reject
