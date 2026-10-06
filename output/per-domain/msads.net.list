@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,a.global.msads.net,reject
+DOMAIN-SUFFIX,ads1.msads.net,reject
+DOMAIN-SUFFIX,ads2.msads.net,reject
+DOMAIN-SUFFIX,global.msads.net,reject
+DOMAIN-SUFFIX,msads.net,reject
+host-suffix,a.global.msads.net,reject
+host-suffix,ads1.msads.net,reject
+host-suffix,ads2.msads.net,reject
+host-suffix,global.msads.net,reject
+host-suffix,msads.net,reject
