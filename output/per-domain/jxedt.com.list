@@ -1,0 +1,6 @@
+DOMAIN,richmanapi.jxedt.com,reject
+DOMAIN,richmanmain.jxedt.com,reject
+DOMAIN,richmanrules.jxedt.com,reject
+host,richmanapi.jxedt.com,reject
+host,richmanmain.jxedt.com,reject
+host,richmanrules.jxedt.com,reject
