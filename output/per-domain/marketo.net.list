@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,marketo.net,reject
+DOMAIN-SUFFIX,munchkin.marketo.net,reject
+host-suffix,marketo.net,reject
+host-suffix,munchkin.marketo.net,reject
