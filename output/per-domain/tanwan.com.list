@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,app.tanwan.com,reject
+DOMAIN-SUFFIX,wap.tanwan.com,reject
+host-suffix,app.tanwan.com,reject
+host-suffix,wap.tanwan.com,reject
