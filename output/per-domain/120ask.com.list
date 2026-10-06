@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,ax.120ask.com,reject
+DOMAIN-SUFFIX,eclick.120ask.com,reject
+DOMAIN-SUFFIX,x.120ask.com,reject
+host-suffix,ax.120ask.com,reject
+host-suffix,eclick.120ask.com,reject
+host-suffix,x.120ask.com,reject
