@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,ad.cacafly.com,reject
+DOMAIN-SUFFIX,cacafly.com,reject
+host-suffix,ad.cacafly.com,reject
