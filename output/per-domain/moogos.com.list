@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,api.moogos.com,reject
+DOMAIN-SUFFIX,c3.moogos.com,reject
+DOMAIN-SUFFIX,cdn.moogos.com,reject
+DOMAIN-SUFFIX,moogos.com,reject
+DOMAIN-SUFFIX,rcv.moogos.com,reject
