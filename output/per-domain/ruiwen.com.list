@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,abc.ruiwen.com,reject
+DOMAIN-SUFFIX,d*.ruiwen.com,reject
+DOMAIN-SUFFIX,d.ruiwen.com,reject
+DOMAIN-SUFFIX,js.ruiwen.com,reject
