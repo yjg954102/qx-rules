@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,ad.ganji.com,reject
+DOMAIN-SUFFIX,ganjituiguang.ganji.com,reject
+DOMAIN-SUFFIX,sta.ganji.com,reject
+DOMAIN-SUFFIX,tralog.ganji.com,reject
+host-suffix,ad.ganji.com,reject
+host-suffix,ganjituiguang.ganji.com,reject
+host-suffix,sta.ganji.com,reject
+host-suffix,tralog.ganji.com,reject
