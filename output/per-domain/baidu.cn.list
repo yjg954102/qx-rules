@@ -1,0 +1,3 @@
+DOMAIN,union.baidu.cn,reject
+DOMAIN-SUFFIX,cpro.baidu.cn,reject
+host-suffix,cpro.baidu.cn,reject
