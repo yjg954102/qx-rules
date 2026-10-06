@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,apas.aipai.com,reject
+DOMAIN-SUFFIX,atiws.aipai.com,reject
+DOMAIN-SUFFIX,mlog.aipai.com,reject
+host-suffix,apas.aipai.com,reject
+host-suffix,atiws.aipai.com,reject
+host-suffix,mlog.aipai.com,reject
