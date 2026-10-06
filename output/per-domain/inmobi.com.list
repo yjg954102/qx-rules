@@ -1,0 +1,7 @@
+DOMAIN,ads.inmobi.com,reject
+DOMAIN,config.inmobi.com,reject
+DOMAIN,et-eus.w.inmobi.com,reject
+DOMAIN,telemetry.sdk.inmobi.com,reject
+DOMAIN-SUFFIX,inmobi.com,reject
+host-suffix,ads.inmobi.com,reject
+host-suffix,inmobi.com,reject
