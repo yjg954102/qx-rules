@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,bu1.duba.com,reject
+DOMAIN-SUFFIX,bu2.duba.com,reject
+host-suffix,bu1.duba.com,reject
+host-suffix,bu2.duba.com,reject
