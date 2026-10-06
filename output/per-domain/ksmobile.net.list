@@ -1,0 +1,6 @@
+DOMAIN,ups.ksmobile.net,reject
+DOMAIN,ws.ksmobile.net,reject
+DOMAIN-SUFFIX,ups.ksmobile.net,reject
+DOMAIN-SUFFIX,ws.ksmobile.net,reject
+host,ups.ksmobile.net,reject
+host,ws.ksmobile.net,reject
