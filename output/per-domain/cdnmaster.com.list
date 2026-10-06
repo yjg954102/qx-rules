@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,cdnmaster.com,reject
+DOMAIN-SUFFIX,sdk.cdnmaster.com,reject
+DOMAIN-SUFFIX,site.cdnmaster.com,reject
