@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,ad.pchome.com.tw,reject
+DOMAIN-SUFFIX,adcl.pchome.com.tw,reject
+host-suffix,ad.pchome.com.tw,reject
+host-suffix,adcl.pchome.com.tw,reject
