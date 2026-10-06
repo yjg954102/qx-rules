@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,ehd.baike.com,reject
+DOMAIN-SUFFIX,hdad.baike.com,reject
+host-suffix,ehd.baike.com,reject
+host-suffix,hdad.baike.com,reject
