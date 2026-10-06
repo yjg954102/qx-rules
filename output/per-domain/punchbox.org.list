@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,atm.punchbox.org,reject
+DOMAIN-SUFFIX,pic.punchbox.org,reject
+DOMAIN-SUFFIX,punchbox.org,reject
+DOMAIN-SUFFIX,switching.atm.punchbox.org,reject
+DOMAIN-SUFFIX,uapi.punchbox.org,reject
+DOMAIN-SUFFIX,w.punchbox.org,reject
