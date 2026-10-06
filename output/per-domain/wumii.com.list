@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,app.wumii.com,reject
+DOMAIN-SUFFIX,wumii.com,reject
+host-suffix,app.wumii.com,reject
+host-suffix,wumii.com,reject
