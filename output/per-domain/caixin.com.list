@@ -1,0 +1,7 @@
+DOMAIN-SUFFIX,apollo.caixin.com,reject
+DOMAIN-SUFFIX,gg.caixin.com,reject
+DOMAIN-SUFFIX,logstat.caixin.com,reject
+DOMAIN-SUFFIX,promote.caixin.com,reject
+host-suffix,apollo.caixin.com,reject
+host-suffix,logstat.caixin.com,reject
+host-suffix,promote.caixin.com,reject
