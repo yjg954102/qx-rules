@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,cms.quantserve.com,reject
+DOMAIN-SUFFIX,edge.quantserve.com,reject
+DOMAIN-SUFFIX,pixel.quantserve.com,reject
+DOMAIN-SUFFIX,quantserve.com,reject
+DOMAIN-SUFFIX,secure.quantserve.com,reject
+host-suffix,cms.quantserve.com,reject
+host-suffix,edge.quantserve.com,reject
+host-suffix,pixel.quantserve.com,reject
+host-suffix,quantserve.com,reject
+host-suffix,secure.quantserve.com,reject
