@@ -161,37 +161,23 @@ $hosts = @($hostSeen | Sort-Object)
 $now   = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
 
 # ---------- 写分流订阅 ----------
-$filterOut = @(
-  '#!name=去广告分流合集 (AllInOne-Filter)'
-  '#!desc=合并 AWAvenue + fmz200 + NobyDa + Adblock4limbo + BanAD + easylistchina，跨源去重，策略统一归一化为 reject。'
-  '#!author=合并自各开源项目，原始版权归各作者所有'
-  '#!date=' + $now
-  '#!remark=共 ' + $filterList.Count + ' 条，全部为 <type>,<value>,reject。用法：QX -> 分流 -> 规则资源'
-  '#############################################'
-  '[filter_local]'
-) + ($filterList | Sort-Object)
-[System.IO.File]::WriteAllLines((Join-Path $outDir 'QX-AllInOne-Filter.conf'), $filterOut, $enc)
+# 注意：远程订阅必须是「纯净规则列表」
+#   ✗ 不能有 [filter_local] 段头、#! 元数据行 —— QX 会报 INVALID LINE
+#   ✓ 只能是一行一条规则
+[System.IO.File]::WriteAllLines((Join-Path $outDir 'QX-AllInOne-Filter.conf'), ($filterList | Sort-Object), $enc)
 
 # ---------- 写重写订阅 ----------
-# 每行最多 60 个主机名，避免出现超长行
+# 同理：只输出重写规则行，不带段头与元数据
+[System.IO.File]::WriteAllLines((Join-Path $outDir 'QX-AllInOne-Rewrite.conf'), $rwList, $enc)
+
+# ---------- 单独导出 MITM 主机名清单 ----------
+# 远程订阅里没有 [MITM] 段，这些主机名必须由用户在 QX 的 MITM 界面手动填入。
+# 每行最多 60 个，便于整段复制。
 $hostLines = @()
 for ($i = 0; $i -lt $hosts.Count; $i += 60) {
-  $hostLines += 'hostname = ' + (($hosts[$i..([Math]::Min($i+59, $hosts.Count-1))]) -join ', ')
+  $hostLines += (($hosts[$i..([Math]::Min($i+59, $hosts.Count-1))]) -join ', ')
 }
-$rewriteOut = @(
-  '#!name=去广告+解锁 重写合集 (AllInOne-Rewrite)'
-  '#!desc=fmz200 去广告 + XWebAds + BoxJS + B站/贴吧/Spotify/YouTube/知乎/内容农场 + 会员解锁。'
-  '#!author=合并自各开源项目，原始版权归各作者所有'
-  '#!date=' + $now
-  '#!remark=共 ' + $rwList.Count + ' 条重写，MITM 主机名 ' + $hosts.Count + ' 个。必须配好 MITM 证书否则全部不生效。解锁类有账号风险，仅供学习研究。'
-  '#############################################'
-  '[rewrite_local]'
-) + $rwList + @(
-  ''
-  '[MITM]'
-  '# MITM 主机名：取自各来源文件的 hostname 声明与重写目标，统一合并去重'
-) + $hostLines
-[System.IO.File]::WriteAllLines((Join-Path $outDir 'QX-AllInOne-Rewrite.conf'), $rewriteOut, $enc)
+[System.IO.File]::WriteAllLines((Join-Path $outDir 'MITM-主机名.txt'), $hostLines, $enc)
 
 # ---------- 汇总 ----------
 Write-Host ''
