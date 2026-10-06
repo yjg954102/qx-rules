@@ -1,6 +1,3 @@
-DOMAIN,ads.aplus.pptv.com,reject
-DOMAIN,ads.aplusapi.pptv.com,reject
-DOMAIN,de.as.pptv.com,reject
 DOMAIN-SUFFIX,app.aplus.pptv.com,reject
 DOMAIN-SUFFIX,as.aplus.pptv.com,reject
 DOMAIN-SUFFIX,de.as.pptv.com,reject
@@ -8,12 +5,15 @@ DOMAIN-SUFFIX,jp.as.pptv.com,reject
 DOMAIN-SUFFIX,pp2.pptv.com,reject
 DOMAIN-SUFFIX,stat.pptv.com,reject
 DOMAIN-SUFFIX,static.g.pptv.com,reject
-host,ads.aplus.pptv.com,reject
-host,ads.aplusapi.pptv.com,reject
-host,de.as.pptv.com,reject
+DOMAIN,ads.aplus.pptv.com,reject
+DOMAIN,ads.aplusapi.pptv.com,reject
+DOMAIN,de.as.pptv.com,reject
 host-suffix,app.aplus.pptv.com,reject
 host-suffix,as.aplus.pptv.com,reject
 host-suffix,jp.as.pptv.com,reject
 host-suffix,pp2.pptv.com,reject
 host-suffix,stat.pptv.com,reject
 host-suffix,static.g.pptv.com,reject
+host,ads.aplus.pptv.com,reject
+host,ads.aplusapi.pptv.com,reject
+host,de.as.pptv.com,reject

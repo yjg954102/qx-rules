@@ -1,7 +1,3 @@
-DOMAIN,adproxy.autohome.com.cn,reject
-DOMAIN,al.autohome.com.cn,reject
-DOMAIN,applogapi.autohome.com.cn,reject
-DOMAIN,rd.autohome.com.cn,reject
 DOMAIN-SUFFIX,33.autohome.com.cn,reject
 DOMAIN-SUFFIX,activity.app.autohome.com.cn,reject
 DOMAIN-SUFFIX,c.autohome.com.cn,reject
@@ -15,10 +11,10 @@ DOMAIN-SUFFIX,push.app.autohome.com.cn,reject
 DOMAIN-SUFFIX,pv.alert.autohome.com.cn,reject
 DOMAIN-SUFFIX,pvx.autohome.com.cn,reject
 DOMAIN-SUFFIX,rdx.autohome.com.cn,reject
-host,adproxy.autohome.com.cn,reject
-host,al.autohome.com.cn,reject
-host,applogapi.autohome.com.cn,reject
-host,rd.autohome.com.cn,reject
+DOMAIN,adproxy.autohome.com.cn,reject
+DOMAIN,al.autohome.com.cn,reject
+DOMAIN,applogapi.autohome.com.cn,reject
+DOMAIN,rd.autohome.com.cn,reject
 host-suffix,33.autohome.com.cn,reject
 host-suffix,activity.app.autohome.com.cn,reject
 host-suffix,adproxy.autohome.com.cn,reject
@@ -36,3 +32,7 @@ host-suffix,pv.alert.autohome.com.cn,reject
 host-suffix,pvx.autohome.com.cn,reject
 host-suffix,rd.autohome.com.cn,reject
 host-suffix,rdx.autohome.com.cn,reject
+host,adproxy.autohome.com.cn,reject
+host,al.autohome.com.cn,reject
+host,applogapi.autohome.com.cn,reject
+host,rd.autohome.com.cn,reject

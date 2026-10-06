@@ -1,4 +1,4 @@
+DOMAIN-SUFFIX,ap.dongqiudi.com,reject
 DOMAIN,ap.dongqiudi.com,reject
 DOMAIN,sensors-log.dongqiudi.com,reject
 DOMAIN,stat.dongqiudi.com,reject
-DOMAIN-SUFFIX,ap.dongqiudi.com,reject

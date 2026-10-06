@@ -1,11 +1,3 @@
-DOMAIN,adv.sec.intl.miui.com,reject
-DOMAIN,adv.sec.miui.com,reject
-DOMAIN,logupdate.avlyun.sec.miui.com,reject
-DOMAIN,notify.sec.miui.com,reject
-DOMAIN,staging-notify.sec.miui.com,reject
-DOMAIN,tracking.miui.com,reject
-DOMAIN,tracking.rus.miui.com,reject
-DOMAIN,update.avlyun.sec.miui.com,reject
 DOMAIN-SUFFIX,adinfo.ra1.xlmc.sec.miui.com,reject
 DOMAIN-SUFFIX,api.ra2.xlmc.sec.miui.com,reject
 DOMAIN-SUFFIX,api.sec.miui.com,reject
@@ -23,6 +15,14 @@ DOMAIN-SUFFIX,r.browser.miui.com,reject
 DOMAIN-SUFFIX,reader.browser.miui.com,reject
 DOMAIN-SUFFIX,security.browser.miui.com,reject
 DOMAIN-SUFFIX,update.avlyun.sec.miui.com,reject
+DOMAIN,adv.sec.intl.miui.com,reject
+DOMAIN,adv.sec.miui.com,reject
+DOMAIN,logupdate.avlyun.sec.miui.com,reject
+DOMAIN,notify.sec.miui.com,reject
+DOMAIN,staging-notify.sec.miui.com,reject
+DOMAIN,tracking.miui.com,reject
+DOMAIN,tracking.rus.miui.com,reject
+DOMAIN,update.avlyun.sec.miui.com,reject
 host-suffix,adinfo.ra1.xlmc.sec.miui.com,reject
 host-suffix,adv.sec.intl.miui.com,reject
 host-suffix,adv.sec.miui.com,reject

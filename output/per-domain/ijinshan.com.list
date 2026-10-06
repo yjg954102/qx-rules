@@ -1,4 +1,3 @@
-DOMAIN,mobad.ijinshan.com,reject
 DOMAIN-SUFFIX,apns.ios.ijinshan.com,reject
 DOMAIN-SUFFIX,bp.mobad.ijinshan.com,reject
 DOMAIN-SUFFIX,cdnimg.liehu.ijinshan.com,reject
@@ -11,7 +10,7 @@ DOMAIN-SUFFIX,rcmd.pop.ijinshan.com,reject
 DOMAIN-SUFFIX,rcv.mobad.ijinshan.com,reject
 DOMAIN-SUFFIX,sdk.mobad.ijinshan.com,reject
 DOMAIN-SUFFIX,unconf.mobad.ijinshan.com,reject
-host,mobad.ijinshan.com,reject
+DOMAIN,mobad.ijinshan.com,reject
 host-suffix,apns.ios.ijinshan.com,reject
 host-suffix,bp.mobad.ijinshan.com,reject
 host-suffix,cdnimg.liehu.ijinshan.com,reject
@@ -24,3 +23,4 @@ host-suffix,rcmd.pop.ijinshan.com,reject
 host-suffix,rcv.mobad.ijinshan.com,reject
 host-suffix,sdk.mobad.ijinshan.com,reject
 host-suffix,unconf.mobad.ijinshan.com,reject
+host,mobad.ijinshan.com,reject

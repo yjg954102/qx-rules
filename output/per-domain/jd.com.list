@@ -1,3 +1,9 @@
+DOMAIN-SUFFIX,ads-union.jd.com,reject
+DOMAIN-SUFFIX,c-nfa.jd.com,reject
+DOMAIN-SUFFIX,cm.jd.com,reject
+DOMAIN-SUFFIX,du.jd.com,reject
+DOMAIN-SUFFIX,img-x.jd.com,reject
+DOMAIN-SUFFIX,jzt.jd.com,reject
 DOMAIN,addata.jd.com,reject
 DOMAIN,ccc-x.jd.com,reject
 DOMAIN,chat1.jd.com,reject
@@ -12,17 +18,9 @@ DOMAIN,skdisplay.jd.com,reject
 DOMAIN,uranus.jd.com,reject
 DOMAIN,wn.x.jd.com,reject
 DOMAIN,xlog.jd.com,reject
-DOMAIN-SUFFIX,ads-union.jd.com,reject
-DOMAIN-SUFFIX,cm.jd.com,reject
-DOMAIN-SUFFIX,c-nfa.jd.com,reject
-DOMAIN-SUFFIX,du.jd.com,reject
-DOMAIN-SUFFIX,img-x.jd.com,reject
-DOMAIN-SUFFIX,jzt.jd.com,reject
-host,dgstatic.jd.com,reject
-host,dns.jd.com,reject
 host-suffix,bdsp.x.jd.com,reject
-host-suffix,cm.jd.com,reject
 host-suffix,c-nfa.jd.com,reject
+host-suffix,cm.jd.com,reject
 host-suffix,du.jd.com,reject
 host-suffix,img-x.jd.com,reject
 host-suffix,jdqd.jd.com,reject
@@ -31,3 +29,5 @@ host-suffix,kepler.jd.com,reject
 host-suffix,keplerapi.jd.com,reject
 host-suffix,mapi.m.jd.com,reject
 host-suffix,policy.jd.com,reject
+host,dgstatic.jd.com,reject
+host,dns.jd.com,reject

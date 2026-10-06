@@ -1,6 +1,3 @@
-DOMAIN,pgdt.gtimg.com,reject
-DOMAIN,splashqqlive.gtimg.com,reject
-DOMAIN,wa.gtimg.com,reject
 DOMAIN-SUFFIX,beacon.gtimg.com,reject
 DOMAIN-SUFFIX,bla.gtimg.com,reject
 DOMAIN-SUFFIX,lb.gtimg.com,reject
@@ -9,7 +6,9 @@ DOMAIN-SUFFIX,swa.gtimg.com,reject
 DOMAIN-SUFFIX,tui.gtimg.com,reject
 DOMAIN-SUFFIX,wa.gtimg.com,reject
 DOMAIN-SUFFIX,wb.gtimg.com,reject
-host,pgdt.gtimg.com,reject
+DOMAIN,pgdt.gtimg.com,reject
+DOMAIN,splashqqlive.gtimg.com,reject
+DOMAIN,wa.gtimg.com,reject
 host-suffix,beacon.gtimg.com,reject
 host-suffix,bla.gtimg.com,reject
 host-suffix,lb.gtimg.com,reject
@@ -20,3 +19,4 @@ host-suffix,swa.gtimg.com,reject
 host-suffix,tui.gtimg.com,reject
 host-suffix,wa.gtimg.com,reject
 host-suffix,wb.gtimg.com,reject
+host,pgdt.gtimg.com,reject

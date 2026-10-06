@@ -3,8 +3,8 @@ DOMAIN-SUFFIX,api-game.meizu.com,reject
 DOMAIN-SUFFIX,api-push.meizu.com,reject
 DOMAIN-SUFFIX,cal.meizu.com,reject
 DOMAIN-SUFFIX,ebook.res.meizu.com,reject
-DOMAIN-SUFFIX,game.res.meizu.com,reject
 DOMAIN-SUFFIX,game-res.meizu.com,reject
+DOMAIN-SUFFIX,game.res.meizu.com,reject
 DOMAIN-SUFFIX,infocenter.meizu.com,reject
 DOMAIN-SUFFIX,openapi-news.meizu.com,reject
 DOMAIN-SUFFIX,push.res.meizu.com,reject
@@ -19,8 +19,8 @@ host-suffix,api-game.meizu.com,reject
 host-suffix,api-push.meizu.com,reject
 host-suffix,cal.meizu.com,reject
 host-suffix,ebook.res.meizu.com,reject
-host-suffix,game.res.meizu.com,reject
 host-suffix,game-res.meizu.com,reject
+host-suffix,game.res.meizu.com,reject
 host-suffix,infocenter.meizu.com,reject
 host-suffix,openapi-news.meizu.com,reject
 host-suffix,push.res.meizu.com,reject

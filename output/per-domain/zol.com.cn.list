@@ -1,5 +1,3 @@
-DOMAIN,apppv.zol.com.cn,reject
-DOMAIN,pvnapp.zol.com.cn,reject
 DOMAIN-SUFFIX,cpro.zol.com.cn,reject
 DOMAIN-SUFFIX,dynamic.zol.com.cn,reject
 DOMAIN-SUFFIX,imp.zol.com.cn,reject
@@ -13,6 +11,8 @@ DOMAIN-SUFFIX,pvsite.zol.com.cn,reject
 DOMAIN-SUFFIX,pvtest.zol.com.cn,reject
 DOMAIN-SUFFIX,wappv.zol.com.cn,reject
 DOMAIN-SUFFIX,ydjs.zol.com.cn,reject
+DOMAIN,apppv.zol.com.cn,reject
+DOMAIN,pvnapp.zol.com.cn,reject
 host-suffix,apppv.zol.com.cn,reject
 host-suffix,cpro.zol.com.cn,reject
 host-suffix,dynamic.zol.com.cn,reject

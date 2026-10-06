@@ -1,5 +1,5 @@
-DOMAIN,pgdt.gtimg.cn,reject
 DOMAIN-SUFFIX,cmshow.gtimg.cn,reject
 DOMAIN-SUFFIX,discuz.gtimg.cn,reject
+DOMAIN,pgdt.gtimg.cn,reject
 host-suffix,cmshow.gtimg.cn,reject
 host-suffix,discuz.gtimg.cn,reject

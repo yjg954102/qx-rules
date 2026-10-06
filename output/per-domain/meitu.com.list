@@ -1,12 +1,11 @@
-DOMAIN,adui.tg.meitu.com,reject
-DOMAIN,tuiguang.meitu.com,reject
 DOMAIN-SUFFIX,corp.meitu.com,reject
 DOMAIN-SUFFIX,gg.meitu.com,reject
 DOMAIN-SUFFIX,message.meitu.com,reject
 DOMAIN-SUFFIX,rabbit.tg.meitu.com,reject
 DOMAIN-SUFFIX,tuiguang.meitu.com,reject
 DOMAIN-SUFFIX,xiuxiu.android.dl.meitu.com,reject
-host,adui.tg.meitu.com,reject
+DOMAIN,adui.tg.meitu.com,reject
+DOMAIN,tuiguang.meitu.com,reject
 host-suffix,adui.tg.meitu.com,reject
 host-suffix,corp.meitu.com,reject
 host-suffix,gg.meitu.com,reject
@@ -14,3 +13,4 @@ host-suffix,message.meitu.com,reject
 host-suffix,rabbit.tg.meitu.com,reject
 host-suffix,tuiguang.meitu.com,reject
 host-suffix,xiuxiu.android.dl.meitu.com,reject
+host,adui.tg.meitu.com,reject

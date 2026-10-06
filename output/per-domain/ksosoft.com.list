@@ -1,8 +1,8 @@
-DOMAIN,ad-stat.ksosoft.com,reject
-DOMAIN,counter.ksosoft.com,reject
 DOMAIN-SUFFIX,event.ksosoft.com,reject
 DOMAIN-SUFFIX,haiwai-ic.ksosoft.com,reject
 DOMAIN-SUFFIX,hoplink.ksosoft.com,reject
 DOMAIN-SUFFIX,uid.ksosoft.com,reject
+DOMAIN,ad-stat.ksosoft.com,reject
+DOMAIN,counter.ksosoft.com,reject
 host,ad-stat.ksosoft.com,reject
 host,counter.ksosoft.com,reject

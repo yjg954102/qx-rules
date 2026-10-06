@@ -1,8 +1,3 @@
-DOMAIN,admusicpic.music.126.net,reject
-DOMAIN,h5.analytics.126.net,reject
-DOMAIN,iadmusicmat.music.126.net,reject
-DOMAIN,iadmusicmatvideo.music.126.net,reject
-DOMAIN,yt-adp.ws.126.net,reject
 DOMAIN-SUFFIX,android.push.126.net,reject
 DOMAIN-SUFFIX,b.bst.126.net,reject
 DOMAIN-SUFFIX,img1.126.net,reject
@@ -15,10 +10,11 @@ DOMAIN-SUFFIX,pimg1.126.net,reject
 DOMAIN-SUFFIX,push.126.net,reject
 DOMAIN-SUFFIX,webstat.ws.126.net,reject
 DOMAIN-SUFFIX,yt-adp.ws.126.net,reject
-host,admusicpic.music.126.net,reject
-host,iadmusicmat.music.126.net,reject
-host,iadmusicmatvideo.music.126.net,reject
-host,yt-adp.ws.126.net,reject
+DOMAIN,admusicpic.music.126.net,reject
+DOMAIN,h5.analytics.126.net,reject
+DOMAIN,iadmusicmat.music.126.net,reject
+DOMAIN,iadmusicmatvideo.music.126.net,reject
+DOMAIN,yt-adp.ws.126.net,reject
 host-suffix,admusicpic.music.126.net,reject
 host-suffix,android.push.126.net,reject
 host-suffix,b.bst.126.net,reject
@@ -34,3 +30,7 @@ host-suffix,pimg1.126.net,reject
 host-suffix,push.126.net,reject
 host-suffix,webstat.ws.126.net,reject
 host-suffix,yt-adp.ws.126.net,reject
+host,admusicpic.music.126.net,reject
+host,iadmusicmat.music.126.net,reject
+host,iadmusicmatvideo.music.126.net,reject
+host,yt-adp.ws.126.net,reject

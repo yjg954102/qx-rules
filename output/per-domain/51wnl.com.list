@@ -1,5 +1,5 @@
-DOMAIN,ad.51wnl.com,reject
-DOMAIN-SUFFIX,ad.51wnl.com,reject
 DOMAIN-SUFFIX,ad-android.51wnl.com,reject
-host-suffix,ad.51wnl.com,reject
+DOMAIN-SUFFIX,ad.51wnl.com,reject
+DOMAIN,ad.51wnl.com,reject
 host-suffix,ad-android.51wnl.com,reject
+host-suffix,ad.51wnl.com,reject

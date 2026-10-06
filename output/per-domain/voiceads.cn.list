@@ -1,10 +1,10 @@
-DOMAIN,msdk.voiceads.cn,reject
-DOMAIN,rtb.voiceads.cn,reject
 DOMAIN-SUFFIX,agr.voiceads.cn,reject
 DOMAIN-SUFFIX,bj.imp.voiceads.cn,reject
 DOMAIN-SUFFIX,m.panda.voiceads.cn,reject
 DOMAIN-SUFFIX,voiceads.cn,reject
 DOMAIN-SUFFIX,ws.voiceads.cn,reject
+DOMAIN,msdk.voiceads.cn,reject
+DOMAIN,rtb.voiceads.cn,reject
 host-keyword,bj.imp.voiceads.cn,reject
 host-keyword,m.panda.voiceads.cn,reject
 host-suffix,agr.voiceads.cn,reject

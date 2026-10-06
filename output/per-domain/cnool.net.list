@@ -1,5 +1,5 @@
-DOMAIN-SUFFIX,adi*.cnool.net,reject
 DOMAIN-SUFFIX,adi.cnool.net,reject
+DOMAIN-SUFFIX,adi*.cnool.net,reject
 DOMAIN-SUFFIX,adi2007.cnool.net,reject
 DOMAIN-SUFFIX,adp.cnool.net,reject
 DOMAIN-SUFFIX,adp1.cnool.net,reject

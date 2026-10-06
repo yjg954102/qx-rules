@@ -1,8 +1,8 @@
-DOMAIN,flurry.com,reject
 DOMAIN-SUFFIX,ad.flurry.com,reject
 DOMAIN-SUFFIX,adlog.flurry.com,reject
 DOMAIN-SUFFIX,flurry.com,reject
 DOMAIN-SUFFIX,proton.flurry.com,reject
+DOMAIN,flurry.com,reject
 host-suffix,ad.flurry.com,reject
 host-suffix,adlog.flurry.com,reject
 host-suffix,flurry.com,reject

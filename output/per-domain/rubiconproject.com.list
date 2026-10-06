@@ -4,9 +4,9 @@ DOMAIN-SUFFIX,optimized-by.rubiconproject.com,reject
 DOMAIN-SUFFIX,pixel.rubiconproject.com,reject
 DOMAIN-SUFFIX,rubiconproject.com,reject
 DOMAIN-SUFFIX,secure-assets.rubiconproject.com,reject
-DOMAIN-SUFFIX,tap.rubiconproject.com,reject
 DOMAIN-SUFFIX,tap-cdn.rubiconproject.com,reject
 DOMAIN-SUFFIX,tap-t.rubiconproject.com,reject
+DOMAIN-SUFFIX,tap.rubiconproject.com,reject
 DOMAIN-SUFFIX,token.rubiconproject.com,reject
 DOMAIN-SUFFIX,usync.aws.rubiconproject.com,reject
 host-suffix,beacon-us-sjc1.rubiconproject.com,reject
@@ -15,8 +15,8 @@ host-suffix,optimized-by.rubiconproject.com,reject
 host-suffix,pixel.rubiconproject.com,reject
 host-suffix,rubiconproject.com,reject
 host-suffix,secure-assets.rubiconproject.com,reject
-host-suffix,tap.rubiconproject.com,reject
 host-suffix,tap-cdn.rubiconproject.com,reject
 host-suffix,tap-t.rubiconproject.com,reject
+host-suffix,tap.rubiconproject.com,reject
 host-suffix,token.rubiconproject.com,reject
 host-suffix,usync.aws.rubiconproject.com,reject

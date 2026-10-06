@@ -1,3 +1,4 @@
+DOMAIN-SUFFIX,iadsdk.apple.com,reject
 DOMAIN,advertising.apple.com,reject
 DOMAIN,api-adservices.apple.com,reject
 DOMAIN,books-analytics-events.apple.com,reject
@@ -9,7 +10,8 @@ DOMAIN,notes-analytics-events.apple.com,reject
 DOMAIN,proxy.advp.apple.com,reject
 DOMAIN,securemetrics.apple.com,reject
 DOMAIN,weather-analytics-events.apple.com,reject
-DOMAIN-SUFFIX,iadsdk.apple.com,reject
+host-suffix,advp.apple.com,reject
+host-suffix,iadsdk.apple.com,reject
 host,advertising.apple.com,reject
 host,api-adservices.apple.com,reject
 host,banners.itunes.apple.com,reject
@@ -21,5 +23,3 @@ host,launch.apple.com,reject
 host,metrics.apple.com,reject
 host,qwapi.apple.com,reject
 host,securemetrics.apple.com,reject
-host-suffix,advp.apple.com,reject
-host-suffix,iadsdk.apple.com,reject

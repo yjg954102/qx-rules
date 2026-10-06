@@ -1,5 +1,3 @@
-DOMAIN,shouji.sogou.com,reject
-DOMAIN,ws-keyboard.shouji.sogou.com,reject
 DOMAIN-SUFFIX,123.sogou.com,reject
 DOMAIN-SUFFIX,a1click.cpc.sogou.com,reject
 DOMAIN-SUFFIX,adsence.sogou.com,reject
@@ -59,6 +57,8 @@ DOMAIN-SUFFIX,wangmeng.sogou.com,reject
 DOMAIN-SUFFIX,web.sogou.com,reject
 DOMAIN-SUFFIX,wuliao.epro.sogou.com,reject
 DOMAIN-SUFFIX,xtruh.uranus.sogou.com,reject
+DOMAIN,shouji.sogou.com,reject
+DOMAIN,ws-keyboard.shouji.sogou.com,reject
 host-suffix,123.sogou.com,reject
 host-suffix,a1click.cpc.sogou.com,reject
 host-suffix,adsence.sogou.com,reject

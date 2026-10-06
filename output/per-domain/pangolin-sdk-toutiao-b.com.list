@@ -1,6 +1,6 @@
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com,reject
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject
 DOMAIN,api-access.pangolin-sdk-toutiao-b.com,reject
 DOMAIN,log-api.pangolin-sdk-toutiao-b.com,reject
 DOMAIN,pangolin-sdk-toutiao-b.com,reject
-DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com,reject
-DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject
 host-keyword,log-api.pangolin-sdk-toutiao-b.com,reject

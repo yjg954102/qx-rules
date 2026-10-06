@@ -1,5 +1,5 @@
+DOMAIN-SUFFIX,ad.gameley.com,reject
 DOMAIN,ad.gameley.com,reject
 DOMAIN,de.ad.gameley.com,reject
 DOMAIN,jp.ad.gameley.com,reject
-DOMAIN-SUFFIX,ad.gameley.com,reject
 host-suffix,ad.gameley.com,reject

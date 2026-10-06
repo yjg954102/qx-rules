@@ -1,4 +1,3 @@
-DOMAIN,adm.funshion.com,reject
 DOMAIN-SUFFIX,aa0.pub.funshion.com,reject
 DOMAIN-SUFFIX,aa1.pub.funshion.com,reject
 DOMAIN-SUFFIX,adk.funshion.com,reject
@@ -7,6 +6,7 @@ DOMAIN-SUFFIX,conf.funshion.com,reject
 DOMAIN-SUFFIX,pub.funshion.com,reject
 DOMAIN-SUFFIX,vas.funshion.com,reject
 DOMAIN-SUFFIX,vs.funshion.com,reject
+DOMAIN,adm.funshion.com,reject
 host-suffix,aa0.pub.funshion.com,reject
 host-suffix,aa1.pub.funshion.com,reject
 host-suffix,adk.funshion.com,reject

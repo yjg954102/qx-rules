@@ -1,10 +1,9 @@
-DOMAIN,u1.img.mobile.sina.cn,reject
 DOMAIN-SUFFIX,2016.sina.cn,reject
 DOMAIN-SUFFIX,adimg.mobile.sina.cn,reject
 DOMAIN-SUFFIX,api.apps.sina.cn,reject
 DOMAIN-SUFFIX,contentrecommend-out.mobile.sina.cn,reject
-DOMAIN-SUFFIX,cre.dp.sina.cn,reject
 DOMAIN-SUFFIX,cre-dp.sina.cn,reject
+DOMAIN-SUFFIX,cre.dp.sina.cn,reject
 DOMAIN-SUFFIX,dl.kjava.sina.cn,reject
 DOMAIN-SUFFIX,dmp.sina.cn,reject
 DOMAIN-SUFFIX,mixer.sina.cn,reject
@@ -20,12 +19,13 @@ DOMAIN-SUFFIX,wapwbclick.mobile.sina.cn,reject
 DOMAIN-SUFFIX,wbapp.mobile.sina.cn,reject
 DOMAIN-SUFFIX,wbclick.mobile.sina.cn,reject
 DOMAIN-SUFFIX,wbpctips.mobile.sina.cn,reject
+DOMAIN,u1.img.mobile.sina.cn,reject
 host-suffix,2016.sina.cn,reject
 host-suffix,adimg.mobile.sina.cn,reject
 host-suffix,api.apps.sina.cn,reject
 host-suffix,contentrecommend-out.mobile.sina.cn,reject
-host-suffix,cre.dp.sina.cn,reject
 host-suffix,cre-dp.sina.cn,reject
+host-suffix,cre.dp.sina.cn,reject
 host-suffix,dl.kjava.sina.cn,reject
 host-suffix,dmp.sina.cn,reject
 host-suffix,palmnews.sina.cn,reject

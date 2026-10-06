@@ -1,9 +1,9 @@
-DOMAIN,adsp.xunlei.com,reject
 DOMAIN-SUFFIX,biz.live.xunlei.com,reject
 DOMAIN-SUFFIX,ct.niu.xunlei.com,reject
 DOMAIN-SUFFIX,mou.niu.xunlei.com,reject
 DOMAIN-SUFFIX,scene.vip.xunlei.com,reject
 DOMAIN-SUFFIX,static-xl9-ssl.xunlei.com,reject
+DOMAIN,adsp.xunlei.com,reject
 host-suffix,adsp.xunlei.com,reject
 host-suffix,biz.live.xunlei.com,reject
 host-suffix,ct.niu.xunlei.com,reject

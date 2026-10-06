@@ -1,5 +1,3 @@
-DOMAIN,api.newad.ifeng.com,reject
-DOMAIN,ifengad.3g.ifeng.com,reject
 DOMAIN-SUFFIX,9fum.ifeng.com,reject
 DOMAIN-SUFFIX,api.iapps.ifeng.com,reject
 DOMAIN-SUFFIX,ax.*.ifeng.com,reject
@@ -19,6 +17,8 @@ DOMAIN-SUFFIX,qcvf.ifeng.com,reject
 DOMAIN-SUFFIX,stadig.ifeng.com,reject
 DOMAIN-SUFFIX,stadig0.ifeng.com,reject
 DOMAIN-SUFFIX,ztyumn.ifeng.com,reject
+DOMAIN,api.newad.ifeng.com,reject
+DOMAIN,ifengad.3g.ifeng.com,reject
 host-suffix,api.iapps.ifeng.com,reject
 host-suffix,api.newad.ifeng.com,reject
 host-suffix,dmpclick.deliver.ifeng.com,reject

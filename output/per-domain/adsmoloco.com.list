@@ -1,5 +1,5 @@
+DOMAIN-SUFFIX,adsmoloco.com,reject
 DOMAIN,adsmoloco.com,reject
 DOMAIN,cdn-f.adsmoloco.com,reject
 DOMAIN,tr-asia.adsmoloco.com,reject
-DOMAIN-SUFFIX,adsmoloco.com,reject
 host-suffix,adsmoloco.com,reject

@@ -1,8 +1,3 @@
-DOMAIN,ifacelog.iqiyi.com,reject
-DOMAIN,mbdlog.iqiyi.com,reject
-DOMAIN,static-s.iqiyi.com,reject
-DOMAIN,t7z.cupid.iqiyi.com,reject
-DOMAIN,tpa-hcdn.iqiyi.com,reject
 DOMAIN-SUFFIX,a.ckm.iqiyi.com,reject
 DOMAIN-SUFFIX,ad.m.iqiyi.com,reject
 DOMAIN-SUFFIX,afp.iqiyi.com,reject
@@ -25,9 +20,11 @@ DOMAIN-SUFFIX,static.g.iqiyi.com,reject
 DOMAIN-SUFFIX,store.iqiyi.com,reject
 DOMAIN-SUFFIX,tracker.sns.iqiyi.com,reject
 DOMAIN-SUFFIX,yuedu.iqiyi.com,reject
-host,api.iqiyi.com,reject
-host,cr-status.iqiyi.com,reject
-host,t7z.cupid.iqiyi.com,reject
+DOMAIN,ifacelog.iqiyi.com,reject
+DOMAIN,mbdlog.iqiyi.com,reject
+DOMAIN,static-s.iqiyi.com,reject
+DOMAIN,t7z.cupid.iqiyi.com,reject
+DOMAIN,tpa-hcdn.iqiyi.com,reject
 host-suffix,a.ckm.iqiyi.com,reject
 host-suffix,ad.m.iqiyi.com,reject
 host-suffix,afp.iqiyi.com,reject
@@ -47,9 +44,12 @@ host-suffix,nl.rcd.iqiyi.com,reject
 host-suffix,notice.iqiyi.com,reject
 host-suffix,paopao.iqiyi.com,reject
 host-suffix,policy.video.iqiyi.com,reject
-host-suffix,static.g.iqiyi.com,reject
 host-suffix,static-s.iqiyi.com,reject
+host-suffix,static.g.iqiyi.com,reject
 host-suffix,store.iqiyi.com,reject
 host-suffix,t7z.cupid.iqiyi.com,reject
 host-suffix,tracker.sns.iqiyi.com,reject
 host-suffix,yuedu.iqiyi.com,reject
+host,api.iqiyi.com,reject
+host,cr-status.iqiyi.com,reject
+host,t7z.cupid.iqiyi.com,reject

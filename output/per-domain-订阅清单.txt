@@ -2325,13 +2325,13 @@
 ;     标签: gomlab.com
 ;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-domain/gomlab.com.list
 
-; --- googleadsserving.cn  （3 条）
-;     标签: googleadsserving.cn
-;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-domain/googleadsserving.cn.list
-
 ; --- google-analytics.com  （3 条）
 ;     标签: google-analytics.com
 ;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-domain/google-analytics.com.list
+
+; --- googleadsserving.cn  （3 条）
+;     标签: googleadsserving.cn
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-domain/googleadsserving.cn.list
 
 ; --- googleapis.com  （3 条）
 ;     标签: googleapis.com

@@ -1,4 +1,4 @@
-DOMAIN,adstudio.spotify.com,reject
-DOMAIN,heads-fa.spotify.com,reject
 DOMAIN-SUFFIX,adeventtracker.spotify.com,reject
 DOMAIN-SUFFIX,weblb-wg.gslb.spotify.com,reject
+DOMAIN,adstudio.spotify.com,reject
+DOMAIN,heads-fa.spotify.com,reject

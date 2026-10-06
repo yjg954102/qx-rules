@@ -1,7 +1,7 @@
-DOMAIN-SUFFIX,aa.goodsblock.mgid.com,reject
 DOMAIN-SUFFIX,aa-gb.mgid.com,reject
-DOMAIN-SUFFIX,ab.goodsblock.mgid.com,reject
+DOMAIN-SUFFIX,aa.goodsblock.mgid.com,reject
 DOMAIN-SUFFIX,ab-gb.mgid.com,reject
+DOMAIN-SUFFIX,ab.goodsblock.mgid.com,reject
 DOMAIN-SUFFIX,ac-gb.mgid.com,reject
 DOMAIN-SUFFIX,ad-gb.mgid.com,reject
 DOMAIN-SUFFIX,ae-gb.mgid.com,reject
@@ -10,10 +10,10 @@ DOMAIN-SUFFIX,imgg.mgid.com,reject
 DOMAIN-SUFFIX,jsc.mgid.com,reject
 DOMAIN-SUFFIX,mgid.com,reject
 DOMAIN-SUFFIX,usr.mgid.com,reject
-host-suffix,aa.goodsblock.mgid.com,reject
 host-suffix,aa-gb.mgid.com,reject
-host-suffix,ab.goodsblock.mgid.com,reject
+host-suffix,aa.goodsblock.mgid.com,reject
 host-suffix,ab-gb.mgid.com,reject
+host-suffix,ab.goodsblock.mgid.com,reject
 host-suffix,ac-gb.mgid.com,reject
 host-suffix,ad-gb.mgid.com,reject
 host-suffix,ae-gb.mgid.com,reject

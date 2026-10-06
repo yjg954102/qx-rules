@@ -1,6 +1,3 @@
-DOMAIN,ark.letv.com,reject
-DOMAIN,g3.letv.com,reject
-DOMAIN,n.mark.letv.com,reject
 DOMAIN-SUFFIX,apple.www.letv.com,reject
 DOMAIN-SUFFIX,dc.letv.com,reject
 DOMAIN-SUFFIX,fz.letv.com,reject
@@ -11,6 +8,9 @@ DOMAIN-SUFFIX,pro.letv.com,reject
 DOMAIN-SUFFIX,stat.letv.com,reject
 DOMAIN-SUFFIX,static.app.m.letv.com,reject
 DOMAIN-SUFFIX,webp2p.letv.com,reject
+DOMAIN,ark.letv.com,reject
+DOMAIN,g3.letv.com,reject
+DOMAIN,n.mark.letv.com,reject
 host-suffix,ark.letv.com,reject
 host-suffix,dc.letv.com,reject
 host-suffix,fz.letv.com,reject

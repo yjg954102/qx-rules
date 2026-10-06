@@ -1,4 +1,3 @@
-DOMAIN,etl.xlmc.sandai.net,reject
 DOMAIN-SUFFIX,cpm.cm.sandai.net,reject
 DOMAIN-SUFFIX,hub5pn.wap.sandai.net,reject
 DOMAIN-SUFFIX,idx.m.hub.sandai.net,reject
@@ -8,6 +7,7 @@ DOMAIN-SUFFIX,pre.api.tw06.xlmc.sandai.net,reject
 DOMAIN-SUFFIX,test.api.xlmc.sandai.net,reject
 DOMAIN-SUFFIX,tw13b093.sandai.net,reject
 DOMAIN-SUFFIX,xlmc.sandai.net,reject
+DOMAIN,etl.xlmc.sandai.net,reject
 host-suffix,cpm.cm.sandai.net,reject
 host-suffix,etl.xlmc.sandai.net,reject
 host-suffix,hub5pn.wap.sandai.net,reject

@@ -1,13 +1,9 @@
-DOMAIN,adash-emas.cn-hangzhou.aliyuncs.com,reject
-DOMAIN,beacon-api.aliyuncs.com,reject
-DOMAIN,cdn-ads.oss-cn-shanghai.aliyuncs.com,reject
-DOMAIN,union-record.oss-cn-zhangjiakou.aliyuncs.com,reject
 DOMAIN-SUFFIX,aixuntupian.oss-cn-hongkong.aliyuncs.com,reject
 DOMAIN-SUFFIX,alime-pic.oss-cn-hangzhou.aliyuncs.com,reject
 DOMAIN-SUFFIX,asd8900.oss-*.aliyuncs.com,reject
 DOMAIN-SUFFIX,cdn-ads.oss-cn-shanghai.aliyuncs.com,reject
-DOMAIN-SUFFIX,com-eonsun-owl.oss-cn-hangzhou.aliyuncs.com,reject
 DOMAIN-SUFFIX,com-eonsun-owl-user.oss-cn-hangzhou.aliyuncs.com,reject
+DOMAIN-SUFFIX,com-eonsun-owl.oss-cn-hangzhou.aliyuncs.com,reject
 DOMAIN-SUFFIX,cootek-dialer-download.oss-cn-hangzhou.aliyuncs.com,reject
 DOMAIN-SUFFIX,darren01.oss-cn-beijing.aliyuncs.com,reject
 DOMAIN-SUFFIX,dmg-dd.oss-accelerate.aliyuncs.com,reject
@@ -34,5 +30,9 @@ DOMAIN-SUFFIX,wzjs1.oss-accelerate.aliyuncs.com,reject
 DOMAIN-SUFFIX,xpj08.oss-cn-beijing.aliyuncs.com,reject
 DOMAIN-SUFFIX,xz-development.oss-cn-beijing.aliyuncs.com,reject
 DOMAIN-SUFFIX,zhizhizhizhi.oss-*.aliyuncs.com,reject
+DOMAIN,adash-emas.cn-hangzhou.aliyuncs.com,reject
+DOMAIN,beacon-api.aliyuncs.com,reject
+DOMAIN,cdn-ads.oss-cn-shanghai.aliyuncs.com,reject
+DOMAIN,union-record.oss-cn-zhangjiakou.aliyuncs.com,reject
 host-KEYWORD,adash.man.aliyuncs.com,reject
 host-suffix,log.aliyuncs.com,reject

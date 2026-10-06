@@ -1,11 +1,11 @@
+DOMAIN-SUFFIX,ads.internal.unity3d.com,reject
+DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,reject
+DOMAIN-SUFFIX,config.unityads.unity3d.com,reject
+DOMAIN-SUFFIX,unityads.unity3d.com,reject
 DOMAIN,adserver.unityads.unity3d.com,reject
 DOMAIN,auction.unityads.unity3d.com,reject
 DOMAIN,config.unityads.unity3d.com,reject
 DOMAIN,o-sdk.mediation.unity3d.com,reject
 DOMAIN,unityads.unity3d.com,reject
 DOMAIN,webview.unityads.unity3d.com,reject
-DOMAIN-SUFFIX,ads.internal.unity3d.com,reject
-DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,reject
-DOMAIN-SUFFIX,config.unityads.unity3d.com,reject
-DOMAIN-SUFFIX,unityads.unity3d.com,reject
 host-suffix,config.unityads.unity3d.com,reject

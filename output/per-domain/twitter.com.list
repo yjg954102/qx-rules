@@ -1,11 +1,11 @@
-DOMAIN,ads-api.twitter.com,reject
 DOMAIN-SUFFIX,p.twitter.com,reject
 DOMAIN-SUFFIX,scribe.twitter.com,reject
-DOMAIN-SUFFIX,syndication.twitter.com,reject
 DOMAIN-SUFFIX,syndication-o.twitter.com,reject
+DOMAIN-SUFFIX,syndication.twitter.com,reject
 DOMAIN-SUFFIX,urls.api.twitter.com,reject
+DOMAIN,ads-api.twitter.com,reject
 host-suffix,p.twitter.com,reject
 host-suffix,scribe.twitter.com,reject
-host-suffix,syndication.twitter.com,reject
 host-suffix,syndication-o.twitter.com,reject
+host-suffix,syndication.twitter.com,reject
 host-suffix,urls.api.twitter.com,reject

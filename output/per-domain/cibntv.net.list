@@ -1,7 +1,3 @@
-DOMAIN,adx.op.cp18.ott.cibntv.net,reject
-DOMAIN,pl.cp31.ott.cibntv.net,reject
-DOMAIN,ykad-data.cp31.ott.cibntv.net,reject
-DOMAIN,yk-ssp-ad.cp31.ott.cibntv.net,reject
 DOMAIN-SUFFIX,adinf.cp11.ott.cibntv.net,reject
 DOMAIN-SUFFIX,adstat.cp11.ott.cibntv.net,reject
 DOMAIN-SUFFIX,agn.aty.cp45.ott.cibntv.net,reject
@@ -20,3 +16,7 @@ DOMAIN-SUFFIX,mmg.aty.cp45.ott.cibntv.net,reject
 DOMAIN-SUFFIX,news-l.play.cp81.ott.cibntv.net,reject
 DOMAIN-SUFFIX,val.atm.cp31.ott.cibntv.net,reject
 DOMAIN-SUFFIX,valf.atm.cp31.ott.cibntv.net,reject
+DOMAIN,adx.op.cp18.ott.cibntv.net,reject
+DOMAIN,pl.cp31.ott.cibntv.net,reject
+DOMAIN,yk-ssp-ad.cp31.ott.cibntv.net,reject
+DOMAIN,ykad-data.cp31.ott.cibntv.net,reject

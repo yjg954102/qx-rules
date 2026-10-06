@@ -1,12 +1,12 @@
-DOMAIN,adservice.google.com,reject
-DOMAIN,ogads-pa.clients6.google.com,reject
 DOMAIN-SUFFIX,afd.l.google.com,reject
 DOMAIN-SUFFIX,mobileads.google.com,reject
+DOMAIN-SUFFIX,pagead-tpc.l.google.com,reject
 DOMAIN-SUFFIX,pagead.google.com,reject
 DOMAIN-SUFFIX,pagead.l.google.com,reject
-DOMAIN-SUFFIX,pagead-tpc.l.google.com,reject
+DOMAIN,adservice.google.com,reject
+DOMAIN,ogads-pa.clients6.google.com,reject
 host-suffix,afd.l.google.com,reject
 host-suffix,mobileads.google.com,reject
+host-suffix,pagead-tpc.l.google.com,reject
 host-suffix,pagead.google.com,reject
 host-suffix,pagead.l.google.com,reject
-host-suffix,pagead-tpc.l.google.com,reject

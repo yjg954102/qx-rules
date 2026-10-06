@@ -1,6 +1,6 @@
-DOMAIN,sdownload.stargame.com,reject
 DOMAIN-SUFFIX,appsupport.stargame.com,reject
 DOMAIN-SUFFIX,att.stargame.com,reject
 DOMAIN-SUFFIX,gg.stargame.com,reject
 DOMAIN-SUFFIX,sdownload.stargame.com,reject
 DOMAIN-SUFFIX,stargame.com,reject
+DOMAIN,sdownload.stargame.com,reject

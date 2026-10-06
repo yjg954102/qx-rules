@@ -1,8 +1,3 @@
-DOMAIN,ad4.sina.com.cn,reject
-DOMAIN,adbox.sina.com.cn,reject
-DOMAIN,sax.sina.com.cn,reject
-DOMAIN,saxn.sina.com.cn,reject
-DOMAIN,saxs.sina.com.cn,reject
 DOMAIN-SUFFIX,ad.sina.com.cn,reject
 DOMAIN-SUFFIX,ad4.sina.com.cn,reject
 DOMAIN-SUFFIX,adbox.sina.com.cn,reject
@@ -41,6 +36,11 @@ DOMAIN-SUFFIX,sbeacon.sina.com.cn,reject
 DOMAIN-SUFFIX,slog.sina.com.cn,reject
 DOMAIN-SUFFIX,staticadm.leju.sina.com.cn,reject
 DOMAIN-SUFFIX,woocall.sina.com.cn,reject
+DOMAIN,ad4.sina.com.cn,reject
+DOMAIN,adbox.sina.com.cn,reject
+DOMAIN,sax.sina.com.cn,reject
+DOMAIN,saxn.sina.com.cn,reject
+DOMAIN,saxs.sina.com.cn,reject
 host-suffix,ad.sina.com.cn,reject
 host-suffix,ad4.sina.com.cn,reject
 host-suffix,adbox.sina.com.cn,reject

@@ -1,10 +1,3 @@
-DOMAIN,adimg.uve.weibo.com,reject
-DOMAIN,adimg.vue.weibo.com,reject
-DOMAIN,adstrategy.biz.weibo.com,reject
-DOMAIN,biz.weibo.com,reject
-DOMAIN,bootpreload.uve.weibo.com,reject
-DOMAIN,datacollection.uve.weibo.com,reject
-DOMAIN,sdkapp.uve.weibo.com,reject
 DOMAIN-SUFFIX,adimg.uve.weibo.com,reject
 DOMAIN-SUFFIX,alitui.weibo.com,reject
 DOMAIN-SUFFIX,biz.weibo.com,reject
@@ -12,3 +5,10 @@ DOMAIN-SUFFIX,game.weibo.com,reject
 DOMAIN-SUFFIX,s.alitui.weibo.com,reject
 DOMAIN-SUFFIX,sdkapp.uve.weibo.com,reject
 DOMAIN-SUFFIX,zymo.mps.weibo.com,reject
+DOMAIN,adimg.uve.weibo.com,reject
+DOMAIN,adimg.vue.weibo.com,reject
+DOMAIN,adstrategy.biz.weibo.com,reject
+DOMAIN,biz.weibo.com,reject
+DOMAIN,bootpreload.uve.weibo.com,reject
+DOMAIN,datacollection.uve.weibo.com,reject
+DOMAIN,sdkapp.uve.weibo.com,reject

@@ -1,10 +1,10 @@
-DOMAIN,adstore-1252524079.file.myqcloud.com,reject
-DOMAIN,adstore-index-1252524079.file.myqcloud.com,reject
 DOMAIN-SUFFIX,ad-1258444056.cos.accelerate.myqcloud.com,reject
 DOMAIN-SUFFIX,cndjs-1251973891.coshk.myqcloud.com,reject
 DOMAIN-SUFFIX,ggtp-1255424916.cos.ap-chengdu.myqcloud.com,reject
 DOMAIN-SUFFIX,mibook-10006092.cos.myqcloud.com,reject
 DOMAIN-SUFFIX,moren-1252794300.file.myqcloud.com,reject
 DOMAIN-SUFFIX,redpaper-10006092.cos.myqcloud.com,reject
+DOMAIN,adstore-1252524079.file.myqcloud.com,reject
+DOMAIN,adstore-index-1252524079.file.myqcloud.com,reject
 host,amsweb-cdn-gz-1258344696.file.myqcloud.com,reject
 host,wallpaper-1258344696.file.myqcloud.com,reject

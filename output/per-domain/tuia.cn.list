@@ -1,7 +1,7 @@
-DOMAIN,adx.tuia.cn,reject
 DOMAIN-SUFFIX,engine.tuia.cn,reject
 DOMAIN-SUFFIX,tuia.cn,reject
 DOMAIN-SUFFIX,yun.tuia.cn,reject
+DOMAIN,adx.tuia.cn,reject
 host-suffix,engine.tuia.cn,reject
 host-suffix,tuia.cn,reject
 host-suffix,yun.tuia.cn,reject

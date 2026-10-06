@@ -1,6 +1,6 @@
-DOMAIN,m.ad.zhangyue.com,reject
 DOMAIN-SUFFIX,ad.zhangyue.com,reject
 DOMAIN-SUFFIX,img.ad.zhangyue.com,reject
 DOMAIN-SUFFIX,m.ad.zhangyue.com,reject
 DOMAIN-SUFFIX,push.zhangyue.com,reject
 DOMAIN-SUFFIX,sys.zhangyue.com,reject
+DOMAIN,m.ad.zhangyue.com,reject

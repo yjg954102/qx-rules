@@ -1,7 +1,7 @@
+DOMAIN-SUFFIX,adsmind.gdtimg.com,reject
 DOMAIN,adsmind.gdtimg.com,reject
 DOMAIN,public.gdtimg.com,reject
 DOMAIN,qzs.gdtimg.com,reject
 DOMAIN,review.gdtimg.com,reject
-DOMAIN-SUFFIX,adsmind.gdtimg.com,reject
 host,adsmind.gdtimg.com,reject
 host,qzs.gdtimg.com,reject

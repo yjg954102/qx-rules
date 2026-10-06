@@ -1,6 +1,6 @@
+DOMAIN-SUFFIX,miaozhen.com,reject
 DOMAIN,g.dtv.cn.miaozhen.com,reject
 DOMAIN,tencent-dtv.m.cn.miaozhen.com,reject
 DOMAIN,tytx.m.cn.miaozhen.com,reject
 DOMAIN,xiaomi-dtv.m.cn.miaozhen.com,reject
-DOMAIN-SUFFIX,miaozhen.com,reject
 host-suffix,miaozhen.com,reject

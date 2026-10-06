@@ -1,5 +1,5 @@
-DOMAIN,jpush.cn,reject
 DOMAIN-SUFFIX,im.jpush.cn,reject
 DOMAIN-SUFFIX,im64.jpush.cn,reject
 DOMAIN-SUFFIX,jpush.cn,reject
 DOMAIN-SUFFIX,s.jpush.cn,reject
+DOMAIN,jpush.cn,reject

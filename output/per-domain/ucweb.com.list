@@ -16,10 +16,6 @@ DOMAIN-SUFFIX,vs7.gzcu.u3.ucweb.com,reject
 DOMAIN-SUFFIX,vs8.gzct.u3.ucweb.com,reject
 DOMAIN-SUFFIX,vs8.gzcu.u3.ucweb.com,reject
 DOMAIN-SUFFIX,wap3.ucweb.com,reject
-host,px.ucweb.com,reject
-host,safe.ucweb.com,reject
-host,uc.ucweb.com,reject
-host,vs6.bj2ct.u3.ucweb.com,reject
 host-suffix,adn.insight.ucweb.com,reject
 host-suffix,adtrack.ucweb.com,reject
 host-suffix,bjcu.u3.ucweb.com,reject
@@ -34,11 +30,15 @@ host-suffix,u3.ucweb.com,reject
 host-suffix,uc9.ucweb.com,reject
 host-suffix,ucus.ucweb.com,reject
 host-suffix,up4.ucweb.com,reject
-host-suffix,utp.ucweb.com,reject
 host-suffix,utp-dmp.ucweb.com,reject
+host-suffix,utp.ucweb.com,reject
 host-suffix,vs19.gzcu.u3.ucweb.com,reject
 host-suffix,vs2.gzcu.u3.ucweb.com,reject
 host-suffix,vs7.gzcu.u3.ucweb.com,reject
 host-suffix,vs8.gzct.u3.ucweb.com,reject
 host-suffix,vs8.gzcu.u3.ucweb.com,reject
 host-suffix,wap3.ucweb.com,reject
+host,px.ucweb.com,reject
+host,safe.ucweb.com,reject
+host,uc.ucweb.com,reject
+host,vs6.bj2ct.u3.ucweb.com,reject

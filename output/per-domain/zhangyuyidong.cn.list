@@ -1,5 +1,5 @@
+DOMAIN-SUFFIX,zhangyuyidong.cn,reject
 DOMAIN,adm.zhangyuyidong.cn,reject
 DOMAIN,sdk.zhangyuyidong.cn,reject
 DOMAIN,sdklog.zhangyuyidong.cn,reject
-DOMAIN-SUFFIX,zhangyuyidong.cn,reject
 host-suffix,zhangyuyidong.cn,reject

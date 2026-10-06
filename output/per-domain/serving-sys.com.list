@@ -2,8 +2,8 @@ DOMAIN-SUFFIX,activity.serving-sys.com,reject
 DOMAIN-SUFFIX,bs.serving-sys.com,reject
 DOMAIN-SUFFIX,bsch.serving-sys.com,reject
 DOMAIN-SUFFIX,datacapture.serving-sys.com,reject
-DOMAIN-SUFFIX,ds.serving-sys.com,reject
 DOMAIN-SUFFIX,ds-ll.serving-sys.com,reject
+DOMAIN-SUFFIX,ds.serving-sys.com,reject
 DOMAIN-SUFFIX,secure-ds.serving-sys.com,reject
 DOMAIN-SUFFIX,serving-sys.com,reject
 DOMAIN-SUFFIX,us.bs.serving-sys.com,reject
@@ -11,8 +11,8 @@ host-suffix,activity.serving-sys.com,reject
 host-suffix,bs.serving-sys.com,reject
 host-suffix,bsch.serving-sys.com,reject
 host-suffix,datacapture.serving-sys.com,reject
-host-suffix,ds.serving-sys.com,reject
 host-suffix,ds-ll.serving-sys.com,reject
+host-suffix,ds.serving-sys.com,reject
 host-suffix,secure-ds.serving-sys.com,reject
 host-suffix,serving-sys.com,reject
 host-suffix,us.bs.serving-sys.com,reject

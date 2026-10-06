@@ -1,7 +1,3 @@
-DOMAIN,adtago.s3.amazonaws.com,reject
-DOMAIN,advice-ads.s3.amazonaws.com,reject
-DOMAIN,analytics.s3.amazonaws.com,reject
-DOMAIN,analyticsengine.s3.amazonaws.com,reject
 DOMAIN-SUFFIX,airpushmarketing.s3.amazonaws.com,reject
 DOMAIN-SUFFIX,epowernetworktrackerimages.s3.amazonaws.com,reject
 DOMAIN-SUFFIX,gateways.s3.amazonaws.com,reject
@@ -10,6 +6,10 @@ DOMAIN-SUFFIX,sdb.amazonaws.com,reject
 DOMAIN-SUFFIX,secretmedia.s3.amazonaws.com,reject
 DOMAIN-SUFFIX,smblock.s3.amazonaws.com,reject
 DOMAIN-SUFFIX,whistleout.s3.amazonaws.com,reject
+DOMAIN,adtago.s3.amazonaws.com,reject
+DOMAIN,advice-ads.s3.amazonaws.com,reject
+DOMAIN,analytics.s3.amazonaws.com,reject
+DOMAIN,analyticsengine.s3.amazonaws.com,reject
 host-suffix,airpushmarketing.s3.amazonaws.com,reject
 host-suffix,epowernetworktrackerimages.s3.amazonaws.com,reject
 host-suffix,gateways.s3.amazonaws.com,reject

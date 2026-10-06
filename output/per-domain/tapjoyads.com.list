@@ -1,5 +1,5 @@
-DOMAIN,ws.tapjoyads.com,reject
 DOMAIN-SUFFIX,tapjoyads.com,reject
 DOMAIN-SUFFIX,ws.tapjoyads.com,reject
+DOMAIN,ws.tapjoyads.com,reject
 host-suffix,tapjoyads.com,reject
 host-suffix,ws.tapjoyads.com,reject

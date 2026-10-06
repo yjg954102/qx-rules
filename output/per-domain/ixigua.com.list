@@ -1,8 +1,8 @@
 DOMAIN,api5-normal-quic-lf.ixigua.com,reject
 DOMAIN,search.ixigua.com,reject
 DOMAIN,search3-search.ixigua.com,reject
-DOMAIN,search5-search.ixigua.com,reject
 DOMAIN,search5-search-hl.ixigua.com,reject
-host,v6-novelapp.ixigua.com,reject
+DOMAIN,search5-search.ixigua.com,reject
 host-suffix,default.ixigua.com,reject
 host-suffix,novelapp.ixigua.com,reject
+host,v6-novelapp.ixigua.com,reject

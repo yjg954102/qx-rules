@@ -1,11 +1,11 @@
-DOMAIN,admonitor.thepaper.cn,reject
-DOMAIN,adpai.thepaper.cn,reject
-DOMAIN,imgadpai.thepaper.cn,reject
 DOMAIN-SUFFIX,ad.thepaper.cn,reject
 DOMAIN-SUFFIX,adpai.thepaper.cn,reject
 DOMAIN-SUFFIX,imgad.thepaper.cn,reject
+DOMAIN,admonitor.thepaper.cn,reject
+DOMAIN,adpai.thepaper.cn,reject
+DOMAIN,imgadpai.thepaper.cn,reject
+host-suffix,ad.thepaper.cn,reject
+host-suffix,imgad.thepaper.cn,reject
 host,admonitor.thepaper.cn,reject
 host,adpai.thepaper.cn,reject
 host,imgadpai.thepaper.cn,reject
-host-suffix,ad.thepaper.cn,reject
-host-suffix,imgad.thepaper.cn,reject

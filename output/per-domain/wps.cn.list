@@ -1,4 +1,3 @@
-DOMAIN,minfo.wps.cn,reject
 DOMAIN-SUFFIX,1.wps.cn,reject
 DOMAIN-SUFFIX,android-lrcresource.wps.cn,reject
 DOMAIN-SUFFIX,crashes.mo.wps.cn,reject
@@ -8,7 +7,7 @@ DOMAIN-SUFFIX,ios-informationplatform.wps.cn,reject
 DOMAIN-SUFFIX,mostat.wps.cn,reject
 DOMAIN-SUFFIX,moupdate10332052.wps.cn,reject
 DOMAIN-SUFFIX,pcfg.wps.cn,reject
-host,minfo.wps.cn,reject
+DOMAIN,minfo.wps.cn,reject
 host-suffix,1.wps.cn,reject
 host-suffix,android-lrcresource.wps.cn,reject
 host-suffix,crashes.mo.wps.cn,reject
@@ -19,3 +18,4 @@ host-suffix,minfo.wps.cn,reject
 host-suffix,mostat.wps.cn,reject
 host-suffix,moupdate10332052.wps.cn,reject
 host-suffix,pcfg.wps.cn,reject
+host,minfo.wps.cn,reject

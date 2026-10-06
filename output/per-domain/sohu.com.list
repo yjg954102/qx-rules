@@ -1,5 +1,3 @@
-DOMAIN,agn.aty.sohu.com,reject
-DOMAIN,hui.sohu.com,reject
 DOMAIN-SUFFIX,3rd.t.sohu.com,reject
 DOMAIN-SUFFIX,888.tv.sohu.com,reject
 DOMAIN-SUFFIX,ad.mail.sohu.com,reject
@@ -26,7 +24,8 @@ DOMAIN-SUFFIX,t.go.sohu.com,reject
 DOMAIN-SUFFIX,txt.go.sohu.com,reject
 DOMAIN-SUFFIX,x1.go.sohu.com,reject
 DOMAIN-SUFFIX,xls.go.sohu.com,reject
-host,hui.sohu.com,reject
+DOMAIN,agn.aty.sohu.com,reject
+DOMAIN,hui.sohu.com,reject
 host-suffix,3rd.t.sohu.com,reject
 host-suffix,888.tv.sohu.com,reject
 host-suffix,ad.mail.sohu.com,reject
@@ -49,3 +48,4 @@ host-suffix,track.sohu.com,reject
 host-suffix,txt.go.sohu.com,reject
 host-suffix,x1.go.sohu.com,reject
 host-suffix,xls.go.sohu.com,reject
+host,hui.sohu.com,reject

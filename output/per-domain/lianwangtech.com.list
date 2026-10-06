@@ -1,6 +1,6 @@
-DOMAIN,c1wx.lianwangtech.com,reject
-DOMAIN,cwx.lianwangtech.com,reject
 DOMAIN-SUFFIX,c.lianwangtech.com,reject
 DOMAIN-SUFFIX,c1.lianwangtech.com,reject
+DOMAIN,c1wx.lianwangtech.com,reject
+DOMAIN,cwx.lianwangtech.com,reject
 host,c1wx.lianwangtech.com,reject
 host,cwx.lianwangtech.com,reject

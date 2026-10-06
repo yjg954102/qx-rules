@@ -1,4 +1,4 @@
-DOMAIN,admarketing.yahoo.net,reject
 DOMAIN-SUFFIX,w.homes.yahoo.net,reject
-host,admarketing.yahoo.net,reject
+DOMAIN,admarketing.yahoo.net,reject
 host-suffix,w.homes.yahoo.net,reject
+host,admarketing.yahoo.net,reject

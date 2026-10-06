@@ -1,7 +1,5 @@
 DOMAIN-SUFFIX,c-hzgt2.getui.com,reject
 DOMAIN-SUFFIX,getui.com,reject
-host,cm-10-138.getui.com,reject
-host,sdk-conf.getui.com,reject
 host-keyword,c-hzgt2.getui.com,reject
 host-keyword,cm-10-134.getui.com,reject
 host-keyword,cm-10-35.getui.com,reject
@@ -10,3 +8,5 @@ host-keyword,talk.bz.getui.com,reject
 host-suffix,c-hzgt2.getui.com,reject
 host-suffix,getui.com,reject
 host-suffix,gs.getui.com,reject
+host,cm-10-138.getui.com,reject
+host,sdk-conf.getui.com,reject

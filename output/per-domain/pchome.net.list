@@ -1,8 +1,8 @@
 DOMAIN-SUFFIX,btn.pchome.net,reject
 DOMAIN-SUFFIX,js-1.pchome.net,reject
-DOMAIN-SUFFIX,pf.pchome.net,reject
 DOMAIN-SUFFIX,pf-2.pchome.net,reject
+DOMAIN-SUFFIX,pf.pchome.net,reject
 host-suffix,btn.pchome.net,reject
 host-suffix,js-1.pchome.net,reject
-host-suffix,pf.pchome.net,reject
 host-suffix,pf-2.pchome.net,reject
+host-suffix,pf.pchome.net,reject

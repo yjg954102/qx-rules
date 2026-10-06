@@ -18,6 +18,9 @@ DOMAIN,sl.hpplay.cn,reject
 DOMAIN,tvapp.hpplay.cn,reject
 DOMAIN,vipauth.hpplay.cn,reject
 DOMAIN,vipgslb.hpplay.cn,reject
+host-suffix,ad.hpplay.cn,reject
+host-suffix,adeng.hpplay.cn,reject
+host-suffix,rp.hpplay.cn,reject
 host,ad.hpplay.cn,reject
 host,adc.hpplay.cn,reject
 host,adcdn.hpplay.cn,reject
@@ -25,6 +28,3 @@ host,adeng.hpplay.cn,reject
 host,pin.hpplay.cn,reject
 host,rp.hpplay.cn,reject
 host,rpt.hpplay.cn,reject
-host-suffix,ad.hpplay.cn,reject
-host-suffix,adeng.hpplay.cn,reject
-host-suffix,rp.hpplay.cn,reject

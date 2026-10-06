@@ -1,6 +1,6 @@
-DOMAIN,adsmind.ugdtimg.com,reject
-DOMAIN,pgdt.ugdtimg.com,reject
 DOMAIN-SUFFIX,pgdt.ugdtimg.com,reject
 DOMAIN-SUFFIX,ugdtimg.com,reject
-host,pgdt.ugdtimg.com,reject
+DOMAIN,adsmind.ugdtimg.com,reject
+DOMAIN,pgdt.ugdtimg.com,reject
 host-suffix,pgdt.ugdtimg.com,reject
+host,pgdt.ugdtimg.com,reject

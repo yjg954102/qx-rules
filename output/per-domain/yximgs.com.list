@@ -1,11 +1,12 @@
+DOMAIN-KEYWORD,-ad.video.yximgs.com,reject
 DOMAIN,ali-ad.a.yximgs.com,reject
 DOMAIN,ali-p2p-v2.pull.yximgs.com,reject
 DOMAIN,hw-ot-ad.a.yximgs.com,reject
 DOMAIN,hw-p2p.pull.yximgs.com,reject
 DOMAIN,js-ad.a.yximgs.com,reject
-DOMAIN,ks.pull.yximgs.com,reject
-DOMAIN,ks-p2p.pull.yximgs.com,reject
 DOMAIN,ks-p2p-v2.pull.yximgs.com,reject
+DOMAIN,ks-p2p.pull.yximgs.com,reject
+DOMAIN,ks.pull.yximgs.com,reject
 DOMAIN,pcdn.yximgs.com,reject
 DOMAIN,tx-ad.a.yximgs.com,reject
 DOMAIN,tx-kmpaudio.pull.yximgs.com,reject
@@ -13,4 +14,3 @@ DOMAIN,tx-p2p-v2.pull.yximgs.com,reject
 DOMAIN,v1-ad.video.yximgs.com,reject
 DOMAIN,v2-ad.video.yximgs.com,reject
 DOMAIN,v3-ad.video.yximgs.com,reject
-DOMAIN-KEYWORD,-ad.video.yximgs.com,reject

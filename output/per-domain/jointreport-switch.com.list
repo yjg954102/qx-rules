@@ -2,7 +2,7 @@ DOMAIN-SUFFIX,demo.jointreport-switch.com,reject
 DOMAIN-SUFFIX,jointreport-switch.com,reject
 DOMAIN-SUFFIX,lg2.jointreport-switch.com,reject
 DOMAIN-SUFFIX,lg4.jointreport-switch.com,reject
-DOMAIN-SUFFIX,media.jointreport-switch.com,reject
 DOMAIN-SUFFIX,media-static.jointreport-switch.com,reject
+DOMAIN-SUFFIX,media.jointreport-switch.com,reject
 DOMAIN-SUFFIX,popup.jointreport-switch.com,reject
 DOMAIN-SUFFIX,safe-aisle.jointreport-switch.com,reject

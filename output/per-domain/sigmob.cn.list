@@ -1,4 +1,4 @@
+DOMAIN-SUFFIX,adservice.sigmob.cn,reject
 DOMAIN,adservice.sigmob.cn,reject
 DOMAIN,dc.sigmob.cn,reject
-DOMAIN-SUFFIX,adservice.sigmob.cn,reject
 host-suffix,adservice.sigmob.cn,reject

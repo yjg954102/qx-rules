@@ -1,3 +1,8 @@
+DOMAIN-SUFFIX,ads.oppomobile.com,reject
+DOMAIN-SUFFIX,adsfs.oppomobile.com,reject
+DOMAIN-SUFFIX,httpdns.push.oppomobile.com,reject
+DOMAIN-SUFFIX,i.flow.browser.oppomobile.com,reject
+DOMAIN-SUFFIX,imagzine.oppomobile.com,reject
 DOMAIN,adsfs.oppomobile.com,reject
 DOMAIN,adx.ads.oppomobile.com,reject
 DOMAIN,bdapi.ads.oppomobile.com,reject
@@ -5,10 +10,5 @@ DOMAIN,ck.ads.oppomobile.com,reject
 DOMAIN,data.ads.oppomobile.com,reject
 DOMAIN,httpdns.ocloud.oppomobile.com,reject
 DOMAIN,sms.ads.oppomobile.com,reject
-DOMAIN-SUFFIX,ads.oppomobile.com,reject
-DOMAIN-SUFFIX,adsfs.oppomobile.com,reject
-DOMAIN-SUFFIX,httpdns.push.oppomobile.com,reject
-DOMAIN-SUFFIX,i.flow.browser.oppomobile.com,reject
-DOMAIN-SUFFIX,imagzine.oppomobile.com,reject
-host,adsfs.oppomobile.com,reject
 host-suffix,ads.oppomobile.com,reject
+host,adsfs.oppomobile.com,reject

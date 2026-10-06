@@ -1,5 +1,3 @@
-DOMAIN,browser.events.data.msn.com,reject
-DOMAIN,mobileads.msn.com,reject
 DOMAIN-SUFFIX,0.r.msn.com,reject
 DOMAIN-SUFFIX,a.ads1.msn.com,reject
 DOMAIN-SUFFIX,a.ads2.msn.com,reject
@@ -10,8 +8,8 @@ DOMAIN-SUFFIX,ads1.msn.com,reject
 DOMAIN-SUFFIX,ads2.msn.com,reject
 DOMAIN-SUFFIX,adsyndication.msn.com,reject
 DOMAIN-SUFFIX,b.ads1.msn.com,reject
-DOMAIN-SUFFIX,c.msn.com,reject
 DOMAIN-SUFFIX,c-5uwzmx78pmca09x24aiux2euavx2ekwu.g00.msn.com,reject
+DOMAIN-SUFFIX,c.msn.com,reject
 DOMAIN-SUFFIX,catalog.video.msn.com,reject
 DOMAIN-SUFFIX,h.msn.com,reject
 DOMAIN-SUFFIX,mobileads.msn.com,reject
@@ -25,6 +23,8 @@ DOMAIN-SUFFIX,rmads.msn.com,reject
 DOMAIN-SUFFIX,toolbar.msn.com,reject
 DOMAIN-SUFFIX,udc.msn.com,reject
 DOMAIN-SUFFIX,unicast.msn.com,reject
+DOMAIN,browser.events.data.msn.com,reject
+DOMAIN,mobileads.msn.com,reject
 host-suffix,0.r.msn.com,reject
 host-suffix,a.ads1.msn.com,reject
 host-suffix,a.ads2.msn.com,reject

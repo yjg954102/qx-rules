@@ -1,4 +1,4 @@
-DOMAIN,uedas.qidian.com,reject
 DOMAIN-SUFFIX,cj.qidian.com,reject
 DOMAIN-SUFFIX,game.qidian.com,reject
 DOMAIN-SUFFIX,o.if.qidian.com,reject
+DOMAIN,uedas.qidian.com,reject

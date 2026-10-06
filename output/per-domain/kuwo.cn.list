@@ -1,7 +1,3 @@
-DOMAIN,kwpush.kuwo.cn,reject
-DOMAIN,log.kuwo.cn,reject
-DOMAIN,mobilead.kuwo.cn,reject
-DOMAIN,rich.kuwo.cn,reject
 DOMAIN-SUFFIX,c.kuwo.cn,reject
 DOMAIN-SUFFIX,deliver.kuwo.cn,reject
 DOMAIN-SUFFIX,game.kuwo.cn,reject
@@ -11,8 +7,10 @@ DOMAIN-SUFFIX,msphoneclick.kuwo.cn,reject
 DOMAIN-SUFFIX,updatepage.kuwo.cn,reject
 DOMAIN-SUFFIX,wa.kuwo.cn,reject
 DOMAIN-SUFFIX,webstat.kuwo.cn,reject
-host,mobilead.kuwo.cn,reject
-host,rich.kuwo.cn,reject
+DOMAIN,kwpush.kuwo.cn,reject
+DOMAIN,log.kuwo.cn,reject
+DOMAIN,mobilead.kuwo.cn,reject
+DOMAIN,rich.kuwo.cn,reject
 host-keyword,mobilead.kuwo.cn,reject
 host-keyword,rich.kuwo.cn,reject
 host-suffix,ad.kuwo.cn,reject
@@ -27,3 +25,5 @@ host-suffix,rich.kuwo.cn,reject
 host-suffix,updatepage.kuwo.cn,reject
 host-suffix,wa.kuwo.cn,reject
 host-suffix,webstat.kuwo.cn,reject
+host,mobilead.kuwo.cn,reject
+host,rich.kuwo.cn,reject

@@ -1,5 +1,5 @@
-DOMAIN,advertising-api.amazon.com,reject
+DOMAIN-SUFFIX,mads.amazon.com,reject
 DOMAIN,advertising-api-eu.amazon.com,reject
 DOMAIN,advertising-api-fe.amazon.com,reject
-DOMAIN-SUFFIX,mads.amazon.com,reject
+DOMAIN,advertising-api.amazon.com,reject
 host-suffix,mads.amazon.com,reject

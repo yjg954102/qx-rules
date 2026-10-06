@@ -1,10 +1,10 @@
+DOMAIN-SUFFIX,adshows.21cn.com,reject
+DOMAIN-SUFFIX,market.21cn.com,reject
+DOMAIN-SUFFIX,shows.21cn.com,reject
 DOMAIN,ad.21cn.com,reject
 DOMAIN,ad.k.21cn.com,reject
 DOMAIN,admarket.21cn.com,reject
 DOMAIN,adshows.21cn.com,reject
-DOMAIN-SUFFIX,adshows.21cn.com,reject
-DOMAIN-SUFFIX,market.21cn.com,reject
-DOMAIN-SUFFIX,shows.21cn.com,reject
 host,ad.21cn.com,reject
 host,ad.k.21cn.com,reject
 host,admarket.21cn.com,reject

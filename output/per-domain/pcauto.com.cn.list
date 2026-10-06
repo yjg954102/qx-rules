@@ -1,6 +1,6 @@
+DOMAIN-SUFFIX,ivy.pcauto.com.cn,reject
 DOMAIN,iad0ssl.pcauto.com.cn,reject
 DOMAIN,imgad0.pcauto.com.cn,reject
-DOMAIN-SUFFIX,ivy.pcauto.com.cn,reject
 host-suffix,iad0ssl.pcauto.com.cn,reject
 host-suffix,imgad0.pcauto.com.cn,reject
 host-suffix,ivy.pcauto.com.cn,reject
