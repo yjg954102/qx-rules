@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,cootek-file.cdn.cootekservice.com,reject
+DOMAIN-SUFFIX,data-news.cdn.cootekservice.com,reject
+DOMAIN-SUFFIX,data-pic.cdn.cootekservice.com,reject
+DOMAIN-SUFFIX,dialer.cdn.cootekservice.com,reject
+DOMAIN-SUFFIX,ws2.cootekservice.com,reject
