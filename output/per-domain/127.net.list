@@ -1,0 +1,13 @@
+DOMAIN,iadmat.nosdn.127.net,reject
+DOMAIN,yt-adp.nosdn.127.net,reject
+DOMAIN-SUFFIX,haitaoad.nosdn.127.net,reject
+DOMAIN-SUFFIX,iadmatvideo.nosdn.127.net,reject
+DOMAIN-SUFFIX,pg-ad-b1.nosdn.127.net,reject
+DOMAIN-SUFFIX,wanproxy.127.net,reject
+DOMAIN-SUFFIX,yt-adp.nosdn.127.net,reject
+host,iadmat.nosdn.127.net,reject
+host,yt-adp.nosdn.127.net,reject
+host-suffix,haitaoad.nosdn.127.net,reject
+host-suffix,iadmatvideo.nosdn.127.net,reject
+host-suffix,wanproxy.127.net,reject
+host-suffix,yt-adp.nosdn.127.net,reject
