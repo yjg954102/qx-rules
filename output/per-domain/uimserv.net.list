@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,adclient.uimserv.net,reject
+DOMAIN-SUFFIX,adimg.uimserv.net,reject
+DOMAIN-SUFFIX,fips.uimserv.net,reject
+DOMAIN-SUFFIX,uimserv.net,reject
