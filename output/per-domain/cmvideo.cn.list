@@ -1,0 +1,14 @@
+DOMAIN,adxserver.ad.cmvideo.cn,reject
+DOMAIN,ggc.cmvideo.cn,reject
+DOMAIN,ggv.cmvideo.cn,reject
+DOMAIN,ggx.cmvideo.cn,reject
+DOMAIN-SUFFIX,ad.cmvideo.cn,reject
+DOMAIN-SUFFIX,dspserver.ad.cmvideo.cn,reject
+DOMAIN-SUFFIX,openstorage.ad.cmvideo.cn,reject
+host,ggc.cmvideo.cn,reject
+host,ggv.cmvideo.cn,reject
+host,ggx.cmvideo.cn,reject
+host-suffix,ad.cmvideo.cn,reject
+host-suffix,adxserver.ad.cmvideo.cn,reject
+host-suffix,dspserver.ad.cmvideo.cn,reject
+host-suffix,openstorage.ad.cmvideo.cn,reject
