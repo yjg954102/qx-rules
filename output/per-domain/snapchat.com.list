@@ -1,0 +1,4 @@
+DOMAIN,ads.snapchat.com,reject
+DOMAIN,adsapi.snapchat.com,reject
+host,ads.snapchat.com,reject
+host,adsapi.snapchat.com,reject
