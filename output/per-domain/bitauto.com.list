@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,bglog.bitauto.com,reject
+DOMAIN-SUFFIX,g.bitauto.com,reject
+DOMAIN-SUFFIX,gimg.bitauto.com,reject
+DOMAIN-SUFFIX,gstat.bitauto.com,reject
+host-suffix,bglog.bitauto.com,reject
+host-suffix,g.bitauto.com,reject
+host-suffix,gimg.bitauto.com,reject
+host-suffix,gstat.bitauto.com,reject
