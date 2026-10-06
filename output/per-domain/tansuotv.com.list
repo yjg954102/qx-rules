@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,baidu.dsp.tansuotv.com,reject
+DOMAIN-SUFFIX,i.tansuotv.com,reject
+DOMAIN-SUFFIX,m.tansuotv.com,reject
+DOMAIN-SUFFIX,s1.tansuotv.com,reject
+DOMAIN-SUFFIX,tansuotv.com,reject
+host-suffix,baidu.dsp.tansuotv.com,reject
