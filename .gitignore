@@ -1,0 +1,11 @@
+# 注意：不要忽略 output/ —— GitHub Actions 需要提交重建后的产物
+# 也不要忽略 scripts/sources/，否则 local 离线模式失效
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.tmp
