@@ -1,0 +1,3 @@
+DOMAIN,cnlogs.umengcloud.com,reject
+DOMAIN,ulogs.umengcloud.com,reject
+host,msg.umengcloud.com,reject
