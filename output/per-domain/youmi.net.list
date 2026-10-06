@@ -1,0 +1,14 @@
+DOMAIN-SUFFIX,aos.wall.youmi.net,reject
+DOMAIN-SUFFIX,au.youmi.net,reject
+DOMAIN-SUFFIX,notifiter.youmi.net,reject
+DOMAIN-SUFFIX,r.youmi.net,reject
+DOMAIN-SUFFIX,s.youmi.net,reject
+DOMAIN-SUFFIX,t.youmi.net,reject
+DOMAIN-SUFFIX,youmi.net,reject
+host-suffix,aos.wall.youmi.net,reject
+host-suffix,au.youmi.net,reject
+host-suffix,notifiter.youmi.net,reject
+host-suffix,r.youmi.net,reject
+host-suffix,s.youmi.net,reject
+host-suffix,t.youmi.net,reject
+host-suffix,youmi.net,reject
