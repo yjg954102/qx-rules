@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,gg.51cto.com,reject
+DOMAIN-SUFFIX,gg2.51cto.com,reject
+DOMAIN-SUFFIX,gg3.51cto.com,reject
+host-suffix,gg.51cto.com,reject
+host-suffix,gg2.51cto.com,reject
+host-suffix,gg3.51cto.com,reject
