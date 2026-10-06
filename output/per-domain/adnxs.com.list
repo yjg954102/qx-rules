@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,adnxs.com,reject
+host,acdn.adnxs.com,reject
+host,mediation.adnxs.com,reject
+host,sin3-ib.adnxs.com,reject
+host-suffix,adnxs.com,reject
