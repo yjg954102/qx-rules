@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,api-flow.flyme.cn,reject
+DOMAIN-SUFFIX,bro.flyme.cn,reject
+DOMAIN-SUFFIX,t-e.flyme.cn,reject
+DOMAIN-SUFFIX,t-flow.flyme.cn,reject
+host-suffix,api-flow.flyme.cn,reject
+host-suffix,bro.flyme.cn,reject
+host-suffix,t-e.flyme.cn,reject
+host-suffix,t-flow.flyme.cn,reject
