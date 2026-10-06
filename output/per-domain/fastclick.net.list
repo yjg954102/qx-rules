@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,cdn.fastclick.net,reject
+DOMAIN-SUFFIX,code.fastclick.net,reject
+DOMAIN-SUFFIX,fastclick.net,reject
+DOMAIN-SUFFIX,images.fastclick.net,reject
+DOMAIN-SUFFIX,media.fastclick.net,reject
+DOMAIN-SUFFIX,secure.fastclick.net,reject
+DOMAIN-SUFFIX,sp.fastclick.net,reject
+DOMAIN-SUFFIX,sync.fastclick.net,reject
