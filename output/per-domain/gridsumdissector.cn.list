@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,gridsumdissector.cn,reject
+DOMAIN-SUFFIX,recv-vd.gridsumdissector.cn,reject
+host-suffix,gridsumdissector.cn,reject
+host-suffix,recv-vd.gridsumdissector.cn,reject
