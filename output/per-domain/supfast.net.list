@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,apk.supfast.net,reject
+DOMAIN-SUFFIX,apps.supfast.net,reject
+DOMAIN-SUFFIX,img.supfast.net,reject
+DOMAIN-SUFFIX,l.supfast.net,reject
+DOMAIN-SUFFIX,supfast.net,reject
