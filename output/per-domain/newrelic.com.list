@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,js-agent.newrelic.com,reject
+DOMAIN-SUFFIX,newrelic.com,reject
+host-suffix,js-agent.newrelic.com,reject
+host-suffix,newrelic.com,reject
