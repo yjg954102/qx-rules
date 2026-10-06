@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,58.xgo.com.cn,reject
+DOMAIN-SUFFIX,imp.xgo.com.cn,reject
+host-suffix,58.xgo.com.cn,reject
+host-suffix,imp.xgo.com.cn,reject
