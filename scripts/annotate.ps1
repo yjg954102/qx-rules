@@ -83,7 +83,10 @@ function Get-Root {
 
 function Get-SafeName {
   param([string]$Name)
-  $s = $Name -replace [char]0x2605, 'unlock-'           # ★ -> unlock-
+  # 先去掉 ★解锁- 前缀，统一还原为 unlock-XXX（避免出现 unlock-解锁-XXX）
+  $s = $Name
+  if ($s.StartsWith([char]0x2605 + '解锁-')) { $s = 'unlock-' + $s.Substring(4) }
+  elseif ($s.StartsWith([char]0x2605)) { $s = 'unlock-' + $s.Substring(1) }
   foreach ($ch in [System.IO.Path]::GetInvalidFileNameChars()) { $s = $s.Replace($ch, '_') }
   $s = $s -replace '[\s/\\]+', '_'
   $s = $s.Trim('_','.')
