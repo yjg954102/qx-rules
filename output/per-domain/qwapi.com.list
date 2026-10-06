@@ -1,0 +1,4 @@
+DOMAIN,iadctest.qwapi.com,reject
+DOMAIN-SUFFIX,iadc.qwapi.com,reject
+DOMAIN-SUFFIX,iadctest.qwapi.com,reject
+host,iadctest.qwapi.com,reject
