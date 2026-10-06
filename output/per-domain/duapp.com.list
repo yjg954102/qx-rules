@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,androidgo.duapp.com,reject
+DOMAIN-SUFFIX,duapp.com,reject
+DOMAIN-SUFFIX,noxagile.duapp.com,reject
+host-suffix,noxagile.duapp.com,reject
