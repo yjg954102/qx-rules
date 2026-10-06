@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,img.taotaosou.cn,reject
+DOMAIN-SUFFIX,img01.taotaosou.cn,reject
+host-suffix,img.taotaosou.cn,reject
+host-suffix,img01.taotaosou.cn,reject
