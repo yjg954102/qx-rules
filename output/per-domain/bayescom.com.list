@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,ad.bayescom.com,reject
+DOMAIN-SUFFIX,shuttle.bayescom.com,reject
+host-suffix,bayescom.com,reject
