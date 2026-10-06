@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,c.bxb.oupeng.com,reject
+DOMAIN-SUFFIX,ezine.oupeng.com,reject
+DOMAIN-SUFFIX,img-ad.oupeng.com,reject
+DOMAIN-SUFFIX,notify.oupeng.com,reject
+DOMAIN-SUFFIX,r.bxb.oupeng.com,reject
+DOMAIN-SUFFIX,startup.oupeng.com,reject
+host-suffix,c.bxb.oupeng.com,reject
+host-suffix,ezine.oupeng.com,reject
+host-suffix,img-ad.oupeng.com,reject
+host-suffix,notify.oupeng.com,reject
+host-suffix,r.bxb.oupeng.com,reject
+host-suffix,startup.oupeng.com,reject
