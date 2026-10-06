@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,a.baomihua.com,reject
+DOMAIN-SUFFIX,djs.baomihua.com,reject
+DOMAIN-SUFFIX,resource.baomihua.com,reject
+host-suffix,a.baomihua.com,reject
+host-suffix,djs.baomihua.com,reject
+host-suffix,resource.baomihua.com,reject
