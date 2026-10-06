@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,dt.adsafeprotected.com,reject
+DOMAIN-SUFFIX,fw.adsafeprotected.com,reject
+DOMAIN-SUFFIX,pixel.adsafeprotected.com,reject
+host-suffix,adsafeprotected.com,reject
