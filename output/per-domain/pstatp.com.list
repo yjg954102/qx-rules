@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,dm.pstatp.com,reject
+DOMAIN-SUFFIX,pb3.pstatp.com,reject
+host-KEYWORD,a3.pstatp.com,reject
+host-KEYWORD,dm.pstatp.com,reject
+host-keyword,p3.pstatp.com,reject
+host-KEYWORD,s1.pstatp.com,reject
+host-KEYWORD,s2.pstatp.com,reject
+host-KEYWORD,s3.pstatp.com,reject
+host-suffix,dm.pstatp.com,reject
+host-suffix,pb3.pstatp.com,reject
+host-suffix,s3a.pstatp.com,reject
+host-suffix,tos.pstatp.com,reject
