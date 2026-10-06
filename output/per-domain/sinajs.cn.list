@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,newspush.sinajs.cn,reject
+DOMAIN-SUFFIX,rs.sinajs.cn,reject
+DOMAIN-SUFFIX,tjs.sjs.sinajs.cn,reject
+host-suffix,newspush.sinajs.cn,reject
+host-suffix,rs.sinajs.cn,reject
