@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,cdn.optaim.com,reject
+DOMAIN-SUFFIX,clk.optaim.com,reject
+DOMAIN-SUFFIX,optaim.com,reject
+DOMAIN-SUFFIX,tk.optaim.com,reject
