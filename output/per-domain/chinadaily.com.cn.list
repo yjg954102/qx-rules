@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,same.chinadaily.com.cn,reject
+DOMAIN-SUFFIX,usercollection.chinadaily.com.cn,reject
+host-suffix,same.chinadaily.com.cn,reject
+host-suffix,usercollection.chinadaily.com.cn,reject
