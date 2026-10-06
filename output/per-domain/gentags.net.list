@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,clk.gentags.net,reject
+DOMAIN-SUFFIX,cmpp.gentags.net,reject
+DOMAIN-SUFFIX,gentags.net,reject
+DOMAIN-SUFFIX,imp.gentags.net,reject
+DOMAIN-SUFFIX,pagechoicemotu.gentags.net,reject
+DOMAIN-SUFFIX,pmptrack-autohome.gentags.net,reject
+DOMAIN-SUFFIX,pmptrack-letv.gentags.net,reject
+DOMAIN-SUFFIX,pmptrack-yidianzixunxm.gentags.net,reject
+DOMAIN-SUFFIX,pmptrack-youku.gentags.net,reject
+DOMAIN-SUFFIX,sit.gentags.net,reject
+DOMAIN-SUFFIX,v-sence.gentags.net,reject
+host-KEYWORD,clk.gentags.net,reject
