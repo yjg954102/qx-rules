@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,api.shuzilm.cn,reject
+DOMAIN-SUFFIX,daa.shuzilm.cn,reject
+DOMAIN-SUFFIX,dai.shuzilm.cn,reject
+DOMAIN-SUFFIX,shuzilm.cn,reject
+DOMAIN-SUFFIX,stream.shuzilm.cn,reject
+host-suffix,api.shuzilm.cn,reject
+host-suffix,daa.shuzilm.cn,reject
+host-suffix,dai.shuzilm.cn,reject
+host-suffix,shuzilm.cn,reject
+host-suffix,stream.shuzilm.cn,reject
