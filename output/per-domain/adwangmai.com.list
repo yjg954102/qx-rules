@@ -1,0 +1,4 @@
+DOMAIN,sdk.adx.adwangmai.com,reject
+DOMAIN,sdk.mobads.adwangmai.com,reject
+DOMAIN-SUFFIX,adx.adwangmai.com,reject
+host-suffix,adwangmai.com,reject
