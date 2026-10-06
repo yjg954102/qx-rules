@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,appier.net,reject
+DOMAIN-SUFFIX,rcp.c.appier.net,reject
+host-suffix,appier.net,reject
