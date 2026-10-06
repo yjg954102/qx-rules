@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,ccr.yxdown.com,reject
+DOMAIN-SUFFIX,gg.yxdown.com,reject
+DOMAIN-SUFFIX,ggr.yxdown.com,reject
+host-suffix,ccr.yxdown.com,reject
+host-suffix,gg.yxdown.com,reject
+host-suffix,ggr.yxdown.com,reject
