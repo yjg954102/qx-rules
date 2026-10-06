@@ -1,0 +1,6 @@
+DOMAIN,ad.partner.gifshow.com,reject
+DOMAIN,gdfp.gifshow.com,reject
+DOMAIN,log-sdk.gifshow.com,reject
+DOMAIN,ulogjs.gifshow.com,reject
+DOMAIN,ulog-sdk.gifshow.com,reject
+host-suffix,cm.ad.gifshow.com,reject
