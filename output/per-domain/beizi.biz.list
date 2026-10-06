@@ -1,0 +1,4 @@
+DOMAIN,api-htp.beizi.biz,reject
+DOMAIN,beizi.biz,reject
+DOMAIN,sdk.beizi.biz,reject
+host-suffix,api-htp.beizi.biz,reject
