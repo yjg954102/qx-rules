@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,cdn1.smartadserver.com,reject
+DOMAIN-SUFFIX,smartadserver.com,reject
+DOMAIN-SUFFIX,ww251.smartadserver.com,reject
+DOMAIN-SUFFIX,ww881.smartadserver.com,reject
+DOMAIN-SUFFIX,www6.smartadserver.com,reject
+host-suffix,cdn1.smartadserver.com,reject
+host-suffix,smartadserver.com,reject
+host-suffix,ww251.smartadserver.com,reject
+host-suffix,ww881.smartadserver.com,reject
+host-suffix,www6.smartadserver.com,reject
