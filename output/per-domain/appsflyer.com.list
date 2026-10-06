@@ -1,0 +1,3 @@
+DOMAIN,impression.appsflyer.com,reject
+DOMAIN-SUFFIX,appsflyer.com,reject
+host-suffix,appsflyer.com,reject
