@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,adm.icast.cn,reject
+DOMAIN-SUFFIX,cast.ra.icast.cn,reject
+DOMAIN-SUFFIX,icast.cn,reject
+DOMAIN-SUFFIX,js.icast.cn,reject
+DOMAIN-SUFFIX,kw.ra.icast.cn,reject
+DOMAIN-SUFFIX,labs.ra.icast.cn,reject
+DOMAIN-SUFFIX,post.ra.icast.cn,reject
+DOMAIN-SUFFIX,pre.ra.icast.cn,reject
+DOMAIN-SUFFIX,pv.ra.icast.cn,reject
+DOMAIN-SUFFIX,res.icast.cn,reject
+DOMAIN-SUFFIX,rm.ra.icast.cn,reject
+DOMAIN-SUFFIX,rmtx.ra.icast.cn,reject
