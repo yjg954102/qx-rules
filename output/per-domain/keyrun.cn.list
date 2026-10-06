@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,c1.keyrun.cn,reject
+DOMAIN-SUFFIX,keyrun.cn,reject
+host-suffix,c1.keyrun.cn,reject
+host-suffix,keyrun.cn,reject
