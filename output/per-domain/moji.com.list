@@ -1,0 +1,10 @@
+DOMAIN,ad.api.moji.com,reject
+DOMAIN,adlaunch.moji.com,reject
+DOMAIN,v1.log.moji.com,reject
+DOMAIN-SUFFIX,fds.api.moji.com,reject
+host,ad.api.moji.com,reject
+host,adlaunch.moji.com,reject
+host,v1.log.moji.com,reject
+host-KEYWORD,me.api.moji.com,reject
+host-suffix,cdn.moji.com,reject
+host-suffix,fds.api.moji.com,reject
