@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,guess.h.qhimg.com,reject
+DOMAIN-SUFFIX,jspassport.ssl.qhimg.com,reject
+DOMAIN-SUFFIX,top.h.qhimg.com,reject
+host-suffix,guess.h.qhimg.com,reject
+host-suffix,jspassport.ssl.qhimg.com,reject
+host-suffix,top.h.qhimg.com,reject
