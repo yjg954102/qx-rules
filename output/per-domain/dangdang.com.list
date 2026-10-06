@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,a.dangdang.com,reject
+DOMAIN-SUFFIX,schprompt.dangdang.com,reject
+DOMAIN-SUFFIX,t.dangdang.com,reject
+host-suffix,a.dangdang.com,reject
+host-suffix,schprompt.dangdang.com,reject
+host-suffix,t.dangdang.com,reject
