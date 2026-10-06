@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,1.hao123.com,reject
+DOMAIN-SUFFIX,as1.m.hao123.com,reject
+DOMAIN-SUFFIX,mini.hao123.com,reject
+host-suffix,1.hao123.com,reject
+host-suffix,mini.hao123.com,reject
