@@ -1,0 +1,8 @@
+DOMAIN,a.wkanx.com,reject
+DOMAIN-SUFFIX,c.wkanx.com,reject
+DOMAIN-SUFFIX,c1.wkanx.com,reject
+host,a.wkanx.com,reject
+host-keyword,a.wkanx.com,reject
+host-keyword,c.wkanx.com,reject
+host-keyword,c1.wkanx.com,reject
+host-keyword,static.wkanx.com,reject
