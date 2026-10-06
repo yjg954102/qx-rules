@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,mathtag.com,reject
+DOMAIN-SUFFIX,pixel.mathtag.com,reject
+DOMAIN-SUFFIX,sync.mathtag.com,reject
+host-suffix,mathtag.com,reject
+host-suffix,pixel.mathtag.com,reject
+host-suffix,sync.mathtag.com,reject
