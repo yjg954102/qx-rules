@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,config.mobisage.cn,reject
+DOMAIN-SUFFIX,mobisage.cn,reject
+host-suffix,config.mobisage.cn,reject
+host-suffix,mobisage.cn,reject
