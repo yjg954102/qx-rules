@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,hs.qhupdate.com,reject
+DOMAIN-SUFFIX,res.qhupdate.com,reject
+DOMAIN-SUFFIX,s.qhupdate.com,reject
+host-suffix,hs.qhupdate.com,reject
+host-suffix,res.qhupdate.com,reject
+host-suffix,s.qhupdate.com,reject
