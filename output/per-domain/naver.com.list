@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,ad.naver.com,reject
+DOMAIN-SUFFIX,adcr.naver.com,reject
+DOMAIN-SUFFIX,adcreative.naver.com,reject
+host-suffix,ad.naver.com,reject
+host-suffix,adcr.naver.com,reject
+host-suffix,adcreative.naver.com,reject
