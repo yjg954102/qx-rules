@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,res-ga.smzdm.com,reject
+host,analytics-api.smzdm.com,reject
+host-suffix,res-ga.smzdm.com,reject
