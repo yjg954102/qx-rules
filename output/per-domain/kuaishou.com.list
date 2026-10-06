@@ -1,0 +1,7 @@
+DOMAIN,api.e.kuaishou.com,reject
+DOMAIN,frontend-perf-service.e.kuaishou.com,reject
+DOMAIN,open.e.kuaishou.com,reject
+DOMAIN,promotion-partner.kuaishou.com,reject
+DOMAIN-SUFFIX,e.kuaishou.com,reject
+host-suffix,cm.downloader.commercial.kuaishou.com,reject
+host-suffix,e.kuaishou.com,reject
