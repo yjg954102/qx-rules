@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,c0.ifengimg.com,reject
+DOMAIN-SUFFIX,c1.ifengimg.com,reject
+host-suffix,c0.ifengimg.com,reject
+host-suffix,c1.ifengimg.com,reject
