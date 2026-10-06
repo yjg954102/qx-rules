@@ -1,0 +1,16 @@
+DOMAIN-SUFFIX,a.xywy.com,reject
+DOMAIN-SUFFIX,bdmjs.xywy.com,reject
+DOMAIN-SUFFIX,bdmm.xywy.com,reject
+DOMAIN-SUFFIX,gg.xywy.com,reject
+DOMAIN-SUFFIX,hao123.xywy.com,reject
+DOMAIN-SUFFIX,page.xywy.com,reject
+DOMAIN-SUFFIX,stat-y.xywy.com,reject
+DOMAIN-SUFFIX,stat-z.xywy.com,reject
+host-suffix,a.xywy.com,reject
+host-suffix,bdmjs.xywy.com,reject
+host-suffix,bdmm.xywy.com,reject
+host-suffix,gg.xywy.com,reject
+host-suffix,hao123.xywy.com,reject
+host-suffix,page.xywy.com,reject
+host-suffix,stat-y.xywy.com,reject
+host-suffix,stat-z.xywy.com,reject
