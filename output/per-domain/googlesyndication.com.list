@@ -1,0 +1,13 @@
+DOMAIN,afs.googlesyndication.com,reject
+DOMAIN,pagead2.googlesyndication.com,reject
+DOMAIN,tpc.googlesyndication.com,reject
+DOMAIN-SUFFIX,afs.googlesyndication.com,reject
+DOMAIN-SUFFIX,googlesyndication.com,reject
+DOMAIN-SUFFIX,pagead2.googlesyndication.com,reject
+DOMAIN-SUFFIX,tpc.googlesyndication.com,reject
+DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com,reject
+host-suffix,afs.googlesyndication.com,reject
+host-suffix,googlesyndication.com,reject
+host-suffix,pagead2.googlesyndication.com,reject
+host-suffix,tpc.googlesyndication.com,reject
+host-suffix,video-ad-stats.googlesyndication.com,reject
