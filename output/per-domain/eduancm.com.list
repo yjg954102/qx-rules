@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,app.eduancm.com,reject
+DOMAIN-SUFFIX,dl.eduancm.com,reject
+DOMAIN-SUFFIX,eduancm.com,reject
+DOMAIN-SUFFIX,pic.eduancm.com,reject
+DOMAIN-SUFFIX,test.eduancm.com,reject
