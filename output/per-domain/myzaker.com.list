@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,adm.myzaker.com,reject
+DOMAIN-SUFFIX,ggs.myzaker.com,reject
+DOMAIN-SUFFIX,push-android.myzaker.com,reject
+host-suffix,adm.myzaker.com,reject
+host-suffix,ggs.myzaker.com,reject
+host-suffix,push-android.myzaker.com,reject
