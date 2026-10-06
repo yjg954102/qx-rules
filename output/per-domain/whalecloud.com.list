@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,feedback.whalecloud.com,reject
+DOMAIN-SUFFIX,whalecloud.com,reject
+host-suffix,feedback.whalecloud.com,reject
+host-suffix,whalecloud.com,reject
