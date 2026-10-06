@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,crasheye.cn,reject
+DOMAIN-SUFFIX,rp.crasheye.cn,reject
+host-suffix,rp.crasheye.cn,reject
