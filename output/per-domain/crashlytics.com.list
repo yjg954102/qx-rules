@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,crashlytics.com,reject
+DOMAIN-SUFFIX,e.crashlytics.com,reject
+DOMAIN-SUFFIX,setting.crashlytics.com,reject
+DOMAIN-SUFFIX,settings.crashlytics.com,reject
+host-suffix,crashlytics.com,reject
+host-suffix,e.crashlytics.com,reject
+host-suffix,setting.crashlytics.com,reject
+host-suffix,settings.crashlytics.com,reject
