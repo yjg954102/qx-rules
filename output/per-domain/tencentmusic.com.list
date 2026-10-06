@@ -1,0 +1,12 @@
+DOMAIN,ad.tencentmusic.com,reject
+DOMAIN,adcdn.tencentmusic.com,reject
+DOMAIN,adclick.tencentmusic.com,reject
+DOMAIN,adexpo.tencentmusic.com,reject
+DOMAIN,adstats.tencentmusic.com,reject
+DOMAIN,report.tencentmusic.com,reject
+host,ad.tencentmusic.com,reject
+host,adcdn.tencentmusic.com,reject
+host,adcdn6.tencentmusic.com,reject
+host,adclick.tencentmusic.com,reject
+host,adexpo.tencentmusic.com,reject
+host,adstats.tencentmusic.com,reject
