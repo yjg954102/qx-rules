@@ -1,0 +1,17 @@
+DOMAIN-SUFFIX,brandshow.58.com,reject
+DOMAIN-SUFFIX,jing.58.com,reject
+DOMAIN-SUFFIX,jump.luna.58.com,reject
+DOMAIN-SUFFIX,jumpluna.58.com,reject
+DOMAIN-SUFFIX,news.58.com,reject
+DOMAIN-SUFFIX,zzpush.58.com,reject
+host,track.58.com,reject
+host,tracklog.58.com,reject
+host-suffix,adshow.58.com,reject
+host-suffix,brandshow.58.com,reject
+host-suffix,jing.58.com,reject
+host-suffix,jump.luna.58.com,reject
+host-suffix,jumpluna.58.com,reject
+host-suffix,news.58.com,reject
+host-suffix,track.58.com,reject
+host-suffix,tracklog.58.com,reject
+host-suffix,zzpush.58.com,reject
