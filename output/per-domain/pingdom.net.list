@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,pingdom.net,reject
+DOMAIN-SUFFIX,rum-collector.pingdom.net,reject
+DOMAIN-SUFFIX,rum-static.pingdom.net,reject
