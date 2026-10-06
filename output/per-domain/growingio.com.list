@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,api.growingio.com,reject
+DOMAIN-SUFFIX,apihk.growingio.com,reject
+DOMAIN-SUFFIX,crashapi.growingio.com,reject
+DOMAIN-SUFFIX,growingio.com,reject
+DOMAIN-SUFFIX,t.growingio.com,reject
+DOMAIN-SUFFIX,tags.growingio.com,reject
+host-suffix,api.growingio.com,reject
+host-suffix,apihk.growingio.com,reject
+host-suffix,crashapi.growingio.com,reject
+host-suffix,growingio.com,reject
+host-suffix,t.growingio.com,reject
+host-suffix,tags.growingio.com,reject
