@@ -1,0 +1,7 @@
+DOMAIN-SUFFIX,b.bdstatic.com,reject
+DOMAIN-SUFFIX,mipcache.bdstatic.com,reject
+DOMAIN-SUFFIX,su.bdstatic.com,reject
+DOMAIN-SUFFIX,zz.bdstatic.com,reject
+host-suffix,mipcache.bdstatic.com,reject
+host-suffix,su.bdstatic.com,reject
+host-suffix,zz.bdstatic.com,reject
