@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,as.casalemedia.com,reject
+DOMAIN-SUFFIX,casalemedia.com,reject
+DOMAIN-SUFFIX,ssum.casalemedia.com,reject
+host-suffix,as.casalemedia.com,reject
+host-suffix,casalemedia.com,reject
+host-suffix,ssum.casalemedia.com,reject
