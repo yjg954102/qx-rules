@@ -1,0 +1,15 @@
+DOMAIN-SUFFIX,cas.criteo.com,reject
+DOMAIN-SUFFIX,criteo.com,reject
+DOMAIN-SUFFIX,dis.criteo.com,reject
+DOMAIN-SUFFIX,dis.us.criteo.com,reject
+DOMAIN-SUFFIX,gum.criteo.com,reject
+DOMAIN-SUFFIX,rtax.criteo.com,reject
+DOMAIN-SUFFIX,widget.criteo.com,reject
+host-suffix,bidder.criteo.com,reject
+host-suffix,cas.criteo.com,reject
+host-suffix,criteo.com,reject
+host-suffix,dis.criteo.com,reject
+host-suffix,dis.us.criteo.com,reject
+host-suffix,gum.criteo.com,reject
+host-suffix,rtax.criteo.com,reject
+host-suffix,widget.criteo.com,reject
