@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,ad.zhidian3g.cn,reject
+DOMAIN-SUFFIX,soft.zhidian3g.cn,reject
+DOMAIN-SUFFIX,zhidian3g.cn,reject
+host-suffix,ad.zhidian3g.cn,reject
+host-suffix,soft.zhidian3g.cn,reject
+host-suffix,zhidian3g.cn,reject
