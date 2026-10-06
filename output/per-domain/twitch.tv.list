@@ -1,0 +1,5 @@
+DOMAIN,edge.ads.twitch.tv,reject
+DOMAIN-SUFFIX,fan.twitch.tv,reject
+DOMAIN-SUFFIX,spade.twitch.tv,reject
+host-suffix,fan.twitch.tv,reject
+host-suffix,spade.twitch.tv,reject
