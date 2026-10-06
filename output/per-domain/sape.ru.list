@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,cdn-rtb.sape.ru,reject
+DOMAIN-SUFFIX,dispenser-rtb.sape.ru,reject
+DOMAIN-SUFFIX,sape.ru,reject
+DOMAIN-SUFFIX,ssp-rtb.sape.ru,reject
+host-suffix,cdn-rtb.sape.ru,reject
+host-suffix,dispenser-rtb.sape.ru,reject
+host-suffix,sape.ru,reject
+host-suffix,ssp-rtb.sape.ru,reject
