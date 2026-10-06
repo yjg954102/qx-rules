@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,cap.touclick.com,reject
+DOMAIN-SUFFIX,touclick.com,reject
+DOMAIN-SUFFIX,ver.touclick.com,reject
+host-suffix,cap.touclick.com,reject
+host-suffix,touclick.com,reject
+host-suffix,ver.touclick.com,reject
