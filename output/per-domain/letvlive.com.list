@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,1.letvlive.com,reject
+DOMAIN-SUFFIX,2.letvlive.com,reject
+host-suffix,1.letvlive.com,reject
+host-suffix,2.letvlive.com,reject
