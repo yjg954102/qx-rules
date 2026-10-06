@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,dc.meitustat.com,reject
+DOMAIN-SUFFIX,mdc.meitustat.com,reject
+DOMAIN-SUFFIX,rabbit.meitustat.com,reject
+host-suffix,dc.meitustat.com,reject
+host-suffix,mdc.meitustat.com,reject
+host-suffix,rabbit.meitustat.com,reject
