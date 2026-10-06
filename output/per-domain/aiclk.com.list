@@ -1,0 +1,8 @@
+DOMAIN,cdn.aiclk.com,reject
+DOMAIN,cpc-service-square.aiclk.com,reject
+DOMAIN,logrcv.aiclk.com,reject
+DOMAIN,oss.cdn.aiclk.com,reject
+DOMAIN,tracelog-debug.aiclk.com,reject
+DOMAIN,update0.aiclk.com,reject
+DOMAIN,usr-api.aiclk.com,reject
+host-suffix,aiclk.com,reject
