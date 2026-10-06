@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,client.stats.yinyuetai.com,reject
+DOMAIN-SUFFIX,shop.admin.yinyuetai.com,reject
+DOMAIN-SUFFIX,shop.yinyuetai.com,reject
+DOMAIN-SUFFIX,statisticsv2.yinyuetai.com,reject
+DOMAIN-SUFFIX,t.collect.yinyuetai.com,reject
+host-suffix,client.stats.yinyuetai.com,reject
+host-suffix,shop.admin.yinyuetai.com,reject
+host-suffix,shop.yinyuetai.com,reject
+host-suffix,statisticsv2.yinyuetai.com,reject
+host-suffix,t.collect.yinyuetai.com,reject
