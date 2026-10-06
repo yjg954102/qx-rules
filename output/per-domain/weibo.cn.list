@@ -1,0 +1,7 @@
+DOMAIN,gw5.push.mcp.weibo.cn,reject
+DOMAIN,gw6.push.mcp.weibo.cn,reject
+DOMAIN,huodong.weibo.cn,reject
+DOMAIN-SUFFIX,game.weibo.cn,reject
+DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn,reject
+DOMAIN-SUFFIX,gw6.push.mcp.weibo.cn,reject
+DOMAIN-SUFFIX,promote.biz.weibo.cn,reject
