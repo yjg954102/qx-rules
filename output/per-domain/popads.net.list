@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,c1.popads.net,reject
+DOMAIN-SUFFIX,c2.popads.net,reject
+DOMAIN-SUFFIX,popads.net,reject
+DOMAIN-SUFFIX,serve.popads.net,reject
+host-suffix,c1.popads.net,reject
+host-suffix,c2.popads.net,reject
+host-suffix,popads.net,reject
+host-suffix,serve.popads.net,reject
