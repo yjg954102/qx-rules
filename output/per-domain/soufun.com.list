@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,click1n.soufun.com,reject
+DOMAIN-SUFFIX,countubn.light.soufun.com,reject
+host-suffix,click1n.soufun.com,reject
+host-suffix,countubn.light.soufun.com,reject
