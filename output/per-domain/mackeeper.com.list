@@ -1,0 +1,7 @@
+DOMAIN-SUFFIX,download.mackeeper.com,reject
+DOMAIN-SUFFIX,event.mackeeper.com,reject
+DOMAIN-SUFFIX,mackeeperapp.mackeeper.com,reject
+host-suffix,download.mackeeper.com,reject
+host-suffix,event.mackeeper.com,reject
+host-suffix,mackeeper.com,reject
+host-suffix,mackeeperapp.mackeeper.com,reject
