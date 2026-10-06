@@ -1,0 +1,5 @@
+DOMAIN,d.applvn.com,reject
+DOMAIN,ms.applvn.com,reject
+DOMAIN,ms4.applvn.com,reject
+DOMAIN,rt.applvn.com,reject
+host-suffix,applvn.com,reject
