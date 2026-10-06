@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,app.waps.cn,reject
+DOMAIN-SUFFIX,waps.cn,reject
+host-suffix,app.waps.cn,reject
+host-suffix,waps.cn,reject
