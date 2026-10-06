@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,bolt.jebe.renren.com,reject
+DOMAIN-SUFFIX,cupid.jebe.renren.com,reject
+DOMAIN-SUFFIX,ebp.renren.com,reject
+DOMAIN-SUFFIX,jebe.renren.com,reject
+DOMAIN-SUFFIX,shaft.jebe.renren.com,reject
+DOMAIN-SUFFIX,xray.jebe.renren.com,reject
+host-suffix,bolt.jebe.renren.com,reject
+host-suffix,cupid.jebe.renren.com,reject
+host-suffix,ebp.renren.com,reject
+host-suffix,jebe.renren.com,reject
+host-suffix,shaft.jebe.renren.com,reject
+host-suffix,xray.jebe.renren.com,reject
