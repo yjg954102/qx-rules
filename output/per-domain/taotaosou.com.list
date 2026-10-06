@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,re.taotaosou.com,reject
+DOMAIN-SUFFIX,show.kc.taotaosou.com,reject
+host-suffix,re.taotaosou.com,reject
+host-suffix,show.kc.taotaosou.com,reject
