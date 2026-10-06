@@ -1,0 +1,8 @@
+DOMAIN,ads-img-al.xhscdn.com,reject
+DOMAIN,ads-img-qc.xhscdn.com,reject
+DOMAIN,ads-video-al.xhscdn.com,reject
+DOMAIN,ads-video-qc.xhscdn.com,reject
+host,ads-img-al.xhscdn.com,reject
+host,ads-img-qc.xhscdn.com,reject
+host,ads-video-al.xhscdn.com,reject
+host,ads-video-qc.xhscdn.com,reject
