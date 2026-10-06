@@ -1,0 +1,3 @@
+DOMAIN,adcolony.com,reject
+DOMAIN-SUFFIX,adcolony.com,reject
+host-suffix,adcolony.com,reject
