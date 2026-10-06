@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,bayimob.com,reject
+DOMAIN-SUFFIX,hdggcdn.bayimob.com,reject
+DOMAIN-SUFFIX,interaction.bayimob.com,reject
+host-suffix,bayimob.com,reject
+host-suffix,hdggcdn.bayimob.com,reject
+host-suffix,interaction.bayimob.com,reject
