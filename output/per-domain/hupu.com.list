@@ -1,0 +1,10 @@
+DOMAIN,adx.hupu.com,reject
+DOMAIN,adx-api.hupu.com,reject
+DOMAIN,goblin.hupu.com,reject
+DOMAIN-SUFFIX,cc.dace.hupu.com,reject
+DOMAIN-SUFFIX,orz.hupu.com,reject
+host-suffix,adx.hupu.com,reject
+host-suffix,adx-api.hupu.com,reject
+host-suffix,cc.dace.hupu.com,reject
+host-suffix,goblin.hupu.com,reject
+host-suffix,orz.hupu.com,reject
