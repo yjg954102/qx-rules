@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,edge.sharethis.com,reject
+DOMAIN-SUFFIX,seg.sharethis.com,reject
+DOMAIN-SUFFIX,sharethis.com,reject
+DOMAIN-SUFFIX,w.sharethis.com,reject
+DOMAIN-SUFFIX,wd-edge.sharethis.com,reject
