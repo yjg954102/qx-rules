@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,vi1.ku6img.net,reject
+DOMAIN-SUFFIX,vi2.ku6img.net,reject
+host-suffix,vi1.ku6img.net,reject
+host-suffix,vi2.ku6img.net,reject
