@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,api.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,c.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,dvx-android.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,e.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,r.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,r.ow.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,s.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,scc.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,sd.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,sdl.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,sm.0.0.0.0.cn,reject
+DOMAIN-SUFFIX,swx.0.0.0.0.cn,reject
