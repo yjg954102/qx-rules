@@ -1,0 +1,6 @@
+DOMAIN,adv-adlog.variflight.com,reject
+DOMAIN,adv-ads.variflight.com,reject
+DOMAIN,app-ad.variflight.com,reject
+host,adv-adlog.variflight.com,reject
+host,adv-ads.variflight.com,reject
+host,app-ad.variflight.com,reject
