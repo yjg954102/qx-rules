@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,client.tenddata.com,reject
+DOMAIN-SUFFIX,tenddata.com,reject
+host-suffix,tenddata.com,reject
