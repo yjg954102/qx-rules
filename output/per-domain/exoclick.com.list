@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,exoclick.com,reject
+DOMAIN-SUFFIX,main.exoclick.com,reject
+DOMAIN-SUFFIX,syndication.exoclick.com,reject
+host-suffix,main.exoclick.com,reject
+host-suffix,syndication.exoclick.com,reject
