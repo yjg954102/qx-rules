@@ -1,0 +1,6 @@
+DOMAIN,cpro.baidustatic.com,reject
+DOMAIN-SUFFIX,besc.baidustatic.com,reject
+DOMAIN-SUFFIX,cpro.baidustatic.com,reject
+DOMAIN-SUFFIX,dup.baidustatic.com,reject
+DOMAIN-SUFFIX,ubmcvideo.baidustatic.com,reject
+host-suffix,baidustatic.com,reject
