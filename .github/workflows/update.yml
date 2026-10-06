@@ -26,6 +26,10 @@ jobs:
         shell: pwsh
         run: ./scripts/merge.ps1 -SourceMode remote -RepoRoot .
 
+      - name: 生成带 APP/域名注释的版本
+        shell: pwsh
+        run: ./scripts/annotate.ps1 -RepoRoot .
+
       - name: 提交变更
         run: |
           set -e
