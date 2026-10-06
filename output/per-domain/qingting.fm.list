@@ -1,0 +1,11 @@
+DOMAIN,ad.qingting.fm,reject
+DOMAIN,ad-cdn.qingting.fm,reject
+DOMAIN,adlaunch.qingting.fm,reject
+DOMAIN-SUFFIX,admgr.qingting.fm,reject
+DOMAIN-SUFFIX,dload.qd.qingting.fm,reject
+DOMAIN-SUFFIX,logger.qingting.fm,reject
+DOMAIN-SUFFIX,s.qd.qingting.fm,reject
+DOMAIN-SUFFIX,s.qtad.qingting.fm,reject
+host,ad.qingting.fm,reject
+host,ad-cdn.qingting.fm,reject
+host,adlaunch.qingting.fm,reject
