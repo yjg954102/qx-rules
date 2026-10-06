@@ -1,0 +1,7 @@
+DOMAIN,api-access.pangolin-sdk-toutiao.com,reject
+DOMAIN,gromore.pangolin-sdk-toutiao.com,reject
+DOMAIN,log-api.pangolin-sdk-toutiao.com,reject
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,reject
+host,novel.pangolin-sdk-toutiao.com,reject
+host-keyword,api-access.pangolin-sdk-toutiao.com,reject
+host-keyword,log-api.pangolin-sdk-toutiao.com,reject
