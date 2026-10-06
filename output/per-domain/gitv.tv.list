@@ -1,0 +1,12 @@
+DOMAIN,liveats-vod.video.ptqy.gitv.tv,reject
+DOMAIN,policy.video.ptqy.gitv.tv,reject
+DOMAIN,sdk-cache.video.ptqy.gitv.tv,reject
+DOMAIN,t7z.cupid.ptqy.gitv.tv,reject
+DOMAIN-SUFFIX,mixer.cupid.ptqy.gitv.tv,reject
+DOMAIN-SUFFIX,msg.ptqy.gitv.tv,reject
+DOMAIN-SUFFIX,msga.ptqy.gitv.tv,reject
+DOMAIN-SUFFIX,nl.rcd.ptqy.gitv.tv,reject
+DOMAIN-SUFFIX,pb.bi.gitv.tv,reject
+DOMAIN-SUFFIX,store.ptqy.gitv.tv,reject
+DOMAIN-SUFFIX,t7z.cupid.ptqy.gitv.tv,reject
+host,t7z.cupid.ptqy.gitv.tv,reject
