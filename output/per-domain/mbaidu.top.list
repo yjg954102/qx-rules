@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,jb.mbaidu.top,reject
+DOMAIN-SUFFIX,js.mbaidu.top,reject
+host-suffix,jb.mbaidu.top,reject
+host-suffix,js.mbaidu.top,reject
