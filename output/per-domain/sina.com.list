@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,atm.sina.com,reject
+DOMAIN-SUFFIX,oascentral.sina.com,reject
+DOMAIN-SUFFIX,pfpip.sina.com,reject
+host-suffix,oascentral.sina.com,reject
+host-suffix,pfpip.sina.com,reject
