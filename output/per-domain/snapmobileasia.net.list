@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,selfie.snapmobileasia.net,reject
+DOMAIN-SUFFIX,snapmobileasia.net,reject
+host-suffix,selfie.snapmobileasia.net,reject
+host-suffix,snapmobileasia.net,reject
