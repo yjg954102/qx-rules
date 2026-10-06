@@ -1,0 +1,14 @@
+DOMAIN-SUFFIX,ag-gb.marketgid.com,reject
+DOMAIN-SUFFIX,cdn.marketgid.com,reject
+DOMAIN-SUFFIX,counter.marketgid.com,reject
+DOMAIN-SUFFIX,imgg.marketgid.com,reject
+DOMAIN-SUFFIX,jsc.marketgid.com,reject
+DOMAIN-SUFFIX,marketgid.com,reject
+DOMAIN-SUFFIX,wsp.marketgid.com,reject
+host-suffix,ag-gb.marketgid.com,reject
+host-suffix,cdn.marketgid.com,reject
+host-suffix,counter.marketgid.com,reject
+host-suffix,imgg.marketgid.com,reject
+host-suffix,jsc.marketgid.com,reject
+host-suffix,marketgid.com,reject
+host-suffix,wsp.marketgid.com,reject
