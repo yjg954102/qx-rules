@@ -1,0 +1,5 @@
+DOMAIN,roi.soulapp.cn,reject
+host,ad-r.soulapp.cn,reject
+host,ad-reward.soulapp.cn,reject
+host,soul-ad.soulapp.cn,reject
+host-suffix,cdn.soulapp.cn,reject
