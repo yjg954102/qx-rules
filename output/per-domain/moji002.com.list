@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,cdn.moji002.com,reject
+DOMAIN-SUFFIX,cdn2.moji002.com,reject
+host-suffix,cdn.moji002.com,reject
+host-suffix,cdn2.moji002.com,reject
