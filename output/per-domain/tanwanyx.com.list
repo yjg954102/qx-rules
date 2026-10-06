@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,b.code.tanwanyx.com,reject
+DOMAIN-SUFFIX,hv.code.tanwanyx.com,reject
+DOMAIN-SUFFIX,tanwanyx.com,reject
+DOMAIN-SUFFIX,xd.code.tanwanyx.com,reject
+host-suffix,b.code.tanwanyx.com,reject
+host-suffix,hv.code.tanwanyx.com,reject
+host-suffix,tanwanyx.com,reject
+host-suffix,xd.code.tanwanyx.com,reject
