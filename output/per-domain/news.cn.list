@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,tmisc.home.news.cn,reject
+DOMAIN-SUFFIX,webd.home.news.cn,reject
+host-suffix,tmisc.home.news.cn,reject
+host-suffix,webd.home.news.cn,reject
