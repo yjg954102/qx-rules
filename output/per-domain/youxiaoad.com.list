@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,api.youxiaoad.com,reject
+DOMAIN-SUFFIX,source.youxiaoad.com,reject
+DOMAIN-SUFFIX,ssp.youxiaoad.com,reject
+DOMAIN-SUFFIX,sspapi.youxiaoad.com,reject
+DOMAIN-SUFFIX,youxiaoad.com,reject
+host-suffix,api.youxiaoad.com,reject
+host-suffix,source.youxiaoad.com,reject
+host-suffix,ssp.youxiaoad.com,reject
+host-suffix,sspapi.youxiaoad.com,reject
+host-suffix,youxiaoad.com,reject
