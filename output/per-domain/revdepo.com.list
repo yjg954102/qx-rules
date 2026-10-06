@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,cdn1.srv.revdepo.com,reject
+DOMAIN-SUFFIX,revdepo.com,reject
+DOMAIN-SUFFIX,srv.revdepo.com,reject
+DOMAIN-SUFFIX,tags4.revdepo.com,reject
