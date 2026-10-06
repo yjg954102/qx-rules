@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,adimages.sina.com.hk,reject
+DOMAIN-SUFFIX,oascentral.sina.com.hk,reject
+host-suffix,adimages.sina.com.hk,reject
+host-suffix,oascentral.sina.com.hk,reject
