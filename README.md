@@ -109,49 +109,68 @@ https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/QX-AllInOn
 
 ---
 
-## 二·五、带 APP / 域名注释的版本
+## 二·五、让 QX 里直接看到 APP / 域名
 
-仓库提供两个「每条规则都标注了 APP 或域名」的文件，方便在 QX 里直接看归属：
+### ⚠️ 首先：QX 不支持行尾注释
 
-| 文件 | 能否作为**订阅**引用 | 说明 |
-| :-- | :-- | :-- |
-| `output/QX-AllInOne-Rewrite-Annotated.conf` | ✅ **可以**（放 `[rewrite_remote]`） | 按 APP 分组，组标题写明 APP 名与域名，每行末尾 `;域名` |
-| `output/QX-AllInOne-Filter-Annotated.conf` | ❌ **不可以** | 只能作【本地分流规则】粘贴 |
-
-### 为什么分流规则不能带注释放进订阅
-
-QX 的两种远程资源格式不同：
-
-- **重写**：`<URL正则> url <动作> [参数]` —— 本身就是「多字段、末字段可变」的格式，
-  官方远程重写样例（`sample-import-rewrite.snippet`）里同样带 `;` 注释行，所以行尾注释可行。
-- **分流**：`<type>,<value>,<policy>` —— **固定三元组，没有注释字段**。
-  加第四个字段会被判 `INVALID LINE`（这就是最初报错的原因）。
-
-所以分流规则只能二选一：**订阅用纯规则版**，注释版用于本地粘贴查阅。
-
-### 重写注释版订阅地址
+实测确认，下面这种写法会被 QX 判为 **Invalid Line**：
 
 ```
-https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/QX-AllInOne-Rewrite-Annotated.conf
+^https:\/\/api\.zhihu\.com\/... url reject-dict  ;api.zhihu.com
 ```
 
-效果（QX 里点开规则就能看到 APP 名和域名）：
+原因：QX 把 `;api.zhihu.com` 当成了 `url` 动作的**参数**（重写格式是 `<正则> url <动作> [参数]`），
+而不是注释。**QX 只支持整行注释**（`;` / `#` / `//` 开头的整行）。
+
+因此本仓库的注释版一律把注释放成**独立的一行**：
 
 ```
-;==========================================================
-;【爱奇艺】17 条规则 | act.vip.iqiyi.com, cards.iqiyi.com, access.if.iqiyi.com
-;==========================================================
-^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\? url reject-dict  ;act.vip.iqiyi.com
+;【知乎】43 条 | api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com
+;   api.zhihu.com
+^https:\/\/api\.zhihu\.com\/(answers|articles)\/v2\/\d+ url script-response-body https://.../zhihu.js
 ```
 
-> 若引用后报错，改回纯规则版即可，两者内容一致（注释版按 APP 分组去重，会多出几条跨 APP 重复规则）。
+### 推荐方案：按 APP 拆分成独立订阅（可见名字 + 自动更新）
 
-### 分流注释版怎么用
+QX 的「规则资源」条目显示的是 **资源标签（tag）**。所以把规则**按 APP 拆成多个文件**，
+订阅时把 tag 填成 APP 名，QX 界面里就直接显示 APP 名字，而且**照样自动更新**。
 
-QX → 风车 → 分流 → **分流规则**（本地）→ 右上角 `+` → 粘贴
-`output/QX-AllInOne-Filter-Annotated.conf` 的内容。
+```
+output/per-app/<APP>.conf      # 558 个 APP，每个一个文件
+output/per-app-订阅清单.txt     # 已按规则数排好序，含「标签 + 路径」，直接复制
+```
 
-> 代价：本地规则**不会自动更新**。若更看重自动更新，就继续用订阅版纯规则，把注释版当查询手册用。
+用法：QX → 重写 → 规则资源 → 右上角 `+`
+
+- **资源标签**：填 APP 名，例如 `知乎`
+- **资源路径**：`https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/知乎.conf`
+
+> 文件名规则：APP 名里的 `★` 会变成 `unlock-`，其他特殊字符替换为 `_`。
+> 具体文件名请以 `per-app-订阅清单.txt` 里给出的路径为准。
+
+这样每个 APP 可以**单独启用/停用**，将来只想保留某几个 App 也很方便。
+
+### 分流同理：按主域名拆分
+
+```
+output/per-domain/<域名>.list      # 721 个域名（规则数 ≥3 的），每个一个文件
+output/per-domain-订阅清单.txt
+```
+
+用法：QX → 分流 → 规则资源 → `+`，标签填域名（如 `baidu.com`）。
+
+> 分流规则是 `<type>,<value>,<policy>` 固定三元组，**没有任何可选字段**，
+> 因此分流**无法**在文件里带注释，只能靠「按域名拆分 + tag 显示」来达到同样效果。
+
+### 其他文件
+
+| 文件 | 说明 |
+| :-- | :-- |
+| `output/QX-AllInOne-Rewrite-Annotated.conf` | 重写合集，按 APP 分组、规则上方标注域名。可作 `rewrite_remote` 订阅 |
+| `output/QX-AllInOne-Filter-Annotated.conf` | 分流合集，注释独立成行。⚠️ **仅供本地粘贴**，不能作 `filter_remote` |
+
+分流注释版本地用法：QX → 风车 → 分流 → **分流规则**（本地）→ `+` → 粘贴内容。
+代价是本地规则**不会自动更新**。
 
 ---
 
