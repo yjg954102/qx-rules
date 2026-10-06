@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,api.union.vip.com,reject
+DOMAIN-SUFFIX,n-st.vip.com,reject
+host-suffix,api.union.vip.com,reject
+host-suffix,n-st.vip.com,reject
