@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,afp.pplive.com,reject
+DOMAIN-SUFFIX,gas.data.pplive.com,reject
+DOMAIN-SUFFIX,plt.data.pplive.com,reject
+DOMAIN-SUFFIX,web.data.pplive.com,reject
+host-suffix,afp.pplive.com,reject
+host-suffix,gas.data.pplive.com,reject
+host-suffix,plt.data.pplive.com,reject
+host-suffix,web.data.pplive.com,reject
