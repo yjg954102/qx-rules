@@ -1,0 +1,11 @@
+DOMAIN-SUFFIX,bshare.optimix.asia,reject
+DOMAIN-SUFFIX,bx.optimix.asia,reject
+DOMAIN-SUFFIX,bx01.optimix.asia,reject
+DOMAIN-SUFFIX,c03.optimix.asia,reject
+DOMAIN-SUFFIX,optimix.asia,reject
+DOMAIN-SUFFIX,s03.optimix.asia,reject
+host-suffix,bshare.optimix.asia,reject
+host-suffix,bx.optimix.asia,reject
+host-suffix,bx01.optimix.asia,reject
+host-suffix,c03.optimix.asia,reject
+host-suffix,s03.optimix.asia,reject
