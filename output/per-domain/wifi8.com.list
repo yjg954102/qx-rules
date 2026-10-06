@@ -1,0 +1,5 @@
+DOMAIN,adfile.wifi8.com,reject
+DOMAIN,adnew.wifi8.com,reject
+DOMAIN-SUFFIX,cmsapi.wifi8.com,reject
+host,adfile.wifi8.com,reject
+host,adnew.wifi8.com,reject
