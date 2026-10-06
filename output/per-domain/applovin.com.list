@@ -1,0 +1,14 @@
+DOMAIN,applovin.com,reject
+DOMAIN,d.applovin.com,reject
+DOMAIN,ms.applovin.com,reject
+DOMAIN,ms4.applovin.com,reject
+DOMAIN,prod-mediate-events.applovin.com,reject
+DOMAIN,res1.applovin.com,reject
+DOMAIN,rt.applovin.com,reject
+DOMAIN,t.applovin.com,reject
+DOMAIN-SUFFIX,d.applovin.com,reject
+DOMAIN-SUFFIX,img.applovin.com,reject
+DOMAIN-SUFFIX,pdn.applovin.com,reject
+DOMAIN-SUFFIX,rt.applovin.com,reject
+DOMAIN-SUFFIX,vid.applovin.com,reject
+host-suffix,applovin.com,reject
