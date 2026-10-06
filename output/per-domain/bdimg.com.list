@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,ecma.bdimg.com,reject
+DOMAIN-SUFFIX,ecmb.bdimg.com,reject
+DOMAIN-SUFFIX,ecmc.bdimg.com,reject
+DOMAIN-SUFFIX,pups.bdimg.com,reject
+DOMAIN-SUFFIX,su.bdimg.com,reject
+host-suffix,ecma.bdimg.com,reject
+host-suffix,ecmb.bdimg.com,reject
+host-suffix,ecmc.bdimg.com,reject
+host-suffix,pups.bdimg.com,reject
+host-suffix,su.bdimg.com,reject
