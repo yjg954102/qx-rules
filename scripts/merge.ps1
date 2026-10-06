@@ -177,7 +177,7 @@ $hostLines = @()
 for ($i = 0; $i -lt $hosts.Count; $i += 60) {
   $hostLines += (($hosts[$i..([Math]::Min($i+59, $hosts.Count-1))]) -join ', ')
 }
-[System.IO.File]::WriteAllLines((Join-Path $outDir 'MITM-主机名.txt'), $hostLines, $enc)
+[System.IO.File]::WriteAllLines((Join-Path $outDir 'MITM-hostnames.txt'), $hostLines, $enc)
 
 # ---------- 汇总 ----------
 Write-Host ''
@@ -186,4 +186,3 @@ Write-Host ("   分流规则 {0} 条   重写规则 {1} 条   MITM 主机名 {2}
 Get-ChildItem (Join-Path $outDir 'QX-AllInOne-*.conf') | ForEach-Object {
   Write-Host ("   {0}  {1} KB" -f $_.Name, [math]::Round($_.Length/1KB,1))
 }
-# (build trigger check)
