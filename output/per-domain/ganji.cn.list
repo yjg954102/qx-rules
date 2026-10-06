@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,jiaoben.ganji.cn,reject
+DOMAIN-SUFFIX,wuliao.ganji.cn,reject
+host-suffix,jiaoben.ganji.cn,reject
+host-suffix,wuliao.ganji.cn,reject
