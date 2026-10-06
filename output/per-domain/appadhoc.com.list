@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,appadhoc.com,reject
+DOMAIN-SUFFIX,sdk.appadhoc.com,reject
+host-suffix,appadhoc.com,reject
+host-suffix,sdk.appadhoc.com,reject
