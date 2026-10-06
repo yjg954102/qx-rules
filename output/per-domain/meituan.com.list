@@ -1,0 +1,3 @@
+host-suffix,mads.meituan.com,reject
+host-suffix,report.meituan.com,reject
+host-suffix,wmlog.meituan.com,reject
