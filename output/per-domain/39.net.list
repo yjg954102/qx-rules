@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,abody.39.net,reject
+DOMAIN-SUFFIX,app-g.39.net,reject
+DOMAIN-SUFFIX,d.39.net,reject
+DOMAIN-SUFFIX,dpvc.39.net,reject
+DOMAIN-SUFFIX,d-test.39.net,reject
+DOMAIN-SUFFIX,thetestpage.39.net,reject
+host-suffix,app-g.39.net,reject
+host-suffix,d.39.net,reject
+host-suffix,dpvc.39.net,reject
+host-suffix,thetestpage.39.net,reject
