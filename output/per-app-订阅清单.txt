@@ -1,0 +1,2795 @@
+; ============================================================
+; 按 APP 拆分的重写订阅清单
+; 用法：QX → 重写 → 规则资源 → + → 路径填下方网址，资源标签填方括号中的 APP 名
+; 每个 APP 独立订阅 = 可单独启停，且自动跟随仓库更新
+; ============================================================
+
+; 共 558 个 APP，按规则数排序：
+
+; --- 知乎  （43 条）
+;     标签: 知乎
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/知乎.conf
+;     域名: api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, link.zhihu.com, m-cloud.zhihu.com, zhuanlan.zhihu.com
+
+; --- Line  （33 条）
+;     标签: Line
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Line.conf
+;     域名: a.line.me, w.line.me, crs-event.line.me, obs.line-scdn.net, p.mp, scdn.line-apps.com
+
+; --- 闲鱼  （23 条）
+;     标签: 闲鱼
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/闲鱼.conf
+;     域名: acs.m.goofish.com, mtop.taobao.idlemtopsearch.item.search.activate, mtop.taobao.idlemtopsearch.search.discover, mtop.taobao.idle.item.resell.recommendorhotcate, mtop.taobao.idlehome.idle.coin.nextfresh, mtop.taobao.idle.item.buy.feeds
+
+; --- 大众点评  （19 条）
+;     标签: 大众点评
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/大众点评.conf
+;     域名: 103.37.155.60, catdot.dianping.com, mapi.dianping.com, img.meituan.net, p.meituan.com, rms.meituan.com
+
+; --- 腾讯广告  （19 条）
+;     标签: 腾讯广告
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/腾讯广告.conf
+;     域名: btrace.qq.com, api2.helper.qq.com, beacon.qq.com, mi.gdt.qq.com, gdt_mview.fcg, lives.l.qq.com
+
+; --- Soul  （18 条）
+;     标签: Soul
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Soul.conf
+;     域名: data-collector.soulapp.cn, ssp.soulapp.cn, chat-live.soulapp.cn, api-chat.soulapp.cn, api-account.soulapp.cn, api-a.soulapp.cn
+
+; --- 喜马拉雅  （18 条）
+;     标签: 喜马拉雅
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/喜马拉雅.conf
+;     域名: ximalaya.com
+
+; --- 小红书  （18 条）
+;     标签: 小红书
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小红书.conf
+;     域名: edith.xiaohongshu.com, www.xiaohongshu.com, xiaohongshu.com, ci.xiaohongshu.com
+
+; --- 爱奇艺  （17 条）
+;     标签: 爱奇艺
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/爱奇艺.conf
+;     域名: act.vip.iqiyi.com, cards.iqiyi.com, access.if.iqiyi.com, comment-card.iqiyi.com, iface2.iqiyi.com, search.video.iqiyi.com
+
+; --- 百度  （17 条）
+;     标签: 百度
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/百度.conf
+;     域名: fcvbjbcebos.baidu.com, cover.baidu.com, baichuan.baidu.com, apid.tuisong.baidu.com, afd.baidu.com, als.baidu.com
+
+; --- 百度网盘  （17 条）
+;     标签: 百度网盘
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/百度网盘.conf
+;     域名: pan.baidu.com, ndstatic.cdn.bcebos.com, staticsns.cdn.bcebos.com, issuecdn.baidupcs.com, update.pan.baidu.com, fc-video.cdn.bcebos.com
+
+; --- 朴朴超市  （17 条）
+;     标签: 朴朴超市
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/朴朴超市.conf
+;     域名: 139.196.12.179, 106.55.220.18, 54.222.159.138, 101.42.130.147, j1.pupuapi.com
+
+; --- Keep  （16 条）
+;     标签: Keep
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Keep.conf
+;     域名: static1.keepcdn.com, api.gotokeep.com, kad.gotokeep.com
+
+; --- 阿里巴巴  （15 条）
+;     标签: 阿里巴巴
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/阿里巴巴.conf
+;     域名: acs.m.taobao.com, mtop.fliggy.crm.screen, mtop.alibaba.advertisementservice.getadv, mtop.alimama.etao.config.query, mtop.alimusic.common.mobileservice.startinit, mtop.etao.noah.query
+
+; --- 什么值得买  （14 条）
+;     标签: 什么值得买
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/什么值得买.conf
+;     域名: haojia.m.smzdm.com, haojia-api.smzdm.com, s-api.smzdm.com, user-api.smzdm.com, app-api.smzdm.com, homepage-api.smzdm.com
+
+; --- 书旗小说  （14 条）
+;     标签: 书旗小说
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/书旗小说.conf
+;     域名: ut2.shuqistat.com, dsp.toutiao.com, sf3-be-pack.pglstatp-toutiao.com, ad.union.api, api-access.pangolin-sdk-toutiao.com, sq.sljkj.com
+
+; --- 菜鸟裹裹  （13 条）
+;     标签: 菜鸟裹裹
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/菜鸟裹裹.conf
+;     域名: cn-acs.m.cainiao.com, mtop.cainiao.adkeyword.get.cn, mtop.cainiao.cncommunity.my.station.query.cn, mtop.cainiao.guoguo.nbnetflow.ads, batch.show, show.cn
+
+; --- 番茄小说  （13 条）
+;     标签: 番茄小说
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/番茄小说.conf
+;     域名: pangolin-sdk-toutiao.com, pglstatp-toutiao.com, toutiao.mp, web.business.image, gurd.snssdk.com, byteimg.com
+
+; --- 芒果TV  （13 条）
+;     标签: 芒果TV
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/芒果TV.conf
+;     域名: damang.api.mgtv.com, hb-boom.api.mgtv.com, me.bz.mgtv.com, mob-st.bz.mgtv.com, bz.mgtv.com, mobile.api.mgtv.com
+
+; --- 起点读书  （13 条）
+;     标签: 起点读书
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/起点读书.conf
+;     域名: qidian.qpic.cn, mage.if.qidian.com, Atom.axd, magev6.if.qidian.com
+
+; --- 搜狐  （13 条）
+;     标签: 搜狐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/搜狐.conf
+;     域名: api.k.sohu.com, pic.k.sohu.com, s1.api.tv.itc.cn, tv.sohu.com, agn.aty.sohu.com, hui.sohu.com
+
+; --- 网易  （13 条）
+;     标签: 网易
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易.conf
+;     域名: music.126.net, p.c.music.126.net, img1.126.net, iadmusicmat.music.126.net, pd.music.126.net, www.icourse163.org
+
+; --- 网易有道词典  （13 条）
+;     标签: 网易有道词典
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易有道词典.conf
+;     域名: dict.youdao.com, api-overmind.youdao.com, cdke.youdao.com, dictvip-business.youdao.com, ydstatic.com, oimagewd.ydstatic.com
+
+; --- 哔哩哔哩漫画  （12 条）
+;     标签: 哔哩哔哩漫画
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/哔哩哔哩漫画.conf
+;     域名: id.hdslb.com, manga.bilibili.com, comic.vd.Comic, comic.vd.Shop, user.vd.SeasonVd, user.vd.Read
+
+; --- 叮咚买菜  （12 条）
+;     标签: 叮咚买菜
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/叮咚买菜.conf
+;     域名: maicai.api.ddxq.mobi, gw.api.ddxq.mobi, user.api.ddxq.mobi
+
+; --- 网易云音乐  （12 条）
+;     标签: 网易云音乐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易云音乐.conf
+;     域名: music.163.com
+
+; --- 雪球  （12 条）
+;     标签: 雪球
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/雪球.conf
+;     域名: api.xueqiu.com, open.xueqiu.com, stock.xueqiu.com
+
+; --- 滴滴出行  （11 条）
+;     标签: 滴滴出行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/滴滴出行.conf
+;     域名: hd.xiaojukeji.com, ct.xiaojukeji.com, freight.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn, common.diditaxi.com.cn
+
+; --- 前程无忧 51Job  （11 条）
+;     标签: 前程无忧 51Job
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/前程无忧_51Job.conf
+;     域名: img01.51jobcdn.com
+
+; --- 人人视频  （11 条）
+;     标签: 人人视频
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/人人视频.conf
+;     域名: api.rr.tv
+
+; --- 淘宝  （11 条）
+;     标签: 淘宝
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/淘宝.conf
+;     域名: acs.m.taobao.com, mtop.alibaba.advertisementservice.getadv, mtop.alimama.etao.config.query, mtop.alimusic.common.mobileservice.startinit, mtop.etao.noah.query, mtop.film.mtopadvertiseapi.queryadvertise
+
+; --- 途虎养车  （11 条）
+;     标签: 途虎养车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/途虎养车.conf
+;     域名: gateway.tuhu.cn
+
+; --- 百度输入法  （10 条）
+;     标签: 百度输入法
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/百度输入法.conf
+;     域名: r6.mo.baidu.com, res.mi.baidu.com, mime.baidu.com, mbd.baidu.com
+
+; --- 斗鱼直播  （10 条）
+;     标签: 斗鱼直播
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/斗鱼直播.conf
+;     域名: daoyu.sdo.com, rtbapi.douyucdn.cn, staticlive.douyucdn.cn, capi.douyucdn.cn, douyucdn.cn
+
+; --- 饿了么  （10 条）
+;     标签: 饿了么
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/饿了么.conf
+;     域名: elemecdn.com, fuss10.elemecdn.com, cube.elemecdn.com, mp4.mp, www1.elecfans.com
+
+; --- 有兔阅读(米兔)  （10 条）
+;     标签: 有兔阅读(米兔)
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/有兔阅读(米兔).conf
+;     域名: img.dailmo.com, img.allahall.com, app.zhoudamozi.com
+
+; --- 薄荷健康  （9 条）
+;     标签: 薄荷健康
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/薄荷健康.conf
+;     域名: api.boohee.com, status.boohee.com, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn
+
+; --- YouTube  （8 条）
+;     标签: YouTube
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/YouTube.conf
+;     域名: youtubei.googleapis.com, googlevideo.com, youtube.com, s.youtube.com
+
+; --- 飞客茶馆  （8 条）
+;     标签: 飞客茶馆
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/飞客茶馆.conf
+;     域名: ptf.flyertrip.com, 47.100.65.202, www.flyert.com, api.flydigi.com
+
+; --- 虎扑  （8 条）
+;     标签: 虎扑
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/虎扑.conf
+;     域名: games.mobileapi.hupu.com, du.hupucdn.com, id.hoopchina.com.cn, goblin.hupu.com, i1.hoopchina.com.cn
+
+; --- 埋堆堆  （8 条）
+;     标签: 埋堆堆
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/埋堆堆.conf
+;     域名: mob.mddcloud.com.cn, t-dsp.pinduoduo.com, mobads-pre-config.cdn.bcebos.com, sfo.mddcloud.com.cn, tower.ubixioe.com, toblog.ctobsnssdk.com
+
+; --- 咪咕视频  （8 条）
+;     标签: 咪咕视频
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/咪咕视频.conf
+;     域名: ggc.miguvideo.com, public-deliver9.miguvideo.com, recommend-dy.miguvideo.com, app-sc.miguvideo.com, common-sc.miguvideo.com, miguvideo.com
+
+; --- 同程旅行  （8 条）
+;     标签: 同程旅行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/同程旅行.conf
+;     域名: wx.17u.cn, tcmobileapi.17usoft.com, mobileapi.ly.com, mobilehotelapi.elong.com
+
+; --- 晓晓优选  （8 条）
+;     标签: 晓晓优选
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/晓晓优选.conf
+;     域名: xxyx-client-api.xiaoxiaoyouxuan.com, statistic.live.126.net
+
+; --- 字节跳动  （8 条）
+;     标签: 字节跳动
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/字节跳动.conf
+;     域名: snssdk.com, dsp.toutiao.com, amemv.com
+
+; --- 百度地图  （7 条）
+;     标签: 百度地图
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/百度地图.conf
+;     域名: dss0.bdstatic.com, tb1.bdstatic.com, tb2.bdstatic.com, ss0.bdstatic.com, gss0.bdstatic.com, newclient.map.baidu.com
+
+; --- 波点音乐  （7 条）
+;     标签: 波点音乐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/波点音乐.conf
+;     域名: bd-api.kuwo.cn, h5app.kuwo.cn, bodianimgcdn.kuwo.cn
+
+; --- 车来了  （7 条）
+;     标签: 车来了
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/车来了.conf
+;     域名: pic1.chelaile.net.cn, chelaile.net.cn, api.chelaile.net.cn, atrace.chelaile.net.cn, web.chelaile.net.cn, chelaileapp.cn
+
+; --- 盒马  （7 条）
+;     标签: 盒马
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/盒马.conf
+;     域名: mtop.wdk.hippotown.tabbar.info, mtop.wdk.sg.querysinglescene, mtop.wdk.render.querysinglepage, mtop.wdk.fc.recommend.feedscommondservice, mtop.wdk.crm.platform.ma.recommend, mtop.wdk.mimir.recommend.after.purchase.activity
+
+; --- 快手  （7 条）
+;     标签: 快手
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/快手.conf
+;     域名: az2-live.ksapisrv.com, az2-api.ksapisrv.com, ksapisrv.com, az2-api-js.gifshow.com
+
+; --- 美团 & 美团外卖  （7 条）
+;     标签: 美团 & 美团外卖
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/美团_&_美团外卖.conf
+;     域名: wmapi.meituan.com, meituan.net, img.meituan.net, s3plus.meituan.net, 59.82.113.10
+
+; --- 美柚  （7 条）
+;     标签: 美柚
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/美柚.conf
+;     域名: x.seeyouyima.com, axxd.xmseeyouyima.com, config-service.seeyouyima.com
+
+; --- 七猫小说  （7 条）
+;     标签: 七猫小说
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/七猫小说.conf
+;     域名: open.e.kuaishou.cn, api-access.pangolin-sdk-toutiao-b.com, dsp-x.jd.com, api-cfg.wtzw.com, p1-lm.adukwai.com, lf-cdn-tos.bytescm.com
+
+; --- 山姆会员商店  （7 条）
+;     标签: 山姆会员商店
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/山姆会员商店.conf
+;     域名: api-sams.walmartmobile.cn
+
+; --- 一汽大众  （7 条）
+;     标签: 一汽大众
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/一汽大众.conf
+;     域名: oneapp-api.faw-vw.com
+
+; --- 优酷  （7 条）
+;     标签: 优酷
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/优酷.conf
+;     域名: acs.youku.com, mtop.youku.columbus, gateway.new.execute, home.feed, mtop.youku.haidai.lantern.appconfig.get, mtop.youku.huluwa.dispatcher.youthmode.config
+
+; --- 转转  （7 条）
+;     标签: 转转
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/转转.conf
+;     域名: app.zhuanzhuan.com
+
+; --- QQ音乐  （6 条）
+;     标签: QQ音乐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/QQ音乐.conf
+;     域名: us.l.qq.com, y.gtimg.cn
+
+; --- 华住会  （6 条）
+;     标签: 华住会
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/华住会.conf
+;     域名: appapi.huazhu.com, hweb-hotel.huazhu.com, hweb-manager.huazhu.com
+
+; --- 建行生活  （6 条）
+;     标签: 建行生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/建行生活.conf
+;     域名: yunbusiness.ccb.com, g.alicdn.com, waimai-guide.ele.me, mtop.alsc.eleme, trigger.respond, mtop.alsc.wamai.store.detail.miniapp.popup
+
+; --- 京东金融  （6 条）
+;     标签: 京东金融
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/京东金融.conf
+;     域名: m.360buyimg.com, api.m.jd.com, client.action, jd.com, ms.jr.jd.com, appconf.mail.163.com
+
+; --- 酷我音乐  （6 条）
+;     标签: 酷我音乐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/酷我音乐.conf
+;     域名: audiobookpay.kuwo.cn, kuwo.cn, musicpay.kuwo.cn, music.pay, vip1.kuwo.cn
+
+; --- 马蜂窝  （6 条）
+;     标签: 马蜂窝
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/马蜂窝.conf
+;     域名: mapi.mafengwo.cn
+
+; --- 闪动校园  （6 条）
+;     标签: 闪动校园
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/闪动校园.conf
+;     域名: api.huachenjie.com, ad.shunchangzhixing.com, open.e.kuaishou.cn, zlsdk.1rtb.net
+
+; --- 顺丰快递小程序  （6 条）
+;     标签: 顺丰快递小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/顺丰快递小程序.conf
+;     域名: mcs-mimp-web.sf-express.com, ucmp-static.sf-express.com, ucmp.sf-express.com
+
+; --- 苏打校园APP  （6 条）
+;     标签: 苏打校园APP
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/苏打校园APP.conf
+;     域名: api.sodalife.xyz
+
+; --- 小宇宙  （6 条）
+;     标签: 小宇宙
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小宇宙.conf
+;     域名: api.xiaoyuzhoufm.com
+
+; --- 悠洗APP  （6 条）
+;     标签: 悠洗APP
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/悠洗APP.conf
+;     域名: api.ulife.group
+
+; --- 中国联通  （6 条）
+;     标签: 中国联通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国联通.conf
+;     域名: m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn
+
+; --- EMS微信小程序  （5 条）
+;     标签: EMS微信小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/EMS微信小程序.conf
+;     域名: ec.ems.com.cn, ump.ems.com.cn
+
+; --- LING Club-原菱菱邦  （5 条）
+;     标签: LING Club-原菱菱邦
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/LING_Club-原菱菱邦.conf
+;     域名: cdn-oss.00bang.cn, api.00bang.cn
+
+; --- 宝宝树孕育  （5 条）
+;     标签: 宝宝树孕育
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/宝宝树孕育.conf
+;     域名: aimg.babytreeimg.com, plough.babytree.com, plough.do, mapiweb.babytree.com, go.babytree.com
+
+; --- 大师兄  （5 条）
+;     标签: 大师兄
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/大师兄.conf
+;     域名: sdk.alibaba.com.ailbaba.me, adservice.sigmob.cn
+
+; --- 嘀嗒出行  （5 条）
+;     标签: 嘀嗒出行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/嘀嗒出行.conf
+;     域名: didapinche.com, adx-cn.anythinktech.com, www.didapinche.com
+
+; --- 盯盯拍  （5 条）
+;     标签: 盯盯拍
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/盯盯拍.conf
+;     域名: pglstatp-toutiao.com, api.htp.ad-scope.com.cn, appgw.ddpai.com, init.sms.mob.com, apphw.ddpai.com
+
+; --- 豆瓣  （5 条）
+;     标签: 豆瓣
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/豆瓣.conf
+;     域名: api.douban.com, imgd.doubanio.com, frodo.douban.com, erebor.douban.com
+
+; --- 富途牛牛  （5 条）
+;     标签: 富途牛牛
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/富途牛牛.conf
+;     域名: api.futunn.com, apid.futunn.com
+
+; --- 驾校一点通  （5 条）
+;     标签: 驾校一点通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/驾校一点通.conf
+;     域名: richmanrules.ksedt.com, richmanapi.jxedt.com, api.jxedt.com, richmanmain.jxedt.com
+
+; --- 金山词霸  （5 条）
+;     标签: 金山词霸
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/金山词霸.conf
+;     域名: dict-mobile.iciba.com, mobile-pic.cache.iciba.com, service.iciba.com, kingsoft-office-service.com
+
+; --- 脉脉  （5 条）
+;     标签: 脉脉
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/脉脉.conf
+;     域名: open.taou.com
+
+; --- 汽水音乐  （5 条）
+;     标签: 汽水音乐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/汽水音乐.conf
+;     域名: webcast-open.douyin.com, ether-pack.pangolin-sdk-toutiao.com, api-access.pangolin, -fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com
+
+; --- 瑞幸咖啡  （5 条）
+;     标签: 瑞幸咖啡
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/瑞幸咖啡.conf
+;     域名: capi.lkcoffee.com, api.lkcoffee.com, m.lkcoffee.com, luckincoffeecdn.com
+
+; --- 苏e行  （5 条）
+;     标签: 苏e行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/苏e行.conf
+;     域名: ad.shunchangzhixing.com, api.bwton.com
+
+; --- 网上国网  （5 条）
+;     标签: 网上国网
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网上国网.conf
+;     域名: -service.sgcc.com.cn
+
+; --- 唯品会  （5 条）
+;     标签: 唯品会
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/唯品会.conf
+;     域名: b.appsimg.com, mapi.appvipshop.com
+
+; --- 小蚕霸王餐  （5 条）
+;     标签: 小蚕霸王餐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小蚕霸王餐.conf
+;     域名: zlsdk.1rtb.net, gw.xiaocantech.com, web2.realtech-inc.com, sdk.1rtb.net
+
+; --- 小芒  （5 条）
+;     标签: 小芒
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小芒.conf
+;     域名: mgesq.api.mgtv.com
+
+; --- 笑容加  （5 条）
+;     标签: 笑容加
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/笑容加.conf
+;     域名: myusmile.online, wemallh5.usmile.com, www.myusmile.online
+
+; --- 中国人保  （5 条）
+;     标签: 中国人保
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国人保.conf
+;     域名: zgrb.epicc.com.cn
+
+; --- 中国移动云盘  （5 条）
+;     标签: 中国移动云盘
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国移动云盘.conf
+;     域名: mcmm.caiyun.feixin.10086.cn, middle.yun.139.com, ad.mcloud.139.com, mrp.mcloud.139.com
+
+; --- 58同城  （4 条）
+;     标签: 58同城
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/58同城.conf
+;     域名: 58cdn.com.cn, app.58.com
+
+; --- Google  （4 条）
+;     标签: Google
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Google.conf
+;     域名: googleapis.com, pagead2.googlesyndication.com
+
+; --- ofo共享单车  （4 条）
+;     标签: ofo共享单车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/ofo共享单车.conf
+;     域名: supportda.ofo.com, ma.ofo.com, activity2.api.ofo.com
+
+; --- Spotify  （4 条）
+;     标签: Spotify
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Spotify.conf
+;     域名: spclient.wg.spotify.com, -spclient.spotify.com, gae2-spclient.spotify.com
+
+; --- 阿里云盘  （4 条）
+;     标签: 阿里云盘
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/阿里云盘.conf
+;     域名: api.alipan.com, member.alipan.com
+
+; --- 百度贴吧  （4 条）
+;     标签: 百度贴吧
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/百度贴吧.conf
+;     域名: c.tieba, baidu.com
+
+; --- 当当阅读  （4 条）
+;     标签: 当当阅读
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/当当阅读.conf
+;     域名: e.dangdang.com, api.dangdang.com, mapi.dangdang.com
+
+; --- 低端影视  （4 条）
+;     标签: 低端影视
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/低端影视.conf
+;     域名: img.ddrk.me, ddrk.me
+
+; --- 飞猪  （4 条）
+;     标签: 飞猪
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/飞猪.conf
+;     域名: acs.m.taobao.com, mtop.fliggy.crm.screen, mtop.trip.activity.querytmsresources, gw.alicdn.com
+
+; --- 丰巢  （4 条）
+;     标签: 丰巢
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/丰巢.conf
+;     域名: dsp.fcbox.com, external.fcbox.com, rtm.fcbox.com, consumer.fcbox.com
+
+; --- 高德地图  （4 条）
+;     标签: 高德地图
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/高德地图.conf
+;     域名: m5.amap.com, optimus-ads.amap.com, amap-aos-info-nogw.amap.com
+
+; --- 虎牙直播  （4 条）
+;     标签: 虎牙直播
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/虎牙直播.conf
+;     域名: cdn.wup.huya.com, business.msstatic.com, cdnfile1.msstatic.com, live-ads.huya.com
+
+; --- 懒人听书  （4 条）
+;     标签: 懒人听书
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/懒人听书.conf
+;     域名: ClientAdvertList.action, 118.178.214.118, dapis.mting.info, display.wting.info
+
+; --- 马达出行  （4 条）
+;     标签: 马达出行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/马达出行.conf
+;     域名: mada-travel.17u.cn, ebk.17u.cn
+
+; --- 买单吧  （4 条）
+;     标签: 买单吧
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/买单吧.conf
+;     域名: creditcard.bankcomm, creditcardapp.bankcomm
+
+; --- 浦发银行  （4 条）
+;     标签: 浦发银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/浦发银行.conf
+;     域名: lban.spdb.com.cn, getAdvList.ah, getAdvertisementList.ah, prefetchAdvList.ah, wap.spdb.com.cn, OpenScreenAdv.ah
+
+; --- 全球购骑士卡  （4 条）
+;     标签: 全球购骑士卡
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/全球购骑士卡.conf
+;     域名: facade-api.black-unique.com
+
+; --- 首汽约车  （4 条）
+;     标签: 首汽约车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/首汽约车.conf
+;     域名: gw-passenger.01zhuanche.com, img.yun.01zhuanche.com
+
+; --- 顺丰快递  （4 条）
+;     标签: 顺丰快递
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/顺丰快递.conf
+;     域名: ucmp.sf-express.com, ccsp-egmas.sf-express.com
+
+; --- 太平洋电脑  （4 条）
+;     标签: 太平洋电脑
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/太平洋电脑.conf
+;     域名: mrobot.pconline.com.cn, agent-count.pconline.com.cn, com.cn, mrobot.pcauto.com.cn
+
+; --- 万词王  （4 条）
+;     标签: 万词王
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/万词王.conf
+;     域名: wanciwangdata.oss-cn-beijing.aliyuncs.com, recite.perfectlingo.com
+
+; --- 网易严选  （4 条）
+;     标签: 网易严选
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易严选.conf
+;     域名: support.you.163.com, check.do, m.you.163.com, yanxuan.nosdn.127.net
+
+; --- 携程  （4 条）
+;     标签: 携程
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/携程.conf
+;     域名: m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com
+
+; --- 涨乐财富通  （4 条）
+;     标签: 涨乐财富通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/涨乐财富通.conf
+;     域名: c.zhangle.com, live.inst-service.htsc.com, geetest.htsc.com
+
+; --- 掌阅  （4 条）
+;     标签: 掌阅
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/掌阅.conf
+;     域名: ih2.ireader.com, book.img.ireader.com
+
+; --- 中通快递  （4 条）
+;     标签: 中通快递
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中通快递.conf
+;     域名: hdgateway.zto.com
+
+; --- 51信用卡管家  （3 条）
+;     标签: 51信用卡管家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/51信用卡管家.conf
+;     域名: api.u51.com
+
+; --- 555影视  （3 条）
+;     标签: 555影视
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/555影视.conf
+;     域名: vip7.fzwdyy.cn
+
+; --- Blued  （3 条）
+;     标签: Blued
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Blued.conf
+;     域名: social.blued.cn
+
+; --- CSDN  （3 条）
+;     标签: CSDN
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/CSDN.conf
+;     域名: app-gw.csdn.net, gw.csdn.net
+
+; --- lofter  （3 条）
+;     标签: lofter
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/lofter.conf
+;     域名: ad.lofter.com, images.pinduoduo.com, lofter.lf127.net
+
+; --- ONE  （3 条）
+;     标签: ONE
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/ONE.conf
+;     域名: v3.wufazhuce.com, app.api.d3yuiw4.com, api.21ec74.com
+
+; --- Spotify(解锁Premium)  （3 条）
+;     标签: Spotify(解锁Premium)
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Spotify(解锁Premium).conf
+;     域名: spclient.wg.spotify.com, -spclient.spotify.com
+
+; --- U净  （3 条）
+;     标签: U净
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/U净.conf
+;     域名: api-marketing.zhinengxiyifang.cn, adsoss.zhinengxiyifang.cn, ads.zhinengxiyifang.cn
+
+; --- 爱美剧  （3 条）
+;     标签: 爱美剧
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/爱美剧.conf
+;     域名: api.bjxkhc.com
+
+; --- 达达骑士版  （3 条）
+;     标签: 达达骑士版
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/达达骑士版.conf
+;     域名: delivery-api.imdada.cn
+
+; --- 到梦空间  （3 条）
+;     标签: 到梦空间
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/到梦空间.conf
+;     域名: appdmkj.5idream.net
+
+; --- 返利网  （3 条）
+;     标签: 返利网
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/返利网.conf
+;     域名: 51fanli.net
+
+; --- 工时记录  （3 条）
+;     标签: 工时记录
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/工时记录.conf
+;     域名: yun.tuitiger.com, mi.gdt.qq.com, gdt_mview.fcg, open.e.kuaishou.com
+
+; --- 挂号网（微医）  （3 条）
+;     标签: 挂号网（微医）
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/挂号网（微医）.conf
+;     域名: kano.guahao.cn, app.wy.guahao.com
+
+; --- 广发银行  （3 条）
+;     标签: 广发银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/广发银行.conf
+;     域名: static.95508.com, mps.95508.com
+
+; --- 航旅纵横  （3 条）
+;     标签: 航旅纵横
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/航旅纵横.conf
+;     域名: oss.umetrip.com, umetrip.com, home.umetrip.com, 114.115.217.129
+
+; --- 横店电影小程序  （3 条）
+;     标签: 横店电影小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/横店电影小程序.conf
+;     域名: api.hengdianfilm.com
+
+; --- 驾考宝典  （3 条）
+;     标签: 驾考宝典
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/驾考宝典.conf
+;     域名: kakamobi.cn, 789.kakamobi.cn, smart.789.image.mucang.cn
+
+; --- 京喜  （3 条）
+;     标签: 京喜
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/京喜.conf
+;     域名: api.m.jd.com, client.action
+
+; --- 看东方（百视TV）  （3 条）
+;     标签: 看东方（百视TV）
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/看东方（百视TV）.conf
+;     域名: bp-api.bestv.com.cn, bp-api.bestv.cn
+
+; --- 肯德基  （3 条）
+;     标签: 肯德基
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/肯德基.conf
+;     域名: res.kfc.com.cn
+
+; --- 酷安  （3 条）
+;     标签: 酷安
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/酷安.conf
+;     域名: api.coolapk.com
+
+; --- 乐刻  （3 条）
+;     标签: 乐刻
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/乐刻.conf
+;     域名: lens.leoao.com, com.lefit.dubbo.cms.api.front.AppAdvertisingFrontService, com.lefit.dubbo.cms.api.bff.ClientFrontFacade, com.lefit.dubbo.cms.api.front.AdvertiseConfigFrontService
+
+; --- 罗森点点  （3 条）
+;     标签: 罗森点点
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/罗森点点.conf
+;     域名: plt.yorentown.com, lawsonapi.yorentown.com
+
+; --- 漫画人  （3 条）
+;     标签: 漫画人
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/漫画人.conf
+;     域名: mangaapi.manhuaren.com, mangaapi.manhuaren
+
+; --- 米读  （3 条）
+;     标签: 米读
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/米读.conf
+;     域名: apiwz.midukanshu.com
+
+; --- 奈菲影视  （3 条）
+;     标签: 奈菲影视
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/奈菲影视.conf
+;     域名: www.nfmovies.com
+
+; --- 农业银行  （3 条）
+;     标签: 农业银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/农业银行.conf
+;     域名: midc.cdn-static.abchina.com.cn, enjoy.cdn-static.abchina.com, firefly.abchina.com.cn
+
+; --- 拼多多  （3 条）
+;     标签: 拼多多
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/拼多多.conf
+;     域名: api.pinduoduo.com, mobile.yangkeduo.com
+
+; --- 平安好车主  （3 条）
+;     标签: 平安好车主
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/平安好车主.conf
+;     域名: iobs.pingan.com.cn, hcz-member.pingan.com.cn
+
+; --- 平安口袋银行  （3 条）
+;     标签: 平安口袋银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/平安口袋银行.conf
+;     域名: cdn.sdb.com.cn
+
+; --- 穷游  （3 条）
+;     标签: 穷游
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/穷游.conf
+;     域名: open.qyer.com, media.qyer.com
+
+; --- 去哪儿  （3 条）
+;     标签: 去哪儿
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/去哪儿.conf
+;     域名: qde.qunar.com, homefront.qunar.com, client.qunar.com
+
+; --- 人民日报  （3 条）
+;     标签: 人民日报
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/人民日报.conf
+;     域名: app.peopleapp.com, stat.peopleapp.com, adstatic.peopleapp.com
+
+; --- 识货  （3 条）
+;     标签: 识货
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/识货.conf
+;     域名: sh-gateway.shihuo.cn, static.shihuocdn.cn
+
+; --- 苏宁易购  （3 条）
+;     标签: 苏宁易购
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/苏宁易购.conf
+;     域名: mpcs.suning.com, image.suning.cn, luckman.suning.com, index.do
+
+; --- 腾讯新闻  （3 条）
+;     标签: 腾讯新闻
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/腾讯新闻.conf
+;     域名: r.inews.qq.com, news.ssp.qq.com
+
+; --- 天府银行小程序  （3 条）
+;     标签: 天府银行小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天府银行小程序.conf
+;     域名: chl.tf.cn, wechat.tf.cn
+
+; --- 天猫养车  （3 条）
+;     标签: 天猫养车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天猫养车.conf
+;     域名: api.ncarzone.com
+
+; --- 天天基金  （3 条）
+;     标签: 天天基金
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天天基金.conf
+;     域名: j5.dfcfw.com, appactive.1234567.com.cn
+
+; --- 同花顺  （3 条）
+;     标签: 同花顺
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/同花顺.conf
+;     域名: adm.10jqka.com.cn, iphone.ac.qq.com, stat.10jqka.com.cn
+
+; --- 途家民宿  （3 条）
+;     标签: 途家民宿
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/途家民宿.conf
+;     域名: client.tujia.com
+
+; --- 网易考拉  （3 条）
+;     标签: 网易考拉
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易考拉.conf
+;     域名: kaola-haitao.oss.kaolacdn.com, sp.kaola.com, gw.kaola.com
+
+; --- 我爱卡社区管家  （3 条）
+;     标签: 我爱卡社区管家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/我爱卡社区管家.conf
+;     域名: api.51credit.com
+
+; --- 下厨房  （3 条）
+;     标签: 下厨房
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/下厨房.conf
+;     域名: pglstatp-toutiao.com, res1.hubcloud.com.cn, api.xiachufang.com
+
+; --- 向日葵  （3 条）
+;     标签: 向日葵
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/向日葵.conf
+;     域名: client-api-v2.oray.com
+
+; --- 小爱音箱  （3 条）
+;     标签: 小爱音箱
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小爱音箱.conf
+;     域名: info.mina.xiaoaisound, marketing-aibox.v.mitvos
+
+; --- 小桔科技  （3 条）
+;     标签: 小桔科技
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小桔科技.conf
+;     域名: ct.xiaojukeji.com, res.xiaojukeji.com
+
+; --- 小象超市  （3 条）
+;     标签: 小象超市
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小象超市.conf
+;     域名: portal-portm.meituan.com, mall.meituan.com
+
+; --- 医考帮  （3 条）
+;     标签: 医考帮
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/医考帮.conf
+;     域名: api.yikaobang.com.cn
+
+; --- 艺龙旅行网  （3 条）
+;     标签: 艺龙旅行网
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/艺龙旅行网.conf
+;     域名: mobile-api2011.elong.com, webboot.zhangyue.com, saad.ms.zhangyue.net
+
+; --- 易车  （3 条）
+;     标签: 易车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/易车.conf
+;     域名: api.ycapp.yiche.com, cheyouapi.ycapp.yiche.com
+
+; --- 邮储银行  （3 条）
+;     标签: 邮储银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/邮储银行.conf
+;     域名: mcc.psbc.com, d.psbc.com, static.mobile-bank.psbc.com
+
+; --- 游民星空  （3 条）
+;     标签: 游民星空
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/游民星空.conf
+;     域名: gamersky.com
+
+; --- 云快充  （3 条）
+;     标签: 云快充
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/云快充.conf
+;     域名: gw3.ykccn.com
+
+; --- 掌上生活  （3 条）
+;     标签: 掌上生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/掌上生活.conf
+;     域名: cmbchina.com, mlife.clientface.clientservice.api.advertiseService, intellicc.bas.cmbchina.com, mlife.intelli.render.api.render, intellicc.bcs.cmbchina.com, mlife.intelli.adrender.api.AdWork
+
+; --- 掌上英雄联盟  （3 条）
+;     标签: 掌上英雄联盟
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/掌上英雄联盟.conf
+;     域名: us.l.qq.com, ossweb-img.qq.com, mlol.qt.qq.com
+
+; --- 中国移动  （3 条）
+;     标签: 中国移动
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国移动.conf
+;     域名: client.app.coc.10086.cn, client.app.coc, 10086.cn
+
+; --- 中信银行  （3 条）
+;     标签: 中信银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中信银行.conf
+;     域名: wap.bank.ecitic.com, cbframework.do, imcs.citicbank.com
+
+; --- AcFun  （2 条）
+;     标签: AcFun
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/AcFun.conf
+;     域名: aes.acfun.cn, api-new.app.acfun.cn
+
+; --- Amazon  （2 条）
+;     标签: Amazon
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Amazon.conf
+;     域名: api-cslp-emt.amazon.cn
+
+; --- DLabel云标签  （2 条）
+;     标签: DLabel云标签
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/DLabel云标签.conf
+;     域名: imagepc.ctaiot.com, dudian-oss.oss-cn-shenzhen.aliyuncs.com
+
+; --- Oray  （2 条）
+;     标签: Oray
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Oray.conf
+;     域名: slapi.oray.net
+
+; --- RARBG  （2 条）
+;     标签: RARBG
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/RARBG.conf
+;     域名: dyncdn.me
+
+; --- Talkatone  （2 条）
+;     标签: Talkatone
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Talkatone.conf
+;     域名: alt-r.my.com, imgx.jampp.com
+
+; --- udn news  （2 条）
+;     标签: udn news
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/udn_news.conf
+;     域名: pubads.g.doubleclick.net, pagead2.googleadservices.com
+
+; --- WPS  （2 条）
+;     标签: WPS
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/WPS.conf
+;     域名: ios.wps.cn, mobile-pic.cache.iciba.com
+
+; --- 安吉星  （2 条）
+;     标签: 安吉星
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/安吉星.conf
+;     域名: www.onstar.com.cn, api.shanghaionstar.com
+
+; --- 百度翻译  （2 条）
+;     标签: 百度翻译
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/百度翻译.conf
+;     域名: mime.baidu.com
+
+; --- 必胜客  （2 条）
+;     标签: 必胜客
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/必胜客.conf
+;     域名: res.pizzahut.com.cn
+
+; --- 哔哩哔哩  （2 条）
+;     标签: 哔哩哔哩
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/哔哩哔哩.conf
+;     域名: app.bilibili.com, grpc.biliapi.net, bilibili.app, viewunite.v1.View
+
+; --- 彩云天气  （2 条）
+;     标签: 彩云天气
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/彩云天气.conf
+;     域名: wrapper.cyapi.cn, api.caiyunapp.com
+
+; --- 曹操专车  （2 条）
+;     标签: 曹操专车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/曹操专车.conf
+;     域名: ptmpcap.caocaokeji.cn, cap.caocaokeji.cn
+
+; --- 超级课程表  （2 条）
+;     标签: 超级课程表
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/超级课程表.conf
+;     域名: 182.92.244.70, ad.myfriday.cn
+
+; --- 大麦  （2 条）
+;     标签: 大麦
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/大麦.conf
+;     域名: acs.m.taobao.com, mtop.damai.wireless.home.welcome, amdc.m.taobao.com
+
+; --- 得物  （2 条）
+;     标签: 得物
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/得物.conf
+;     域名: app.dewu.com, cdn.poizon.com
+
+; --- 滴滴代驾  （2 条）
+;     标签: 滴滴代驾
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/滴滴代驾.conf
+;     域名: as.xiaojukeji.com, daijia.kuaidadi.com, prado.cms.delivery.batch
+
+; --- 滴滴青桔  （2 条）
+;     标签: 滴滴青桔
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/滴滴青桔.conf
+;     域名: pt-starimg.didistatic.com, xiaojukeji.com
+
+; --- 电视家  （2 条）
+;     标签: 电视家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/电视家.conf
+;     域名: api.gaoqingdianshi.com, cdn.dianshihome.com
+
+; --- 叮嗒出行  （2 条）
+;     标签: 叮嗒出行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/叮嗒出行.conf
+;     域名: img.admobile.top, webcdn.m.qq.com
+
+; --- 东方航空  （2 条）
+;     标签: 东方航空
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/东方航空.conf
+;     域名: app.ceair.com
+
+; --- 动画疯  （2 条）
+;     标签: 动画疯
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/动画疯.conf
+;     域名: api.gamer.com.tw
+
+; --- 动卡空间  （2 条）
+;     标签: 动卡空间
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/动卡空间.conf
+;     域名: ump.sz.creditcard.ecitic.com, m.creditcard.ecitic.com
+
+; --- 发现精彩  （2 条）
+;     标签: 发现精彩
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/发现精彩.conf
+;     域名: static.95508.com
+
+; --- 飞常准  （2 条）
+;     标签: 飞常准
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/飞常准.conf
+;     域名: app.variflight.com
+
+; --- 分期乐  （2 条）
+;     标签: 分期乐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/分期乐.conf
+;     域名: fm.fenqile.com
+
+; --- 凤凰秀  （2 条）
+;     标签: 凤凰秀
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/凤凰秀.conf
+;     域名: dsa-mfp.fengshows.cn, mfpMultipleDelivery.do, api.fengshows.com
+
+; --- 高铁管家  （2 条）
+;     标签: 高铁管家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/高铁管家.conf
+;     域名: cdn.133.cn, rsscc.com
+
+; --- 怪兽充电  （2 条）
+;     标签: 怪兽充电
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/怪兽充电.conf
+;     域名: awg.enmonster.com, aag.enmonster.com
+
+; --- 广汽传祺  （2 条）
+;     标签: 广汽传祺
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/广汽传祺.conf
+;     域名: gsp.gacmotor.com
+
+; --- 国美电器  （2 条）
+;     标签: 国美电器
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/国美电器.conf
+;     域名: prom.mobile.gome.com.cn
+
+; --- 海马爸比  （2 条）
+;     标签: 海马爸比
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/海马爸比.conf
+;     域名: hmbaby.simshine.cn
+
+; --- 韩剧TV  （2 条）
+;     标签: 韩剧TV
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/韩剧TV.conf
+;     域名: gfp.veta.naver.com, api.hanju.koudaibaobao.com
+
+; --- 杭州市民  （2 条）
+;     标签: 杭州市民
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/杭州市民.conf
+;     域名: ads.iconntech.com, smkmp.96225.com
+
+; --- 好奇心日报  （2 条）
+;     标签: 好奇心日报
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/好奇心日报.conf
+;     域名: notch.qdaily.com, app3.qdaily.com
+
+; --- 花生地铁  （2 条）
+;     标签: 花生地铁
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/花生地铁.conf
+;     域名: cmsapi.wifi8.com, cmsfile.wifi8.com
+
+; --- 华尔街见闻  （2 条）
+;     标签: 华尔街见闻
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/华尔街见闻.conf
+;     域名: api-one-wscn.awtmt.com, api.wallstreetcn.com
+
+; --- 华盛通  （2 条）
+;     标签: 华盛通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/华盛通.conf
+;     域名: interface.hstong.com
+
+; --- 汇付天下  （2 条）
+;     标签: 汇付天下
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/汇付天下.conf
+;     域名: mcsp.cloudpnr.com, saas-ad.cloudpnr.com
+
+; --- 今日头条  （2 条）
+;     标签: 今日头条
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/今日头条.conf
+;     域名: pd.pstatp.com, pbd.pstatp.com
+
+; --- 京东  （2 条）
+;     标签: 京东
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/京东.conf
+;     域名: api.m.jd.com, client.action
+
+; --- 京东读书  （2 条）
+;     标签: 京东读书
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/京东读书.conf
+;     域名: jdread-api.jd.com
+
+; --- 看天下  （2 条）
+;     标签: 看天下
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/看天下.conf
+;     域名: open3.vistastory.com
+
+; --- 快递100  （2 条）
+;     标签: 快递100
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/快递100.conf
+;     域名: cdn.kuaidi100.com, p.kuaidi100.com, mobileapi.do
+
+; --- 快看  （2 条）
+;     标签: 快看
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/快看.conf
+;     域名: api.kkmh.com
+
+; --- 来疯  （2 条）
+;     标签: 来疯
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/来疯.conf
+;     域名: api.laifeng.com, api.jxedt.com
+
+; --- 猎聘  （2 条）
+;     标签: 猎聘
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/猎聘.conf
+;     域名: api-ac.liepin.com, com.liepin.cyclops.live.get, api-wanda.liepin.com, com.liepin.cbp.baizhong.op
+
+; --- 旅途随身听  （2 条）
+;     标签: 旅途随身听
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/旅途随身听.conf
+;     域名: www.1314zhilv.com
+
+; --- 马卡龙玩图  （2 条）
+;     标签: 马卡龙玩图
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/马卡龙玩图.conf
+;     域名: app.api.versa-ai.com, static01.versa-ai.com
+
+; --- 猫眼  （2 条）
+;     标签: 猫眼
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/猫眼.conf
+;     域名: p0.pipi.cn
+
+; --- 每日精选  （2 条）
+;     标签: 每日精选
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/每日精选.conf
+;     域名: dili.sqcosmos.com
+
+; --- 每日优鲜  （2 条）
+;     标签: 每日优鲜
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/每日优鲜.conf
+;     域名: j-image.missfresh.cn
+
+; --- 美图秀秀  （2 条）
+;     标签: 美图秀秀
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/美图秀秀.conf
+;     域名: mea.meitudata.com, adui.tg.meitu.com
+
+; --- 米家  （2 条）
+;     标签: 米家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/米家.conf
+;     域名: home.mi.com
+
+; --- 民生银行  （2 条）
+;     标签: 民生银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/民生银行.conf
+;     域名: www.cmbc.com.cn
+
+; --- 宁聚  （2 条）
+;     标签: 宁聚
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/宁聚.conf
+;     域名: api.nj.nbtv.cn
+
+; --- 牛津高阶词典第十版  （2 条）
+;     标签: 牛津高阶词典第十版
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/牛津高阶词典第十版.conf
+;     域名: oxadmin.cp.com.cn
+
+; --- 牛听听  （2 条）
+;     标签: 牛听听
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/牛听听.conf
+;     域名: gateway.benewtech.cn, ntt-app.benewtech.cn
+
+; --- 企迈 - QMAI(包含: 挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵)  （2 条）
+;     标签: 企迈 - QMAI(包含: 挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵)
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/企迈_-_QMAI(包含__挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵).conf
+;     域名: qmai.cn
+
+; --- 汽车之家  （2 条）
+;     标签: 汽车之家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/汽车之家.conf
+;     域名: adproxy.autohome.com.cn, app2.autoimg.cn
+
+; --- 球迷报  （2 条）
+;     标签: 球迷报
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/球迷报.conf
+;     域名: a.qiumibao.com
+
+; --- 日日煮  （2 条）
+;     标签: 日日煮
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/日日煮.conf
+;     域名: cms.daydaycook.com.cn, api.daydaycook.com.cn
+
+; --- 搜狗输入法  （2 条）
+;     标签: 搜狗输入法
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/搜狗输入法.conf
+;     域名: sogou.com, h5api.sginput.qq.com
+
+; --- 腾讯体育  （2 条）
+;     标签: 腾讯体育
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/腾讯体育.conf
+;     域名: news.ssp.qq.com, sports3.gtimg.com
+
+; --- 天府市民云  （2 条）
+;     标签: 天府市民云
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天府市民云.conf
+;     域名: tfsmy.chengdu.gov.cn, tft-app.cdtft.cn
+
+; --- 天猫精灵  （2 条）
+;     标签: 天猫精灵
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天猫精灵.conf
+;     域名: ossgw.alicdn.com, zconfig.alibabausercontent.com
+
+; --- 万达电影  （2 条）
+;     标签: 万达电影
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/万达电影.conf
+;     域名: misc-api-prd-mx.wandafilm.com, common_banner_batch.api
+
+; --- 网易大神  （2 条）
+;     标签: 网易大神
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易大神.conf
+;     域名: god.gameyw.netease.com, ok.166.net
+
+; --- 网易蜗牛读书  （2 条）
+;     标签: 网易蜗牛读书
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易蜗牛读书.conf
+;     域名: easyreadfs.nosdn.127.net, p.du.163.com
+
+; --- 网易邮箱  （2 条）
+;     标签: 网易邮箱
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易邮箱.conf
+;     域名: appconf.mail.163.com, client.mail.163.com
+
+; --- 微信公众号  （2 条）
+;     标签: 微信公众号
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/微信公众号.conf
+;     域名: mp.weixin.qq.com
+
+; --- 蜗牛睡眠  （2 条）
+;     标签: 蜗牛睡眠
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/蜗牛睡眠.conf
+;     域名: snailsleep.net
+
+; --- 无他相机  （2 条）
+;     标签: 无他相机
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/无他相机.conf
+;     域名: api-release.wuta-cam.com, res-release.wuta-cam.com
+
+; --- 西施眼  （2 条）
+;     标签: 西施眼
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/西施眼.conf
+;     域名: vapp.tmuyun.com
+
+; --- 小电充电  （2 条）
+;     标签: 小电充电
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小电充电.conf
+;     域名: smarket.dian.so, file.dian.so
+
+; --- 小米打印  （2 条）
+;     标签: 小米打印
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小米打印.conf
+;     域名: api-miprint.hannto.com, api.indeedpower.com
+
+; --- 小米金融  （2 条）
+;     标签: 小米金融
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小米金融.conf
+;     域名: api.jr.mi.com
+
+; --- 小兔充充  （2 条）
+;     标签: 小兔充充
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小兔充充.conf
+;     域名: ad.xiaotucc.com, mapi.xiaotucc.com
+
+; --- 小熊拦截  （2 条）
+;     标签: 小熊拦截
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小熊拦截.conf
+;     域名: spamblocker-api.zeekstudio.com
+
+; --- 小艺  （2 条）
+;     标签: 小艺
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小艺.conf
+;     域名: api.xiaoyi.com
+
+; --- 星途 starway  （2 条）
+;     标签: 星途 starway
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/星途_starway.conf
+;     域名: app.chinahxzq.com.cn
+
+; --- 兴业银行  （2 条）
+;     标签: 兴业银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/兴业银行.conf
+;     域名: images.cib.com.cn
+
+; --- 迅雷  （2 条）
+;     标签: 迅雷
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/迅雷.conf
+;     域名: images.client.vip.xunlei.com, api-shoulei-ssl.xunlei.com
+
+; --- 迅游加速器  （2 条）
+;     标签: 迅游加速器
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/迅游加速器.conf
+;     域名: portal-xunyou.qingcdn.com
+
+; --- 央视频  （2 条）
+;     标签: 央视频
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/央视频.conf
+;     域名: cdn.cmgadx.com
+
+; --- 曜影医疗  （2 条）
+;     标签: 曜影医疗
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/曜影医疗.conf
+;     域名: userpms-api.suh.cn, patient-api.suh.cn
+
+; --- 一淘  （2 条）
+;     标签: 一淘
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/一淘.conf
+;     域名: acs.m.taobao.com, mtop.etao.noah.query, mtop.alimama.etao.config.query
+
+; --- 易捷加油  （2 条）
+;     标签: 易捷加油
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/易捷加油.conf
+;     域名: a.sinopecsales.com, ocrifs.ejoy.sinopec.com
+
+; --- 翼支付  （2 条）
+;     标签: 翼支付
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/翼支付.conf
+;     域名: mapi-app.bestpay.com.cn
+
+; --- 游戏时光  （2 条）
+;     标签: 游戏时光
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/游戏时光.conf
+;     域名: app02.vgtime.com, www.vgtime.com
+
+; --- 云宝宝大数据  （2 条）
+;     标签: 云宝宝大数据
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/云宝宝大数据.conf
+;     域名: nnapp.cloudbae.cn
+
+; --- 掌上公交  （2 条）
+;     标签: 掌上公交
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/掌上公交.conf
+;     域名: quanguo.mygolbs.com, MyGoServer.HttpPool.HttpHandlerServlet, wx.mygolbs.com, ApiData.do
+
+; --- 招商银行  （2 条）
+;     标签: 招商银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/招商银行.conf
+;     域名: webappcfg.paas.cmbchina.com, mbmodule-openapi.paas.cmbchina.com
+
+; --- 中国电信  （2 条）
+;     标签: 中国电信
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国电信.conf
+;     域名: cloud.189.cn, zt-app.go189.cn
+
+; --- 中油好客e站小程序  （2 条）
+;     标签: 中油好客e站小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中油好客e站小程序.conf
+;     域名: minipro.95504.net
+
+; --- 自如  （2 条）
+;     标签: 自如
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/自如.conf
+;     域名: ztoread.ziroom.com
+
+; --- 最右  （2 条）
+;     标签: 最右
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/最右.conf
+;     域名: api.izuiyou.com, adapi.izuiyou.com
+
+; --- ★解锁-DreamFace  （1 条）
+;     标签: ★解锁-DreamFace
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/unlock-解锁-DreamFace.conf
+;     域名: www.dreamfaceapp.com
+
+; --- ★解锁-Notability  （1 条）
+;     标签: ★解锁-Notability
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/unlock-解锁-Notability.conf
+;     域名: notability.com
+
+; --- ★解锁-蛋蛋不语VIP  （1 条）
+;     标签: ★解锁-蛋蛋不语VIP
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/unlock-解锁-蛋蛋不语VIP.conf
+;     域名: 38.76.202.248
+
+; --- 12123  （1 条）
+;     标签: 12123
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/12123.conf
+;     域名: gab.122.gov.cn
+
+; --- 12306  （1 条）
+;     标签: 12306
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/12306.conf
+;     域名: ad.12306.cn
+
+; --- 21经济网  （1 条）
+;     标签: 21经济网
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/21经济网.conf
+;     域名: api.21jingji.com
+
+; --- 2345天气王  （1 条）
+;     标签: 2345天气王
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/2345天气王.conf
+;     域名: tianqi.2345.com
+
+; --- 360儿童卫士  （1 条）
+;     标签: 360儿童卫士
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/360儿童卫士.conf
+;     域名: ad.life.360.cn
+
+; --- 500  （1 条）
+;     标签: 500
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/500.conf
+;     域名: evs.500.com
+
+; --- AppSo  （1 条）
+;     标签: AppSo
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/AppSo.conf
+;     域名: sso.ifanr.com
+
+; --- BoxJS  （1 条）
+;     标签: BoxJS
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/BoxJS.conf
+
+; --- clicli  （1 条）
+;     标签: clicli
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/clicli.conf
+;     域名: js-ad.ayximgs.com.ad-universe-cdn.hzhcbkj.cn
+
+; --- Clubmed  （1 条）
+;     标签: Clubmed
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Clubmed.conf
+;     域名: clubmed.bd.clubmedmnp.com
+
+; --- crunchyroll  （1 条）
+;     标签: crunchyroll
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/crunchyroll.conf
+;     域名: beta-api.crunchyroll.com
+
+; --- e充电  （1 条）
+;     标签: e充电
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/e充电.conf
+;     域名: cdn-evone-ceph.echargenet.com
+
+; --- e代驾  （1 条）
+;     标签: e代驾
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/e代驾.conf
+;     域名: pic.edaijia.cn
+
+; --- i3  （1 条）
+;     标签: i3
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/i3.conf
+;     域名: www.i3zh.com
+
+; --- IT之家  （1 条）
+;     标签: IT之家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/IT之家.conf
+;     域名: napi.ithome.com
+
+; --- linxi  （1 条）
+;     标签: linxi
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/linxi.conf
+;     域名: api.internetofcity.cn
+
+; --- LocSim  （1 条）
+;     标签: LocSim
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/LocSim.conf
+;     域名: app.aa-ab.com
+
+; --- MIX  （1 条）
+;     标签: MIX
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/MIX.conf
+;     域名: dispatcher.camera360.com
+
+; --- NTPlay  （1 条）
+;     标签: NTPlay
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/NTPlay.conf
+;     域名: blog.nilbt.com
+
+; --- omofun  （1 条）
+;     标签: omofun
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/omofun.conf
+;     域名: 103.91.210.141
+
+; --- pikpak  （1 条）
+;     标签: pikpak
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/pikpak.conf
+;     域名: access.mypikpak.com
+
+; --- PushPlus微信推送广告  （1 条）
+;     标签: PushPlus微信推送广告
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/PushPlus微信推送广告.conf
+;     域名: www.pushplus.plus
+
+; --- QQ浏览器  （1 条）
+;     标签: QQ浏览器
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/QQ浏览器.conf
+;     域名: us.l.qq.com
+
+; --- QQ钱包  （1 条）
+;     标签: QQ钱包
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/QQ钱包.conf
+;     域名: m.qianbao.qq.com
+
+; --- Reddit  （1 条）
+;     标签: Reddit
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Reddit.conf
+;     域名: reddit.com
+
+; --- TapTap  （1 条）
+;     标签: TapTap
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/TapTap.conf
+;     域名: api.taptapdada.com
+
+; --- Top Widgets  （1 条）
+;     标签: Top Widgets
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Top_Widgets.conf
+;     域名: top-widgets-api.xiaozujian.com
+
+; --- TruthSocial  （1 条）
+;     标签: TruthSocial
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/TruthSocial.conf
+;     域名: truthsocial.com
+
+; --- TT语音  （1 条）
+;     标签: TT语音
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/TT语音.conf
+;     域名: ga-album-cdnqn.52tt.com
+
+; --- TubeMax  （1 条）
+;     标签: TubeMax
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/TubeMax.conf
+;     域名: i18n-pglstatp.com
+
+; --- vgTime  （1 条）
+;     标签: vgTime
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/vgTime.conf
+;     域名: app02.vgtime.com
+
+; --- Vista看天下  （1 条）
+;     标签: Vista看天下
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Vista看天下.conf
+;     域名: open3.vistastory.com
+
+; --- Weico(微博客户端)  （1 条）
+;     标签: Weico(微博客户端)
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Weico(微博客户端).conf
+;     域名: overseas.weico.cc
+
+; --- WiFi万能钥匙  （1 条）
+;     标签: WiFi万能钥匙
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/WiFi万能钥匙.conf
+;     域名: cds.wifi188.com, feeds.sec
+
+; --- X(Twitter)网页版  （1 条）
+;     标签: X(Twitter)网页版
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/X(Twitter)网页版.conf
+;     域名: x.com
+
+; --- Yahoo  （1 条）
+;     标签: Yahoo
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/Yahoo.conf
+;     域名: m.yap.yahoo.com, getAds.do
+
+; --- 爱回收  （1 条）
+;     标签: 爱回收
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/爱回收.conf
+;     域名: gw.aihuishou.com
+
+; --- 爱企查  （1 条）
+;     标签: 爱企查
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/爱企查.conf
+;     域名: b2baifanfan.baidu.com
+
+; --- 爱牵挂care  （1 条）
+;     标签: 爱牵挂care
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/爱牵挂care.conf
+;     域名: manager.aiqiangua.com, start_ad.do
+
+; --- 爱思助手  （1 条）
+;     标签: 爱思助手
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/爱思助手.conf
+;     域名: list-app-m.i4.cn
+
+; --- 爱桐乡  （1 条）
+;     标签: 爱桐乡
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/爱桐乡.conf
+;     域名: mapi.txcmapp.com
+
+; --- 爱阅书香  （1 条）
+;     标签: 爱阅书香
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/爱阅书香.conf
+;     域名: icc.one
+
+; --- 安徽掌上10000  （1 条）
+;     标签: 安徽掌上10000
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/安徽掌上10000.conf
+;     域名: www.ahzs10000.com, newVerson_getStartUp.action
+
+; --- 澳觅  （1 条）
+;     标签: 澳觅
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/澳觅.conf
+;     域名: interface.aomiapp.com
+
+; --- 百度文库  （1 条）
+;     标签: 百度文库
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/百度文库.conf
+;     域名: appwk.baidu.com
+
+; --- 百信银行  （1 条）
+;     标签: 百信银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/百信银行.conf
+;     域名: mres.aibank.com
+
+; --- 半月谈  （1 条）
+;     标签: 半月谈
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/半月谈.conf
+;     域名: www.banyuetanapp.com
+
+; --- 北京首汽  （1 条）
+;     标签: 北京首汽
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/北京首汽.conf
+;     域名: gateway.shouqiev.com
+
+; --- 北京银行  （1 条）
+;     标签: 北京银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/北京银行.conf
+;     域名: cdnmobibank.bankofbeijing.com.cn
+
+; --- 贝壳找房  （1 条）
+;     标签: 贝壳找房
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/贝壳找房.conf
+;     域名: apps.api.ke.com
+
+; --- 贝太厨房  （1 条）
+;     标签: 贝太厨房
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/贝太厨房.conf
+;     域名: channel.beitaichufang.com
+
+; --- 本来生活  （1 条）
+;     标签: 本来生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/本来生活.conf
+;     域名: benlailife.com
+
+; --- 比特球云盘  （1 条）
+;     标签: 比特球云盘
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/比特球云盘.conf
+;     域名: pan-api.bitqiu.com
+
+; --- 比亚迪王朝  （1 条）
+;     标签: 比亚迪王朝
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/比亚迪王朝.conf
+;     域名: cache.bydauto.com.cn
+
+; --- 币安  （1 条）
+;     标签: 币安
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/币安.conf
+
+; --- 币世界  （1 条）
+;     标签: 币世界
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/币世界.conf
+;     域名: iapi.bishijie.com
+
+; --- 菠萝包轻小说  （1 条）
+;     标签: 菠萝包轻小说
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/菠萝包轻小说.conf
+;     域名: api.sfacg.com
+
+; --- 财经杂志  （1 条）
+;     标签: 财经杂志
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/财经杂志.conf
+;     域名: api.caijingmobile.com
+
+; --- 财联社  （1 条）
+;     标签: 财联社
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/财联社.conf
+;     域名: api3.cls.cn
+
+; --- 财新网  （1 条）
+;     标签: 财新网
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/财新网.conf
+;     域名: gg.caixin.com
+
+; --- 超星学习通  （1 条）
+;     标签: 超星学习通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/超星学习通.conf
+;     域名: learn.chaoxing.com
+
+; --- 潮玩宇宙  （1 条）
+;     标签: 潮玩宇宙
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/潮玩宇宙.conf
+;     域名: ios-api.lucklyworld.com
+
+; --- 创客贴设计  （1 条）
+;     标签: 创客贴设计
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/创客贴设计.conf
+;     域名: gw.chuangkit.com
+
+; --- 刺猬猫阅读  （1 条）
+;     标签: 刺猬猫阅读
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/刺猬猫阅读.conf
+;     域名: app.hbooker.com
+
+; --- 大疆商城  （1 条）
+;     标签: 大疆商城
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/大疆商城.conf
+;     域名: se-api.djiits.com
+
+; --- 大智慧  （1 条）
+;     标签: 大智慧
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/大智慧.conf
+;     域名: ssp.dzh.com.cn
+
+; --- 电E宝  （1 条）
+;     标签: 电E宝
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/电E宝.conf
+;     域名: app.95598pay.com
+
+; --- 电影猎手  （1 条）
+;     标签: 电影猎手
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/电影猎手.conf
+;     域名: app-v1.ecoliving168.com
+
+; --- 丁香医生  （1 条）
+;     标签: 丁香医生
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/丁香医生.conf
+;     域名: dxy.com
+
+; --- 丁香园  （1 条）
+;     标签: 丁香园
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/丁香园.conf
+;     域名: dq.dxy.cn
+
+; --- 钉钉  （1 条）
+;     标签: 钉钉
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/钉钉.conf
+;     域名: alicdn.com
+
+; --- 东方财富  （1 条）
+;     标签: 东方财富
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/东方财富.conf
+;     域名: emdcadvertise.eastmoney.com
+
+; --- 懂球帝  （1 条）
+;     标签: 懂球帝
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/懂球帝.conf
+;     域名: ap.dongqiudi.com
+
+; --- 樊登读书  （1 条）
+;     标签: 樊登读书
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/樊登读书.conf
+;     域名: gateway-api.dushu365.com
+
+; --- 飞猫管家  （1 条）
+;     标签: 飞猫管家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/飞猫管家.conf
+;     域名: app.flymodem.com.cn
+
+; --- 粉笔  （1 条）
+;     标签: 粉笔
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/粉笔.conf
+;     域名: tiku.fenbi.com
+
+; --- 福享太平  （1 条）
+;     标签: 福享太平
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/福享太平.conf
+;     域名: ecloud.tppension.cntaiping.com
+
+; --- 复游会微信小程序  （1 条）
+;     标签: 复游会微信小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/复游会微信小程序.conf
+;     域名: apis.folidaymall.com
+
+; --- 盖得排行  （1 条）
+;     标签: 盖得排行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/盖得排行.conf
+;     域名: zone.guiderank-app.com, listLaunchADByCity.do
+
+; --- 稿定设计  （1 条）
+;     标签: 稿定设计
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/稿定设计.conf
+;     域名: qiye.gaoding.com
+
+; --- 工商银行  （1 条）
+;     标签: 工商银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/工商银行.conf
+;     域名: v.icbc.com.cn
+
+; --- 工银E生活  （1 条）
+;     标签: 工银E生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/工银E生活.conf
+;     域名: pv.elife.icbc.com.cn
+
+; --- 工银e生活小程序  （1 条）
+;     标签: 工银e生活小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/工银e生活小程序.conf
+;     域名: elife.icbc.com.cn, getMantlePages.do
+
+; --- 公考雷达  （1 条）
+;     标签: 公考雷达
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/公考雷达.conf
+;     域名: api.gongkaoleida.com
+
+; --- 故宫博物馆小程序  （1 条）
+;     标签: 故宫博物馆小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/故宫博物馆小程序.conf
+;     域名: gugongmini.dpm.org.cn
+
+; --- 冠寓  （1 条）
+;     标签: 冠寓
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/冠寓.conf
+;     域名: guanyu.longfor.com
+
+; --- 光大银行  （1 条）
+;     标签: 光大银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/光大银行.conf
+;     域名: mobile.cebbank.com
+
+; --- 光大银行 阳光惠生活  （1 条）
+;     标签: 光大银行 阳光惠生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/光大银行_阳光惠生活.conf
+;     域名: yghsh.cebbank.com
+
+; --- 广州农商银行  （1 条）
+;     标签: 广州农商银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/广州农商银行.conf
+;     域名: mbank.grcbank.com
+
+; --- 国家医保服务平台  （1 条）
+;     标签: 国家医保服务平台
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/国家医保服务平台.conf
+;     域名: fuwu.nhsa.gov.cn
+
+; --- 国泰君安  （1 条）
+;     标签: 国泰君安
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/国泰君安.conf
+;     域名: dl.app.gtja.com
+
+; --- 哈富证券  （1 条）
+;     标签: 哈富证券
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/哈富证券.conf
+;     域名: emisdatacenteraws.hafoo.com
+
+; --- 嗨学  （1 条）
+;     标签: 嗨学
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/嗨学.conf
+;     域名: www.haixue.com
+
+; --- 海尔服务小程序  （1 条）
+;     标签: 海尔服务小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/海尔服务小程序.conf
+;     域名: service.haiersmarthomes.com
+
+; --- 海豚优惠  （1 条）
+;     标签: 海豚优惠
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/海豚优惠.conf
+;     域名: townmalls.cn, mossp.BannerManager
+
+; --- 杭州公交  （1 条）
+;     标签: 杭州公交
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/杭州公交.conf
+;     域名: m.ibuscloud.com
+
+; --- 好好住  （1 条）
+;     标签: 好好住
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/好好住.conf
+;     域名: api.haohaozhu.cn
+
+; --- 好型体重秤  （1 条）
+;     标签: 好型体重秤
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/好型体重秤.conf
+;     域名: open.fitdays.cn
+
+; --- 合利宝展业通  （1 条）
+;     标签: 合利宝展业通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/合利宝展业通.conf
+;     域名: promote-trx.helipay.com
+
+; --- 和风天气  （1 条）
+;     标签: 和风天气
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/和风天气.conf
+;     域名: hfapp-service.qweather.net
+
+; --- 红版报  （1 条）
+;     标签: 红版报
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/红版报.conf
+;     域名: fbchina.flipchina.cn
+
+; --- 虎嗅  （1 条）
+;     标签: 虎嗅
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/虎嗅.conf
+;     域名: api-ad-product.huxiu.com
+
+; --- 花小猪  （1 条）
+;     标签: 花小猪
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/花小猪.conf
+;     域名: res.hongyibo.com.cn
+
+; --- 华宝智投  （1 条）
+;     标签: 华宝智投
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/华宝智投.conf
+;     域名: api.touker.com, IAdvertisementAPI.queryStartAdvertisement
+
+; --- 华彩生活  （1 条）
+;     标签: 华彩生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/华彩生活.conf
+;     域名: static.creditcard.hxb.com.cn
+
+; --- 黄油相机  （1 条）
+;     标签: 黄油相机
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/黄油相机.conf
+;     域名: api4.bybutter.com
+
+; --- 汇丰汇选  （1 条）
+;     标签: 汇丰汇选
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/汇丰汇选.conf
+;     域名: m.prod.app.hsbcfts.com.cn
+
+; --- 火猫  （1 条）
+;     标签: 火猫
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/火猫.conf
+;     域名: api.huomao.com
+
+; --- 机核网  （1 条）
+;     标签: 机核网
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/机核网.conf
+;     域名: www.gcores.com
+
+; --- 吉林银行  （1 条）
+;     标签: 吉林银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/吉林银行.conf
+;     域名: cdn.jlbank.com.cn
+
+; --- 极简汇率  （1 条）
+;     标签: 极简汇率
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/极简汇率.conf
+;     域名: explorer.tratao.com
+
+; --- 加油广东  （1 条）
+;     标签: 加油广东
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/加油广东.conf
+;     域名: img.gdoil.cn
+
+; --- 简讯  （1 条）
+;     标签: 简讯
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/简讯.conf
+;     域名: api.tipsoon.com
+
+; --- 江苏银行  （1 条）
+;     标签: 江苏银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/江苏银行.conf
+;     域名: mbank5.jsbchina.cn
+
+; --- 街电  （1 条）
+;     标签: 街电
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/街电.conf
+;     域名: s.jiediankeji.com
+
+; --- 界面新闻  （1 条）
+;     标签: 界面新闻
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/界面新闻.conf
+;     域名: img.jiemian.com
+
+; --- 今日水印相机  （1 条）
+;     标签: 今日水印相机
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/今日水印相机.conf
+;     域名: api.sogaha.cn
+
+; --- 金十数据  （1 条）
+;     标签: 金十数据
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/金十数据.conf
+;     域名: jad-api.jin10.com
+
+; --- 锦江荟APP  （1 条）
+;     标签: 锦江荟APP
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/锦江荟APP.conf
+;     域名: booking.bestwehotel.com
+
+; --- 京东健康  （1 条）
+;     标签: 京东健康
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/京东健康.conf
+;     域名: m.360buyimg.com
+
+; --- 京东云无线宝  （1 条）
+;     标签: 京东云无线宝
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/京东云无线宝.conf
+;     域名: router-app-api.jdcloud.com
+
+; --- 开源中国  （1 条）
+;     标签: 开源中国
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/开源中国.conf
+;     域名: www.oschina.net
+
+; --- 看理想  （1 条）
+;     标签: 看理想
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/看理想.conf
+;     域名: api.vistopia.com.cn
+
+; --- 口袋校园  （1 条）
+;     标签: 口袋校园
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/口袋校园.conf
+;     域名: pocketuni.net
+
+; --- 夸克  （1 条）
+;     标签: 夸克
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/夸克.conf
+
+; --- 快手联盟,优量汇,穿山甲「广告联盟」  （1 条）
+;     标签: 快手联盟,优量汇,穿山甲「广告联盟」
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/快手联盟,优量汇,穿山甲「广告联盟」.conf
+;     域名: api-access.pangolin-sdk-toutiao.com, open.e.kuaishou.com, mi.gdt.qq.com, gdt_mview.fcg
+
+; --- 拉卡拉  （1 条）
+;     标签: 拉卡拉
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/拉卡拉.conf
+;     域名: lakala.com
+
+; --- 来电  （1 条）
+;     标签: 来电
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/来电.conf
+;     域名: mobile-api.imlaidian.com
+
+; --- 莱充  （1 条）
+;     标签: 莱充
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/莱充.conf
+;     域名: laichon.com
+
+; --- 拦截100  （1 条）
+;     标签: 拦截100
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/拦截100.conf
+;     域名: tagit.hyhuo.com
+
+; --- 蓝基因  （1 条）
+;     标签: 蓝基因
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/蓝基因.conf
+;     域名: tk.lanjiyin.com.cn
+
+; --- 懒投资  （1 条）
+;     标签: 懒投资
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/懒投资.conf
+;     域名: ios.lantouzi.com
+
+; --- 乐堡潮玩馆小程序  （1 条）
+;     标签: 乐堡潮玩馆小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/乐堡潮玩馆小程序.conf
+;     域名: tbgapplet.carlsberg.asia
+
+; --- 乐橙  （1 条）
+;     标签: 乐橙
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/乐橙.conf
+;     域名: dl-cu-hz.lechange.cn
+
+; --- 联想  （1 条）
+;     标签: 联想
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/联想.conf
+;     域名: api.club.lenovo.cn
+
+; --- 联想至像打印  （1 条）
+;     标签: 联想至像打印
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/联想至像打印.conf
+;     域名: abcapi.lenovoimage.com
+
+; --- 两步路  （1 条）
+;     标签: 两步路
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/两步路.conf
+;     域名: helper.2bulu.com
+
+; --- 鲁班到家用户版  （1 条）
+;     标签: 鲁班到家用户版
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/鲁班到家用户版.conf
+;     域名: order-app-api.lbdj.com
+
+; --- 旅法师营地  （1 条）
+;     标签: 旅法师营地
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/旅法师营地.conf
+;     域名: www.iyingdi.cn
+
+; --- 妈妈网孕育  （1 条）
+;     标签: 妈妈网孕育
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/妈妈网孕育.conf
+;     域名: qimg.cdnmama.com
+
+; --- 麦当劳  （1 条）
+;     标签: 麦当劳
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/麦当劳.conf
+;     域名: api.mcd.cn
+
+; --- 猫耳FM  （1 条）
+;     标签: 猫耳FM
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/猫耳FM.conf
+;     域名: app.missevan.com
+
+; --- 美丽修行  （1 条）
+;     标签: 美丽修行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/美丽修行.conf
+;     域名: api.bevol.com
+
+; --- 美团充电宝小程序  （1 条）
+;     标签: 美团充电宝小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/美团充电宝小程序.conf
+;     域名: cdb.meituan.com
+
+; --- 美团众包  （1 条）
+;     标签: 美团众包
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/美团众包.conf
+;     域名: peisongapi.meituan.com
+
+; --- 美味不用等  （1 条）
+;     标签: 美味不用等
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/美味不用等.conf
+;     域名: capi.mwee.cn
+
+; --- 米游社  （1 条）
+;     标签: 米游社
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/米游社.conf
+;     域名: upload-bbs.mihoyo.com
+
+; --- 秒拍  （1 条）
+;     标签: 秒拍
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/秒拍.conf
+;     域名: b-api.ins.miaopai.com
+
+; --- 蘑菇租房  （1 条）
+;     标签: 蘑菇租房
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/蘑菇租房.conf
+;     域名: api.mgzf.com
+
+; --- 南方航空  （1 条）
+;     标签: 南方航空
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/南方航空.conf
+;     域名: 3g.csair.com
+
+; --- 内容农场  （1 条）
+;     标签: 内容农场
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/内容农场.conf
+;     域名: www.google
+
+; --- 澎湃新闻  （1 条）
+;     标签: 澎湃新闻
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/澎湃新闻.conf
+;     域名: adpai.thepaper.cn
+
+; --- 皮皮搞笑  （1 条）
+;     标签: 皮皮搞笑
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/皮皮搞笑.conf
+;     域名: adapi.izuiyou.com
+
+; --- 票根  （1 条）
+;     标签: 票根
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/票根.conf
+;     域名: pss.txffp.com
+
+; --- 票星球  （1 条）
+;     标签: 票星球
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/票星球.conf
+;     域名: appapi.caiyicloud.com
+
+; --- 平安壹钱包  （1 条）
+;     标签: 平安壹钱包
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/平安壹钱包.conf
+;     域名: mobile.1qianbao.com
+
+; --- 平安证券  （1 条）
+;     标签: 平安证券
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/平安证券.conf
+;     域名: pacdn.m.stock.pingan.com
+
+; --- 浦大喜奔  （1 条）
+;     标签: 浦大喜奔
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/浦大喜奔.conf
+;     域名: image.spdbccc.com.cn
+
+; --- 奇瑞汽车  （1 条）
+;     标签: 奇瑞汽车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/奇瑞汽车.conf
+;     域名: mobile-consumer-sapp.chery.cn
+
+; --- 亲宝宝  （1 条）
+;     标签: 亲宝宝
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/亲宝宝.conf
+;     域名: api.qbb6.com
+
+; --- 去哒  （1 条）
+;     标签: 去哒
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/去哒.conf
+;     域名: iqushangwang.8quan.com
+
+; --- 全家便利店  （1 条）
+;     标签: 全家便利店
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/全家便利店.conf
+;     域名: fmapp.chinafamilymart.com.cn
+
+; --- 全民K歌  （1 条）
+;     标签: 全民K歌
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/全民K歌.conf
+;     域名: y.gtimg.cn
+
+; --- 全民生活  （1 条）
+;     标签: 全民生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/全民生活.conf
+;     域名: rs.creditcard.cmbc.com.cn
+
+; --- 全能浏览器  （1 条）
+;     标签: 全能浏览器
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/全能浏览器.conf
+;     域名: mi.gdt.qq.com, gdt_mview.fcg
+
+; --- 日产智联  （1 条）
+;     标签: 日产智联
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/日产智联.conf
+;     域名: oneapph5.dongfeng-nissan.com.cn
+
+; --- 日淘任意门  （1 条）
+;     标签: 日淘任意门
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/日淘任意门.conf
+;     域名: app.meruki.cn, Sig.Front.AppFront.GetOpenAdDoorzo
+
+; --- 三联中读  （1 条）
+;     标签: 三联中读
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/三联中读.conf
+;     域名: apis.lifeweek.com.cn
+
+; --- 厦门航空  （1 条）
+;     标签: 厦门航空
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/厦门航空.conf
+;     域名: mobileapi.xiamenair.com
+
+; --- 闪现一下  （1 条）
+;     标签: 闪现一下
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/闪现一下.conf
+;     域名: api.gameplus.qq.com, community.OnloadSrv
+
+; --- 少数派  （1 条）
+;     标签: 少数派
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/少数派.conf
+;     域名: ios.sspai.com
+
+; --- 深圳通  （1 条）
+;     标签: 深圳通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/深圳通.conf
+;     域名: ecard.shenzhentong.com, QryAdvertList.do
+
+; --- 神马  （1 条）
+;     标签: 神马
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/神马.conf
+;     域名: editor.sm.cn
+
+; --- 神舟汽车  （1 条）
+;     标签: 神舟汽车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/神舟汽车.conf
+;     域名: img01.10101111cdn.com
+
+; --- 省省回头车  （1 条）
+;     标签: 省省回头车
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/省省回头车.conf
+;     域名: www.ymm56.com
+
+; --- 盛趣游戏  （1 条）
+;     标签: 盛趣游戏
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/盛趣游戏.conf
+;     域名: daoyu.sdo.com
+
+; --- 首旅如家  （1 条）
+;     标签: 首旅如家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/首旅如家.conf
+;     域名: app.homeinns.com
+
+; --- 顺丰优选  （1 条）
+;     标签: 顺丰优选
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/顺丰优选.conf
+;     域名: mapi.sfbest.com
+
+; --- 四季線上影視  （1 条）
+;     标签: 四季線上影視
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/四季線上影視.conf
+;     域名: service.4gtv.tv
+
+; --- 搜电充电  （1 条）
+;     标签: 搜电充电
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/搜电充电.conf
+;     域名: wxs-weixin.sd.zhumanggroup.com
+
+; --- 苏周到  （1 条）
+;     标签: 苏周到
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/苏周到.conf
+;     域名: szdmobile.suzhou.gov.cn
+
+; --- 台铃智能  （1 条）
+;     标签: 台铃智能
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/台铃智能.conf
+;     域名: www.tailgdd.com
+
+; --- 太平洋知科技  （1 条）
+;     标签: 太平洋知科技
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/太平洋知科技.conf
+;     域名: mrobot.pconline.com.cn
+
+; --- 淘票票  （1 条）
+;     标签: 淘票票
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/淘票票.conf
+;     域名: acs.m.taobao.com, mtop.film.mtopadvertiseapi
+
+; --- 淘淘阅读  （1 条）
+;     标签: 淘淘阅读
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/淘淘阅读.conf
+;     域名: bid.adview.cn
+
+; --- 腾讯乘车码  （1 条）
+;     标签: 腾讯乘车码
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/腾讯乘车码.conf
+;     域名: ccmsupport-sz.tenpay.com, ccm_page_element.cgi
+
+; --- 腾讯地图  （1 条）
+;     标签: 腾讯地图
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/腾讯地图.conf
+;     域名: 4gimg.map.qq.com
+
+; --- 腾讯手机管家  （1 条）
+;     标签: 腾讯手机管家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/腾讯手机管家.conf
+;     域名: otheve.beacon.qq.com
+
+; --- 腾讯游戏  （1 条）
+;     标签: 腾讯游戏
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/腾讯游戏.conf
+;     域名: qt.qq.com
+
+; --- 腾讯游戏社区  （1 条）
+;     标签: 腾讯游戏社区
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/腾讯游戏社区.conf
+;     域名: static.gameplus.qq.com
+
+; --- 天府手机银行  （1 条）
+;     标签: 天府手机银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天府手机银行.conf
+;     域名: cgbank.oss-cn-shenzhen.aliyuncs.com
+
+; --- 天府通  （1 条）
+;     标签: 天府通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天府通.conf
+;     域名: ams-cdn.cdtft.cn
+
+; --- 天山云TV  （1 条）
+;     标签: 天山云TV
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天山云TV.conf
+;     域名: www.tsytv.com.cn
+
+; --- 天星金融  （1 条）
+;     标签: 天星金融
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天星金融.conf
+;     域名: t1.market.xiaomi.com
+
+; --- 天翼云盘  （1 条）
+;     标签: 天翼云盘
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/天翼云盘.conf
+;     域名: api.cloud.189.cn
+
+; --- 途牛  （1 条）
+;     标签: 途牛
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/途牛.conf
+;     域名: m.tuniu.com
+
+; --- 推栏  （1 条）
+;     标签: 推栏
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/推栏.conf
+;     域名: m.pvp.xoyo.com
+
+; --- 完美世界电竞  （1 条）
+;     标签: 完美世界电竞
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/完美世界电竞.conf
+;     域名: api.wmpvp.com
+
+; --- 网易新闻  （1 条）
+;     标签: 网易新闻
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易新闻.conf
+;     域名: c.m.163.com
+
+; --- 网易有钱  （1 条）
+;     标签: 网易有钱
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/网易有钱.conf
+;     域名: client.mail.163.com
+
+; --- 威锋  （1 条）
+;     标签: 威锋
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/威锋.conf
+;     域名: api.wfdata.club
+
+; --- 微店  （1 条）
+;     标签: 微店
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/微店.conf
+;     域名: thor.weidian.com, home.splash
+
+; --- 微信解除链接限制  （1 条）
+;     标签: 微信解除链接限制
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/微信解除链接限制.conf
+;     域名: weixin110.qq, security.wechat
+
+; --- 温尼伯站  （1 条）
+;     标签: 温尼伯站
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/温尼伯站.conf
+;     域名: vue3-api.zhixiny.cn
+
+; --- 悟空遥控器  （1 条）
+;     标签: 悟空遥控器
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/悟空遥控器.conf
+;     域名: img.wukongtv.com
+
+; --- 西窗烛  （1 条）
+;     标签: 西窗烛
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/西窗烛.conf
+;     域名: lchttpapi.xczim.com
+
+; --- 希尔顿  （1 条）
+;     标签: 希尔顿
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/希尔顿.conf
+;     域名: wcprd.hilton.com.cn
+
+; --- 希沃白板5  （1 条）
+;     标签: 希沃白板5
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/希沃白板5.conf
+;     域名: cstore-en-public-tx.seewo.com
+
+; --- 稀饭动漫  （1 条）
+;     标签: 稀饭动漫
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/稀饭动漫.conf
+;     域名: pzoap.moedot.net
+
+; --- 虾米音乐  （1 条）
+;     标签: 虾米音乐
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/虾米音乐.conf
+;     域名: acs.m.taobao.com, mtop.alimusic.common.mobileservice.startinit
+
+; --- 香蕉是一种水果  （1 条）
+;     标签: 香蕉是一种水果
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/香蕉是一种水果.conf
+;     域名: apps.com
+
+; --- 小Biu智家  （1 条）
+;     标签: 小Biu智家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小Biu智家.conf
+;     域名: shcss.suning.com, queryAppImage.do
+
+; --- 小白学习打印机  （1 条）
+;     标签: 小白学习打印机
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小白学习打印机.conf
+;     域名: api.xbxxhz.com
+
+; --- 小合拓展  （1 条）
+;     标签: 小合拓展
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小合拓展.conf
+;     域名: xhtz.oss-cn-guangzhou.aliyuncs.com
+
+; --- 小利生活  （1 条）
+;     标签: 小利生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小利生活.conf
+;     域名: mpos-pic.helipay.com
+
+; --- 小米商城  （1 条）
+;     标签: 小米商城
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小米商城.conf
+;     域名: api.m.mi.com
+
+; --- 小米有品  （1 条）
+;     标签: 小米有品
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小米有品.conf
+;     域名: shopapi.io.mi.com
+
+; --- 小米运动  （1 条）
+;     标签: 小米运动
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小米运动.conf
+;     域名: huami.com
+
+; --- 小牛  （1 条）
+;     标签: 小牛
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小牛.conf
+;     域名: app-api.niu.com
+
+; --- 小佩宠物  （1 条）
+;     标签: 小佩宠物
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小佩宠物.conf
+;     域名: api.petkit.cn
+
+; --- 小睡眠  （1 条）
+;     标签: 小睡眠
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小睡眠.conf
+;     域名: api.psy-1.com
+
+; --- 小特 - 首选特斯拉中文社区  （1 条）
+;     标签: 小特 - 首选特斯拉中文社区
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小特_-_首选特斯拉中文社区.conf
+;     域名: lcen.xiaote.net
+
+; --- 小熊艺术  （1 条）
+;     标签: 小熊艺术
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/小熊艺术.conf
+;     域名: www.xiaoxiongmeishu.com
+
+; --- 心悦俱乐部  （1 条）
+;     标签: 心悦俱乐部
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/心悦俱乐部.conf
+;     域名: bgw.xinyue.qq.com, xyapi.PageService
+
+; --- 新浪新闻  （1 条）
+;     标签: 新浪新闻
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/新浪新闻.conf
+;     域名: edit.sinaapp.com
+
+; --- 新片场  （1 条）
+;     标签: 新片场
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/新片场.conf
+;     域名: app.xinpianchang.com
+
+; --- 星财富  （1 条）
+;     标签: 星财富
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/星财富.conf
+;     域名: operationapi.fosunhanig.com
+
+; --- 星火英语  （1 条）
+;     标签: 星火英语
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/星火英语.conf
+;     域名: apid.sparke.cn
+
+; --- 兴业生活  （1 条）
+;     标签: 兴业生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/兴业生活.conf
+;     域名: file.cibfintech.com
+
+; --- 兴业证券  （1 条）
+;     标签: 兴业证券
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/兴业证券.conf
+;     域名: static.xyzq.cn
+
+; --- 熊猫直播  （1 条）
+;     标签: 熊猫直播
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/熊猫直播.conf
+;     域名: static.api.m.panda.tv, clientconf.firstscreen
+
+; --- 讯飞  （1 条）
+;     标签: 讯飞
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/讯飞.conf
+;     域名: imeclient.openspeech.cn
+
+; --- 鸭奈飞  （1 条）
+;     标签: 鸭奈飞
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/鸭奈飞.conf
+;     域名: pipi.4kya.com, advert.position
+
+; --- 亚朵开屏  （1 条）
+;     标签: 亚朵开屏
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/亚朵开屏.conf
+;     域名: api2.yaduo.com
+
+; --- 央视网  （1 条）
+;     标签: 央视网
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/央视网.conf
+;     域名: www.cntv.cn
+
+; --- 一号店  （1 条）
+;     标签: 一号店
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/一号店.conf
+;     域名: venus.yhd.com
+
+; --- 一刻相册  （1 条）
+;     标签: 一刻相册
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/一刻相册.conf
+;     域名: issuecdn.baidupcs.com
+
+; --- 一起考教师  （1 条）
+;     标签: 一起考教师
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/一起考教师.conf
+;     域名: api.17kjs.com
+
+; --- 易校园  （1 条）
+;     标签: 易校园
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/易校园.conf
+;     域名: compus.xiaofubao.com
+
+; --- 银盛通  （1 条）
+;     标签: 银盛通
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/银盛通.conf
+;     域名: ad.ysepay.com
+
+; --- 银盛小Y管家  （1 条）
+;     标签: 银盛小Y管家
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/银盛小Y管家.conf
+;     域名: ads.ysepay.com
+
+; --- 印象笔记  （1 条）
+;     标签: 印象笔记
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/印象笔记.conf
+;     域名: app.yinxiang.com
+
+; --- 盈宝证券  （1 条）
+;     标签: 盈宝证券
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/盈宝证券.conf
+;     域名: api.winbull8.com
+
+; --- 盈立智投  （1 条）
+;     标签: 盈立智投
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/盈立智投.conf
+;     域名: hz.yxzq.com
+
+; --- 萤石  （1 条）
+;     标签: 萤石
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/萤石.conf
+;     域名: i.ys7.com
+
+; --- 映客直播  （1 条）
+;     标签: 映客直播
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/映客直播.conf
+;     域名: service.busi.inke.cn
+
+; --- 永安行  （1 条）
+;     标签: 永安行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/永安行.conf
+;     域名: api5.youonbike.com
+
+; --- 永辉  （1 条）
+;     标签: 永辉
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/永辉.conf
+;     域名: api.yonghuivip.com
+
+; --- 优书  （1 条）
+;     标签: 优书
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/优书.conf
+;     域名: gongdu.youshu.cc
+
+; --- 友邦  （1 条）
+;     标签: 友邦
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/友邦.conf
+;     域名: e-static.aia.com.cn
+
+; --- 友邻优课  （1 条）
+;     标签: 友邻优课
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/友邻优课.conf
+;     域名: new-app-api.ylyk.com
+
+; --- 育学园  （1 条）
+;     标签: 育学园
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/育学园.conf
+;     域名: yuxueyuan.cn
+
+; --- 猿辅导  （1 条）
+;     标签: 猿辅导
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/猿辅导.conf
+;     域名: xyst.yuanfudao.com
+
+; --- 云麦  （1 条）
+;     标签: 云麦
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/云麦.conf
+;     域名: restapi.iyunmai.com
+
+; --- 长城炼金术  （1 条）
+;     标签: 长城炼金术
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/长城炼金术.conf
+;     域名: fintechappdr.cgws.com
+
+; --- 掌上道具城  （1 条）
+;     标签: 掌上道具城
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/掌上道具城.conf
+;     域名: djcapp.game.qq.com, welink.ad.list
+
+; --- 掌上京彩  （1 条）
+;     标签: 掌上京彩
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/掌上京彩.conf
+;     域名: cdn-xyk-app.bankofbeijing.com.cn
+
+; --- 掌上鹿城  （1 条）
+;     标签: 掌上鹿城
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/掌上鹿城.conf
+;     域名: vapp.tmuyun.com
+
+; --- 招财猫直聘  （1 条）
+;     标签: 招财猫直聘
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/招财猫直聘.conf
+;     域名: beehiveapi.58.com
+
+; --- 招商证券  （1 条）
+;     标签: 招商证券
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/招商证券.conf
+;     域名: marketing.cmschina.com
+
+; --- 浙里办  （1 条）
+;     标签: 浙里办
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/浙里办.conf
+;     域名: portal.zjzwfw.gov.cn
+
+; --- 正气助手  （1 条）
+;     标签: 正气助手
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/正气助手.conf
+;     域名: apio.zhengqi100.com
+
+; --- 郑好办  （1 条）
+;     标签: 郑好办
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/郑好办.conf
+;     域名: app-izz.zhengzhou.gov.cn, gateway.do
+
+; --- 职工普惠  （1 条）
+;     标签: 职工普惠
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/职工普惠.conf
+;     域名: preprod.cdzghome.com
+
+; --- 指点天下  （1 条）
+;     标签: 指点天下
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/指点天下.conf
+;     域名: zua.zhidiantianxia.cn
+
+; --- 智行APP  （1 条）
+;     标签: 智行APP
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/智行APP.conf
+;     域名: m.ctrip.com
+
+; --- 中关村在线  （1 条）
+;     标签: 中关村在线
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中关村在线.conf
+;     域名: apicloud.zol.com.cn
+
+; --- 中国广电  （1 条）
+;     标签: 中国广电
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国广电.conf
+;     域名: app.10099.com.cn
+
+; --- 中国国际航空  （1 条）
+;     标签: 中国国际航空
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国国际航空.conf
+;     域名: m.airchina.com.cn
+
+; --- 中国人寿  （1 条）
+;     标签: 中国人寿
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国人寿.conf
+;     域名: ecssmobile.e-chinalife.com
+
+; --- 中国天气网小程序  （1 条）
+;     标签: 中国天气网小程序
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国天气网小程序.conf
+;     域名: e.weather.com.cn
+
+; --- 中国银行 缤纷生活  （1 条）
+;     标签: 中国银行 缤纷生活
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国银行_缤纷生活.conf
+;     域名: mlife.jf365.boc.cn, FirstPic.do
+
+; --- 中国知网  （1 条）
+;     标签: 中国知网
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中国知网.conf
+;     域名: xyz.cnki.net
+
+; --- 中银跨境GO  （1 条）
+;     标签: 中银跨境GO
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中银跨境GO.conf
+;     域名: openapi.boc.cn
+
+; --- 中油优途  （1 条）
+;     标签: 中油优途
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中油优途.conf
+;     域名: sichuan.95504.net
+
+; --- 中羽在线  （1 条）
+;     标签: 中羽在线
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/中羽在线.conf
+;     域名: app.badmintoncn.com
+
+; --- 众邦银行  （1 条）
+;     标签: 众邦银行
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/众邦银行.conf
+;     域名: direct.z-bank.com, AdvertImageDownLoad4Mobile.do
+
+; --- 猪八戒  （1 条）
+;     标签: 猪八戒
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/猪八戒.conf
+;     域名: fastbuyer.zbj.com
+
+; --- 住这儿  （1 条）
+;     标签: 住这儿
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/住这儿.conf
+;     域名: z.onewo.com
+
+; --- 追剧达人  （1 条）
+;     标签: 追剧达人
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/追剧达人.conf
+;     域名: zjdr666.com
+
+; --- 追书神器  （1 条）
+;     标签: 追书神器
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/追书神器.conf
+;     域名: adx-cn.anythinktech.com
+
+; --- 作业帮  （1 条）
+;     标签: 作业帮
+;     路径: https://raw.githubusercontent.com/<用户名>/<仓库名>/main/output/per-app/作业帮.conf
+;     域名: zybang.com
+
