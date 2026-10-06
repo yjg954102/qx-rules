@@ -1,0 +1,4 @@
+DOMAIN,s8t.teads.tv,reject
+DOMAIN,t.teads.tv,reject
+DOMAIN,t1.teads.tv,reject
+host-suffix,teads.tv,reject
