@@ -1,0 +1,4 @@
+DOMAIN,data-hoisin.coocaa.com,reject
+DOMAIN-SUFFIX,hoisin.coocaa.com,reject
+host,data-hoisin.coocaa.com,reject
+host-suffix,hoisin.coocaa.com,reject
