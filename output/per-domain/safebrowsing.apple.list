@@ -1,0 +1,3 @@
+host,proxy.safebrowsing.apple,reject
+host,token.safebrowsing.apple,reject
+host-suffix,safebrowsing.apple,reject
