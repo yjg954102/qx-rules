@@ -1,0 +1,3 @@
+DOMAIN,google-analytics.com,reject
+host-suffix,google-analytics.com,reject
+host-suffix,www.google-analytics.com,reject
