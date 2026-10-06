@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,ssac.suning.com,reject
+DOMAIN-SUFFIX,tad.suning.com,reject
+host-KEYWORD,m.suning.com,reject
+host-suffix,mads.suning.com,reject
+host-suffix,ssac.suning.com,reject
+host-suffix,tad.suning.com,reject
