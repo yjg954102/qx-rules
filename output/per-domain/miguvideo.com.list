@@ -1,0 +1,10 @@
+DOMAIN,clog.miguvideo.com,reject
+DOMAIN,ggic03.miguvideo.com,reject
+DOMAIN,ggmk.miguvideo.com,reject
+DOMAIN,ggx01.miguvideo.com,reject
+DOMAIN,ggx03.miguvideo.com,reject
+DOMAIN-SUFFIX,ggxwb.miguvideo.com,reject
+host,ggadoffline.miguvideo.com,reject
+host,ggic03.miguvideo.com,reject
+host,ggmk.miguvideo.com,reject
+host,ggx03.miguvideo.com,reject
