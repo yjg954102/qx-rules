@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,api.android.dianru.com,reject
+DOMAIN-SUFFIX,api.dianru.com,reject
+DOMAIN-SUFFIX,dianru.com,reject
+host-suffix,api.android.dianru.com,reject
+host-suffix,api.dianru.com,reject
+host-suffix,dianru.com,reject
