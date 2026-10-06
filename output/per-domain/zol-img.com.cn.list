@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,afp.zol-img.com.cn,reject
+DOMAIN-SUFFIX,p.zol-img.com.cn,reject
+DOMAIN-SUFFIX,pic.zol-img.com.cn,reject
+host-suffix,afp.zol-img.com.cn,reject
+host-suffix,pic.zol-img.com.cn,reject
