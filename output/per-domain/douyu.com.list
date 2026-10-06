@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,g.wan.douyu.com,reject
+DOMAIN-SUFFIX,wan.douyu.com,reject
+host-suffix,g.wan.douyu.com,reject
+host-suffix,wan.douyu.com,reject
