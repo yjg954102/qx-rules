@@ -1,0 +1,7 @@
+DOMAIN-SUFFIX,click-cn.plista.com,reject
+DOMAIN-SUFFIX,farm-cn.plista.com,reject
+DOMAIN-SUFFIX,plista.com,reject
+DOMAIN-SUFFIX,static-cn.plista.com,reject
+host-suffix,click-cn.plista.com,reject
+host-suffix,farm-cn.plista.com,reject
+host-suffix,plista.com,reject
