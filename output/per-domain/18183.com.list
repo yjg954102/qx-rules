@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,eezdx.erc.18183.com,reject
+DOMAIN-SUFFIX,img1.18183.com,reject
+DOMAIN-SUFFIX,zpe.klre.18183.com,reject
+host-suffix,eezdx.erc.18183.com,reject
+host-suffix,img1.18183.com,reject
+host-suffix,zpe.klre.18183.com,reject
