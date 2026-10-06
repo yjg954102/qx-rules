@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,d0.xcar.com.cn,reject
+DOMAIN-SUFFIX,dw.xcar.com.cn,reject
+DOMAIN-SUFFIX,pv.xcar.com.cn,reject
+host-suffix,d0.xcar.com.cn,reject
+host-suffix,dw.xcar.com.cn,reject
+host-suffix,pv.xcar.com.cn,reject
