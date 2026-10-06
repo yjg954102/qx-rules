@@ -1,0 +1,7 @@
+DOMAIN-SUFFIX,c.effectivemeasure.net,reject
+DOMAIN-SUFFIX,effectivemeasure.net,reject
+DOMAIN-SUFFIX,hk-cdn.effectivemeasure.net,reject
+DOMAIN-SUFFIX,me-cdn.effectivemeasure.net,reject
+DOMAIN-SUFFIX,s.effectivemeasure.net,reject
+DOMAIN-SUFFIX,sg-cdn.effectivemeasure.net,reject
+DOMAIN-SUFFIX,www9.effectivemeasure.net,reject
