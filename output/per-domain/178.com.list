@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,market.178.com,reject
+DOMAIN-SUFFIX,tuiguang.178.com,reject
+host-suffix,market.178.com,reject
+host-suffix,tuiguang.178.com,reject
