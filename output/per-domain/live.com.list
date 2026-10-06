@@ -1,0 +1,7 @@
+DOMAIN,outlookads.live.com,reject
+DOMAIN-SUFFIX,c.live.com,reject
+DOMAIN-SUFFIX,rad.live.com,reject
+DOMAIN-SUFFIX,watson.live.com,reject
+host-suffix,c.live.com,reject
+host-suffix,rad.live.com,reject
+host-suffix,watson.live.com,reject
