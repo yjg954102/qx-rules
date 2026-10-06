@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,bat.bing.com,reject
+DOMAIN-SUFFIX,c.bing.com,reject
+host-suffix,bat.bing.com,reject
+host-suffix,c.bing.com,reject
