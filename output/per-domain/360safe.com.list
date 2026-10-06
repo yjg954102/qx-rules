@@ -1,0 +1,9 @@
+DOMAIN-SUFFIX,dl.360safe.com,reject
+DOMAIN-SUFFIX,down.360safe.com,reject
+DOMAIN-SUFFIX,ini.update.360safe.com,reject
+DOMAIN-SUFFIX,inst.360safe.com,reject
+DOMAIN-SUFFIX,kuaikan.netmon.360safe.com,reject
+DOMAIN-SUFFIX,update.360safe.com,reject
+host-suffix,dl.360safe.com,reject
+host-suffix,ini.update.360safe.com,reject
+host-suffix,kuaikan.netmon.360safe.com,reject
