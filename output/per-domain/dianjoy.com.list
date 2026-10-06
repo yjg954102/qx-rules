@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,a.dianjoy.com,reject
+DOMAIN-SUFFIX,dianjoy.com,reject
+DOMAIN-SUFFIX,fast-cdn.dianjoy.com,reject
+host-suffix,a.dianjoy.com,reject
+host-suffix,dianjoy.com,reject
+host-suffix,fast-cdn.dianjoy.com,reject
