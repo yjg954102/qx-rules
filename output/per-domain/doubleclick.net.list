@@ -1,0 +1,7 @@
+DOMAIN,ad.doubleclick.net,reject
+DOMAIN,adclick.g.doubleclick.net,reject
+DOMAIN,googleads.g.doubleclick.net,reject
+DOMAIN,securepubads.g.doubleclick.net,reject
+DOMAIN-SUFFIX,doubleclick.net,reject
+host-suffix,doubleclick.net,reject
+host-suffix,googleads.g.doubleclick.net,reject
