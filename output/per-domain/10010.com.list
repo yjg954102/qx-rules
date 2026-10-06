@@ -1,0 +1,3 @@
+DOMAIN,m1.ad.10010.com,reject
+DOMAIN,smartad.10010.com,reject
+host-suffix,m1.ad.10010.com,reject
