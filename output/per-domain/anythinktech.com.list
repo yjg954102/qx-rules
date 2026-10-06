@@ -1,0 +1,9 @@
+DOMAIN,adx-bj.anythinktech.com,reject
+DOMAIN,adx-bj-req.anythinktech.com,reject
+DOMAIN,adx-cn.anythinktech.com,reject
+DOMAIN,adx-os.anythinktech.com,reject
+DOMAIN,api.anythinktech.com,reject
+DOMAIN,cn-api.anythinktech.com,reject
+DOMAIN,da.anythinktech.com,reject
+DOMAIN,tk.anythinktech.com,reject
+host-suffix,anythinktech.com,reject
