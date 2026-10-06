@@ -1,0 +1,5 @@
+DOMAIN-SUFFIX,l.ykimg.com,reject
+DOMAIN-SUFFIX,p-log.ykimg.com,reject
+host-suffix,l.ykimg.com,reject
+host-suffix,p-log.ykimg.com,reject
+host-suffix,r1.ykimg.com,reject
