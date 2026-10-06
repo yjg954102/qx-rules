@@ -1,0 +1,14 @@
+DOMAIN-SUFFIX,d0.sinaimg.cn,reject
+DOMAIN-SUFFIX,d1.sinaimg.cn,reject
+DOMAIN-SUFFIX,d2.sinaimg.cn,reject
+DOMAIN-SUFFIX,d3.sinaimg.cn,reject
+DOMAIN-SUFFIX,d6.sinaimg.cn,reject
+DOMAIN-SUFFIX,d7.sinaimg.cn,reject
+DOMAIN-SUFFIX,d8.sinaimg.cn,reject
+host-suffix,d0.sinaimg.cn,reject
+host-suffix,d1.sinaimg.cn,reject
+host-suffix,d2.sinaimg.cn,reject
+host-suffix,d3.sinaimg.cn,reject
+host-suffix,d6.sinaimg.cn,reject
+host-suffix,d7.sinaimg.cn,reject
+host-suffix,d8.sinaimg.cn,reject
