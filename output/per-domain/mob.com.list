@@ -1,0 +1,15 @@
+DOMAIN-SUFFIX,api.cmt.mob.com,reject
+DOMAIN-SUFFIX,api.exc.mob.com,reject
+DOMAIN-SUFFIX,api.share.mob.com,reject
+DOMAIN-SUFFIX,c.data.mob.com,reject
+DOMAIN-SUFFIX,cca.mob.com,reject
+DOMAIN-SUFFIX,devs.data.mob.com,reject
+DOMAIN-SUFFIX,m.data.mob.com,reject
+host-suffix,api.cmt.mob.com,reject
+host-suffix,api.exc.mob.com,reject
+host-suffix,api.share.mob.com,reject
+host-suffix,c.data.mob.com,reject
+host-suffix,cca.mob.com,reject
+host-suffix,devs.data.mob.com,reject
+host-suffix,m.data.mob.com,reject
+host-suffix,mob.com,reject
