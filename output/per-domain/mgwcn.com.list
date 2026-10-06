@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,in.mgwcn.com,reject
+DOMAIN-SUFFIX,mgwcn.com,reject
+DOMAIN-SUFFIX,rc.mgwcn.com,reject
+DOMAIN-SUFFIX,s.mgwcn.com,reject
