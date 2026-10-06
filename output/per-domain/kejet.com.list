@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,as.kejet.com,reject
+DOMAIN-SUFFIX,code.kejet.com,reject
+DOMAIN-SUFFIX,dmacore.kejet.com,reject
+DOMAIN-SUFFIX,kejet.com,reject
+host-suffix,as.kejet.com,reject
+host-suffix,code.kejet.com,reject
+host-suffix,dmacore.kejet.com,reject
+host-suffix,kejet.com,reject
