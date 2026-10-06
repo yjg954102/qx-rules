@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,10086.cn.baidu.cdn.yiwk.com,reject
+DOMAIN-SUFFIX,yiwk.com,reject
+host-suffix,10086.cn.baidu.cdn.yiwk.com,reject
