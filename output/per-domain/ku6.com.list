@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,addata.ku6.com,reject
+DOMAIN-SUFFIX,pvdata.ku6.com,reject
+DOMAIN-SUFFIX,static.ku6.com,reject
+host-suffix,addata.ku6.com,reject
+host-suffix,pvdata.ku6.com,reject
+host-suffix,static.ku6.com,reject
