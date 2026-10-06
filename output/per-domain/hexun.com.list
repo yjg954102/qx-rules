@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,hxjs.tool.hexun.com,reject
+DOMAIN-SUFFIX,hxsame.hexun.com,reject
+DOMAIN-SUFFIX,itv.hexun.com,reject
+DOMAIN-SUFFIX,utrack.hexun.com,reject
+host-suffix,hxjs.tool.hexun.com,reject
+host-suffix,hxsame.hexun.com,reject
+host-suffix,itv.hexun.com,reject
+host-suffix,utrack.hexun.com,reject
