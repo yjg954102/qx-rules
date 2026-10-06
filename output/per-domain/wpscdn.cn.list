@@ -1,0 +1,5 @@
+DOMAIN,img.auction-ads.wpscdn.cn,reject
+DOMAIN-SUFFIX,mo.res.wpscdn.cn,reject
+host,img.auction-ads.wpscdn.cn,reject
+host-suffix,img.auction-ads.wpscdn.cn,reject
+host-suffix,mo.res.wpscdn.cn,reject
