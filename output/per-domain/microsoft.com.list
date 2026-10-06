@@ -1,0 +1,14 @@
+DOMAIN,bingads.microsoft.com,reject
+DOMAIN,mobile.events.data.microsoft.com,reject
+DOMAIN,watson.microsoft.com,reject
+DOMAIN,watson.telemetry.microsoft.com,reject
+DOMAIN-SUFFIX,bingads.microsoft.com,reject
+DOMAIN-SUFFIX,crl.microsoft.com,reject
+DOMAIN-SUFFIX,ieonline.microsoft.com,reject
+DOMAIN-SUFFIX,rad.microsoft.com,reject
+DOMAIN-SUFFIX,watson.microsoft.com,reject
+host-suffix,bingads.microsoft.com,reject
+host-suffix,crl.microsoft.com,reject
+host-suffix,ieonline.microsoft.com,reject
+host-suffix,rad.microsoft.com,reject
+host-suffix,watson.microsoft.com,reject
