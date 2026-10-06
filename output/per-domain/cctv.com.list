@@ -1,0 +1,8 @@
+DOMAIN,ad.cctv.com,reject
+DOMAIN-SUFFIX,ad.cctv.com,reject
+host-suffix,a.cctv.com,reject
+host-suffix,ad.cctv.com,reject
+host-suffix,ad_core.cctv.com,reject
+host-suffix,ad_m.cctv.com,reject
+host-suffix,ad-cdn.cctv.com,reject
+host-suffix,ad-cdn_core.cctv.com,reject
