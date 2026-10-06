@@ -1,0 +1,8 @@
+DOMAIN,grs.hicloud.com,reject
+DOMAIN,logbak.hicloud.com,reject
+DOMAIN,logservice.hicloud.com,reject
+DOMAIN,logservice1.hicloud.com,reject
+DOMAIN,metrics.data.hicloud.com,reject
+DOMAIN,metrics2.data.hicloud.com,reject
+DOMAIN-SUFFIX,data.hicloud.com,reject
+host-suffix,ad.hicloud.com,reject
