@@ -1,0 +1,7 @@
+DOMAIN-SUFFIX,hdapp1003-a.akamaihd.net,reject
+DOMAIN-SUFFIX,hdapp1008-a.akamaihd.net,reject
+DOMAIN-SUFFIX,hdsrc-a.akamaihd.net,reject
+DOMAIN-SUFFIX,lbstatic-a.akamaihd.net,reject
+host-suffix,appnext-a.akamaihd.net,reject
+host-suffix,lbstatic-a.akamaihd.net,reject
+host-suffix,toots-a.akamaihd.net,reject
