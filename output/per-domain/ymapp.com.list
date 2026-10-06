@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,ssl.ymapp.com,reject
+DOMAIN-SUFFIX,w.ymapp.com,reject
+DOMAIN-SUFFIX,ymapp.com,reject
