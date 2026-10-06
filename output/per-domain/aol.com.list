@@ -1,0 +1,10 @@
+DOMAIN-SUFFIX,adinfo.aol.com,reject
+DOMAIN-SUFFIX,cdn.komentary.aol.com,reject
+DOMAIN-SUFFIX,dynamic.aol.com,reject
+DOMAIN-SUFFIX,free.aol.com,reject
+DOMAIN-SUFFIX,mads.aol.com,reject
+host-suffix,adinfo.aol.com,reject
+host-suffix,cdn.komentary.aol.com,reject
+host-suffix,dynamic.aol.com,reject
+host-suffix,free.aol.com,reject
+host-suffix,mads.aol.com,reject
