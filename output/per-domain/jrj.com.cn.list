@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,same.jrj.com.cn,reject
+DOMAIN-SUFFIX,same01.jrj.com.cn,reject
+DOMAIN-SUFFIX,same02.jrj.com.cn,reject
+DOMAIN-SUFFIX,same03.jrj.com.cn,reject
+host-suffix,same.jrj.com.cn,reject
+host-suffix,same01.jrj.com.cn,reject
+host-suffix,same02.jrj.com.cn,reject
+host-suffix,same03.jrj.com.cn,reject
