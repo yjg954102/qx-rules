@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,blb.winasdaq.com,reject
+DOMAIN-SUFFIX,nav.winasdaq.com,reject
+DOMAIN-SUFFIX,un.winasdaq.com,reject
+DOMAIN-SUFFIX,winasdaq.com,reject
