@@ -1,0 +1,4 @@
+DOMAIN,cloooud.com,reject
+DOMAIN,sdkapi.cloooud.com,reject
+DOMAIN,ssp.cloooud.com,reject
+host-suffix,cloooud.com,reject
