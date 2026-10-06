@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,cdn-settings.segment.com,reject
+DOMAIN-SUFFIX,mobile-service.segment.com,reject
+DOMAIN-SUFFIX,segment.com,reject
+host-suffix,cdn-settings.segment.com,reject
+host-suffix,mobile-service.segment.com,reject
+host-suffix,segment.com,reject
