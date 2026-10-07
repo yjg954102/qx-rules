@@ -158,6 +158,11 @@ def main():
             if pol not in policy_names:
                 errors.append(f'[filter_local] 引用未知策略: {pol}  ({s[:50]})')
 
+    # 订阅 URL 必须是 ASCII（URL 含未编码中文时 QX 显示「0 条规则」）
+    for lineno, url in check_ascii_urls(lines):
+        errors.append(f'订阅 URL 含非 ASCII 字符（QX 会显示 0 条规则），'
+                      f'请改用 ASCII 文件名: 行{lineno} {url}')
+
     # 输出
     print(f'文件: {PATH}')
     print(f'  字节 {len(raw)}   行 {len(lines)}   段头 {len(found)}')
@@ -174,6 +179,24 @@ def main():
         for w in warns[:10]:
             print('   ' + w)
     return 1 if errors else 0
+
+
+
+def check_ascii_urls(lines):
+    """订阅 URL 必须全是 ASCII。
+    踩过的坑：URL 里带未编码的中文（如 .../墨鱼-应用净化.conf）QX 会显示「0 条规则」。
+    文件名一律用 ASCII，已验证可用。"""
+    bad = []
+    for i, l in enumerate(lines, 1):
+        s = l.strip()
+        if not s.startswith('http') or s.startswith(';'):
+            continue
+        url = s.split(',')[0].strip()
+        try:
+            url.encode('ascii')
+        except UnicodeEncodeError:
+            bad.append((i, url[:90]))
+    return bad
 
 
 if __name__ == '__main__':
