@@ -36,6 +36,11 @@ NODES_SOURCES = [
 DEFAULT_NODES_URL = NODES_SOURCES[0]
 PROBE_FILE = '/opt/open-box/data/subscription-aggregator/probe-results.json'
 PUB_FILE = '/opt/open-box/data/subscription-aggregator/published-nodes.json'
+# 坏节点名单来源：路由器拨测结果 → 仓库内清单（GitHub Actions 用）
+DEAD_SOURCES = [
+    PROBE_FILE,
+    'output/dead-nodes.txt',
+]
 
 REGIONS = [
     ('美国', r'美国|US|United States|圣何塞|洛杉矶|西雅图|芝加哥'),
@@ -156,14 +161,27 @@ def tags_from_template(path):
 
 
 def dead_tags():
+    """坏节点名单：优先读拨测结果，其次读仓库内的纯文本名单"""
+    # 拨测结果（仅路由器上有）
     try:
         res = (json.load(open(PROBE_FILE, encoding='utf-8')) or {}).get('results') or {}
         nd = json.load(open(PUB_FILE, encoding='utf-8'))
         nodes = nd if isinstance(nd, list) else (nd.get('nodes') or [])
         meta = {str(n.get('id')): n.get('tag', '') for n in nodes if isinstance(n, dict)}
-        return {meta.get(str(k), '') for k, v in res.items() if not v.get('success')}
+        dead = {meta.get(str(k), '') for k, v in res.items() if not v.get('success')}
+        dead.discard('')
+        if dead:
+            return dead
     except Exception:
-        return set()
+        pass
+    # 仓库内的纯文本名单（GitHub Actions 用）
+    for p in DEAD_SOURCES[1:]:
+        try:
+            return {l.strip() for l in open(p, encoding='utf-8')
+                    if l.strip() and not l.startswith('#')}
+        except Exception:
+            continue
+    return set()
 
 
 def build_policy(tags, buckets):
