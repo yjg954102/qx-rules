@@ -36,6 +36,12 @@ jobs:
       - name: 重建分类订阅（重写/分流/墨鱼）
         run: python3 scripts/build-categories.py
 
+      - name: 抓取墨鱼完整版（24 VIP 解锁 + 净化）并镜像脚本
+        continue-on-error: true
+        run: |
+          python3 scripts/fetch-moyu-full.py
+          python3 scripts/mirror-moyu-scripts.py
+
       - name: 转换 AdGuard / Clash 规则（与现有列表去重）
         continue-on-error: true
         run: python3 scripts/build-adguard-clash.py
