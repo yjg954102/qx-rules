@@ -1,142 +1,143 @@
 # -*- coding: utf-8 -*-
-"""重建 QX 策略组：完整国家分组（对齐路由器 Shadowrocket 的 40 组结构）。
+"""生成 QX 策略组（可用版）：国家组支持「自动优选」。
 
-QX 用 server-tag-regex 匹配节点（而非列举节点名）——因为 QX 会对同名节点去重，
-列举节点名会导致「未知策略或节点」错误。
+核心设计 —— 双定义模式：
+  1) 选择组（static）：把国家组列出，让别的组能引用它
+       static=🚀 节点选择, 美国-自动, 香港-自动, ...
+  2) 测速组（url-latency-benchmark）：同名再定义一次，作用于节点
+       url-latency-benchmark=美国-自动, <该地区所有节点>, check-interval=...
 
-组结构：
-  核心：🚀 节点选择 / ♻️ 所有-自动 / 📋 所有-手动 / 🎯 全球直连 / 🛑 广告拦截 / 🎵 流媒体 / 🐟 兜底分流
-  国家：14 个地区 × (自动/手动)，日本与新加坡另加「专线」
+QX 取第一次出现作为「可选策略」，benchmark 定义提供「组内自动优选最快节点」。
+
+节点名必须列举（该 QX 版本 server-tag-regex 实测不生效）。
 """
 import os
 import re
 import sys
+import urllib.request
 
+UA = {'User-Agent': 'Quantumult X'}
 BASE = 'C:/Users/Administrator/Documents/deepseek-harness/default-workspace/iOS-QX规则集'
 SRC = os.path.join(BASE, 'qx-分类版.conf')
+NODES_URL = 'http://192.168.50.2:8109/output/qx-compatible-all.txt'
 
-# 国家/地区：显示名 -> 匹配节点的正则片段（QX 的 server-tag-regex 是 (?i) 大小写不敏感）
 REGIONS = [
-    ('美国', '美国|US|United States'),
-    ('香港', '香港|HK|Hong Kong'),
-    ('日本', r'日本(?!-专线)'),
-    ('日本-专线', '日本-专线'),
-    ('新加坡', r'新加坡(?!-专线)'),
-    ('新加坡-专线', '新加坡-专线'),
-    ('台湾', '台湾|TW|Taiwan'),
-    ('韩国', '韩国|KR|Korea'),
-    ('英国', '英国|UK|Britain'),
-    ('加拿大', '加拿大|CA|Canada'),
-    ('越南', '越南|VN|Vietnam'),
-    ('印度', '印度|IN|India'),
-    ('德国', '德国|DE|Germany'),
-    ('俄罗斯', '俄罗斯|RU|Russia'),
-    ('土耳其', '土耳其|TR|Turkey'),
-    ('意大利', '意大利|IT|Italy'),
-    ('澳大利亚', '澳大利亚|澳洲|AU|Australia'),
-    ('法国', '法国|FR|France'),
-    ('荷兰', '荷兰|NL|Netherlands'),
-    ('其他', '其他|Other'),
+    ('美国', r'美国|US|United States|圣何塞|洛杉矶|西雅图|芝加哥'),
+    ('香港', r'香港|HK|Hong Kong|hkt|i-Cable|HGC'),
+    ('日本-专线', r'日本-专线'),
+    ('日本', r'日本|JP|Japan|东京|大阪'),
+    ('新加坡-专线', r'新加坡-专线'),
+    ('新加坡', r'新加坡|SG|Singapore'),
+    ('台湾', r'台湾|TW|Taiwan|中華電信|中华电信'),
+    ('韩国', r'韩国|KR|Korea|首尔'),
+    ('英国', r'英国|UK|Britain|伦敦'),
+    ('加拿大', r'加拿大|CA|Canada|多伦多|温哥华'),
+    ('越南', r'越南|VN|Vietnam'),
+    ('印度', r'印度|IN|India|孟买'),
+    ('德国', r'德国|DE|Germany|法兰克福'),
+    ('俄罗斯', r'俄罗斯|RU|Russia|莫斯科'),
+    ('土耳其', r'土耳其|TR|Turkey|伊斯坦布尔'),
+    ('意大利', r'意大利|IT|Italy|米兰'),
+    ('澳大利亚', r'澳大利亚|澳洲|AU|Australia|悉尼'),
+    ('法国', r'法国|FR|France|巴黎'),
+    ('荷兰', r'荷兰|NL|Netherlands|阿姆斯特丹'),
 ]
+STREAM_RE = r'媒体流|流媒体|专线|原生|AWS|日本东京0[6-9]'
 
-# 流媒体组：优先放吞吐高的节点（聚合器实测新加坡-媒体流/香港-流媒体最高）
-STREAM_RE = (r'媒体流|流媒体|专线|原生|AWS|日本东京0[6-9]')
-
-
-def build_policy():
-    lines = []
-    lines.append('; ================= 核心策略组 =================')
-    # 🚀 节点选择：手动选择，可切到任意国家组
-    region_groups = []
-    for name, _ in REGIONS:
-        region_groups += [name + '-自动', name + '-手动']
-    lines.append(
-        'static=🚀 节点选择, ♻️ 所有-自动, ' + ', '.join(region_groups) +
-        ', 🎯 全球直连, 🎵 流媒体')
-    # 所有节点自动（排除机场广告类 tag）
-    lines.append(
-        'url-latency-benchmark=♻️ 所有-自动, server-tag-regex=(?i)^((?!过期|剩余|流量|官网|到期|'
-        '订阅|群组|网址|客服).)*$, check-interval=900, tolerance=50, alive-checking=true')
-    # 流媒体专用：只测吞吐高的节点
-    lines.append(
-        f'url-latency-benchmark=🎵 流媒体, server-tag-regex=(?i).*({STREAM_RE}).*, '
-        'check-interval=600, tolerance=30, alive-checking=true')
-    lines.append('static=🎯 全球直连, direct')
-    lines.append('static=🛑 广告拦截, reject')
-    lines.append('static=🐟 兜底分流, 🚀 节点选择, ♻️ 所有-自动, 🎯 全球直连')
-    lines.append('')
-    lines.append('; ================= 国家/地区分组 =================')
-    for name, pat in REGIONS:
-        auto = f'{name}-自动'
-        manual = f'{name}-手动'
-        # 自动：延迟测速
-        lines.append(
-            f'url-latency-benchmark={auto}, server-tag-regex=(?i).*({pat}).*, '
-            'check-interval=900, tolerance=50, alive-checking=true')
-        # 手动：静态选择（引用自动组 + 直连，避免列举节点名）
-        lines.append(f'static={manual}, {auto}, 🎯 全球直连')
-    return lines
+GENERAL = [
+    'server_check_url=http://developers.google.cn/generate_204',
+    'network_check_url=http://www.google.cn',
+    'dns_exclusion_list=*.local, *.lan',
+    'icmp_auto_reply=true',
+    'server_check_timeout=2000',
+    'udp_whitelist=1-65535',
+    'fallback_udp_policy=direct',
+]
 
 
 def main():
-    if not os.path.exists(SRC):
-        print(f'源配置不存在: {SRC}')
+    t = urllib.request.urlopen(
+        urllib.request.Request(NODES_URL, headers=UA), timeout=60).read().decode('utf-8', 'replace')
+    tags = []
+    for l in t.splitlines():
+        m = re.search(r'tag=([^,]+)$', l.strip())
+        if m:
+            tags.append(m.group(1).strip())
+    if not tags:
+        print('未取到节点')
         return 1
-    with open(SRC, encoding='utf-8') as f:
-        txt = f.read().replace('\r\n', '\n')
+    print(f'节点 {len(tags)} 个')
 
-    policy = build_policy()
-    print(f'新策略组行数: {len([l for l in policy if l.strip() and not l.strip().startswith(";")])}')
+    buckets = {}
+    used = set()
+    for name, pat in REGIONS:
+        rx = re.compile(pat, re.I)
+        v = [x for x in tags if rx.search(x) and x not in used]
+        if v:
+            buckets[name] = v
+            used.update(v)
+            print(f'  {name:<12} {len(v):>3} 个')
+    stream = [x for x in tags if re.search(STREAM_RE, x, re.I)]
+    print(f'  {"流媒体":<12} {len(stream):>3} 个')
+    leftovers = [x for x in tags if x not in used]
+    if leftovers:
+        buckets['其他'] = leftovers
+        print(f'  {"其他":<12} {len(leftovers):>3} 个')
 
-    # 替换 [policy] 段
+    auto_names = [n + '-自动' for n in buckets]
+    manual_names = [n + '-手动' for n in buckets]
+
+    L = []
+    L.append('; ================= 零、选择组（供其它组引用 / 界面手动选择）=================')
+    L.append('; QX 取同名策略的第一次定义作为「可选策略」，下面的 benchmark 定义提供组内自动优选')
+    L.append('static=🚀 节点选择, ' + ', '.join(auto_names + ['🎵 流媒体', '🎯 全球直连']))
+    L.append('static=🐟 兜底分流, 🚀 节点选择, 🎯 全球直连')
+    L.append('static=🎯 全球直连, direct')
+    L.append('static=🛑 广告拦截, reject')
+    L.append('')
+    L.append('; ================= 一、测速组（组内自动优选最快节点）=================')
+    L.append('url-latency-benchmark=♻️ 所有节点, ' + ', '.join(tags) +
+             ', check-interval=600, tolerance=50, alive-checking=true')
+    L.append('url-latency-benchmark=🎵 流媒体, ' + ', '.join(stream or tags[:5]) +
+             ', check-interval=300, tolerance=30, alive-checking=true')
+    L.append('')
+    L.append('; ================= 二、国家/地区分组（自动优选 + 手动）=================')
+    for name, v in buckets.items():
+        # url-latency-benchmark 至少需要 2 个节点，否则语法错误；单节点组用 static
+        if len(v) >= 2:
+            L.append(f'url-latency-benchmark={name}-自动, ' + ', '.join(v) +
+                     ', check-interval=600, tolerance=50, alive-checking=true')
+        else:
+            L.append(f'static={name}-自动, ' + ', '.join(v))
+        L.append(f'static={name}-手动, ' + ', '.join(v) + ', 🎯 全球直连')
+
+    policy = L
+    n_def = len([l for l in policy if l.strip() and not l.startswith(';')])
+    print(f'\n策略定义 {n_def} 行（{len(auto_names)} 个国家组 × 2）')
+
+    txt = open(SRC, encoding='utf-8').read().replace('\r\n', '\n')
     lines = txt.split('\n')
-    out, i, done = [], 0, False
+    out, i = [], 0
     while i < len(lines):
-        if lines[i].strip() == '[policy]':
+        s = lines[i].strip()
+        if s in ('[general]', '[policy]'):
             out.append(lines[i])
-            out.extend(policy)
+            out.extend(GENERAL if s == '[general]' else policy)
             i += 1
             while i < len(lines) and not lines[i].startswith('['):
                 i += 1
-            done = True
             continue
         out.append(lines[i])
         i += 1
-    if not done:
-        print('未找到 [policy] 段')
-        return 1
 
-    # 把流媒体的兜底分流改到新组（Spotify/YouTube/Netflix 等走 🎵 流媒体）
-    STREAM_HOSTS = ['spotify.com', 'scdn.co', 'spotifycdn.com', 'youtube.com',
-                    'googlevideo.com', 'netflix.com', 'nflxvideo.net', 'disneyplus.com',
-                    'hbomax.com', 'twitch.tv', 'soundcloud.com', 'kkbox.com']
-    res, on = [], False
-    for l in out:
-        if l.strip() == '[filter_local]':
-            on = True
-            res.append(l)
-            res.append('; ---- 流媒体走专用组（吞吐优先）----')
-            for h in STREAM_HOSTS:
-                res.append(f'host-suffix, {h}, 🎵 流媒体')
-            continue
-        if on and l.startswith('['):
-            on = False
-        # 删掉原有的重复流媒体规则（避免先后覆盖）
-        if on and re.match(r'^host-suffix,\s*(spotify|youtube|googlevideo|netflix)', l.strip(), re.I):
-            continue
-        res.append(l)
-
-    dst = SRC
-    with open(dst, 'w', encoding='utf-8', newline='\n') as f:
-        f.write('\n'.join(res))
-    print(f'已写入 {dst}  {os.path.getsize(dst)} 字节')
-
-    # 自检
-    body = '\n'.join(res)
-    n_policy = len(re.findall(r'(?m)^(static|url-latency-benchmark|available|round-robin)=', body))
-    n_sec = len(re.findall(r'(?m)^\[.+\]$', body))
-    print(f'  段头 {n_sec}   策略定义 {n_policy}')
-    print(f'  含 CR: {open(dst,"rb").read().count(13)}')
+    with open(SRC, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('\n'.join(out))
+    body = '\n'.join(out)
+    print(f'已写入 {SRC}  {os.path.getsize(SRC)} 字节')
+    print(f'  段头 {len(re.findall(r"(?m)^\[.+\]$", body))}')
+    print(f'  static {len(re.findall(r"(?m)^static=", body))}  '
+          f'benchmark {len(re.findall(r"(?m)^url-latency-benchmark=", body))}')
+    print(f'  CR {open(SRC,"rb").read().count(13)}')
     return 0
 
 
