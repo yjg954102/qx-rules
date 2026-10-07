@@ -83,7 +83,7 @@ def main():
         lines.extend(fresh)
         stat.append({'tag': tag, 'rules': len(fresh)})
 
-    dst = os.path.join(DST, '墨鱼-应用净化.conf')
+    dst = os.path.join(DST, 'moyu-app-clean.conf')  # ASCII 名：URL 含中文会让 QX 显示 0 条规则
     with open(dst, 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(lines) + '\n')
     os.chmod(dst, 0o644)
