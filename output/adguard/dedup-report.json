@@ -1,0 +1,9 @@
+{
+ "total": 17753,
+ "dup_in_existing": 9838,
+ "dup_internal": 1099,
+ "converted": 6815,
+ "skipped": 1,
+ "adguard_out": 6786,
+ "clash_out": 6815
+}
