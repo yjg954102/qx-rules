@@ -41,6 +41,7 @@ jobs:
         run: |
           python3 scripts/fetch-moyu-full.py
           python3 scripts/mirror-moyu-scripts.py
+          python3 scripts/merge-moyu.py
 
       - name: 转换 AdGuard / Clash 规则（与现有列表去重）
         continue-on-error: true
