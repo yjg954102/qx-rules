@@ -1,0 +1,50 @@
+; ============================================================
+; 重写规则订阅清单（按 App 类别分类）
+; 用法：QX → 重写 → 规则资源 → + → 路径填下面网址，资源标签填类别名
+; 每个类别独立订阅，可单独启停
+; ============================================================
+
+; --- ★会员解锁  （4 个 App / 6 条 / 1.3 KB）
+;     标签: ★会员解锁
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/★会员解锁.conf
+
+; --- 其他  （392 个 App / 814 条 / 83.2 KB）
+;     标签: 其他
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/其他.conf
+
+; --- 出行地图  （24 个 App / 111 条 / 9.6 KB）
+;     标签: 出行地图
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/出行地图.conf
+
+; --- 工具效率  （14 个 App / 59 条 / 5.7 KB）
+;     标签: 工具效率
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/工具效率.conf
+
+; --- 游戏娱乐  （2 个 App / 2 条 / 0.2 KB）
+;     标签: 游戏娱乐
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/游戏娱乐.conf
+
+; --- 社交社区  （17 个 App / 147 条 / 16.4 KB）
+;     标签: 社交社区
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/社交社区.conf
+
+; --- 视频影视  （28 个 App / 178 条 / 22.8 KB）
+;     标签: 视频影视
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/视频影视.conf
+
+; --- 购物电商  （30 个 App / 186 条 / 21.2 KB）
+;     标签: 购物电商
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/购物电商.conf
+
+; --- 金融支付  （36 个 App / 78 条 / 7.9 KB）
+;     标签: 金融支付
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/金融支付.conf
+
+; --- 阅读小说  （11 个 App / 62 条 / 5.1 KB）
+;     标签: 阅读小说
+;     路径: https://raw.githubusercontent.com/yjg954102/qx-rules/main/output/by-category/阅读小说.conf
+
+; 说明：
+;   · 解锁类在「★会员解锁」文件中，独立订阅便于单独启停
+;   · 「其他」占多数（长尾 App），可只订阅你需要的类别
+;   · 全部规则合并版仍是 QX-AllInOne-Rewrite.conf（1641 条）
