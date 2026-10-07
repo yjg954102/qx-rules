@@ -1,0 +1,256 @@
+{
+ "vip": [
+  {
+   "tag": "apowersoft.vip",
+   "rules": 1
+  },
+  {
+   "tag": "appraven.vip",
+   "rules": 1
+  },
+  {
+   "tag": "bdpan.unlock",
+   "rules": 2
+  },
+  {
+   "tag": "buyitunes.vip",
+   "rules": 1
+  },
+  {
+   "tag": "drafts.vip",
+   "rules": 1
+  },
+  {
+   "tag": "endel.vip",
+   "rules": 1
+  },
+  {
+   "tag": "fimo.vip",
+   "rules": 1
+  },
+  {
+   "tag": "flightradar24.vip",
+   "rules": 1
+  },
+  {
+   "tag": "goodbility.vip",
+   "rules": 3
+  },
+  {
+   "tag": "jijianhuilv.vip",
+   "rules": 1
+  },
+  {
+   "tag": "judou.vip",
+   "rules": 2
+  },
+  {
+   "tag": "kkmusic.vip",
+   "rules": 30
+  },
+  {
+   "tag": "nicegram.vip",
+   "rules": 1
+  },
+  {
+   "tag": "revenuecat.vip",
+   "rules": 2
+  },
+  {
+   "tag": "sanlianzhongdu.vip",
+   "rules": 3
+  },
+  {
+   "tag": "session.vip",
+   "rules": 3
+  },
+  {
+   "tag": "shanqiu.vip",
+   "rules": 1
+  },
+  {
+   "tag": "slidebox.vip",
+   "rules": 1
+  },
+  {
+   "tag": "soutushenqi.vip",
+   "rules": 4
+  },
+  {
+   "tag": "vis.vip",
+   "rules": 2
+  },
+  {
+   "tag": "vistopia.vip",
+   "rules": 1
+  },
+  {
+   "tag": "wannianli.vip",
+   "rules": 2
+  },
+  {
+   "tag": "yangjibao.vip",
+   "rules": 2
+  },
+  {
+   "tag": "yiyan.vip",
+   "rules": 1
+  }
+ ],
+ "ads": [
+  {
+   "tag": "AiHuiShouAds",
+   "rules": 22
+  },
+  {
+   "tag": "BiliBiliAds",
+   "rules": 29
+  },
+  {
+   "tag": "BiliBiliAdsLite",
+   "rules": 8
+  },
+  {
+   "tag": "CaiXinAds",
+   "rules": 12
+  },
+  {
+   "tag": "ChinaBroadAds",
+   "rules": 3
+  },
+  {
+   "tag": "DLabelAds",
+   "rules": 4
+  },
+  {
+   "tag": "DaMaiAds",
+   "rules": 13
+  },
+  {
+   "tag": "DaShiXiongAds",
+   "rules": 1
+  },
+  {
+   "tag": "GuaZiVideoAds",
+   "rules": 5
+  },
+  {
+   "tag": "HeFengWeatherAds",
+   "rules": 1
+  },
+  {
+   "tag": "JiaXiaoYiDianTongAds",
+   "rules": 6
+  },
+  {
+   "tag": "JinShiDataAds",
+   "rules": 3
+  },
+  {
+   "tag": "KuaiKanComicsAds",
+   "rules": 17
+  },
+  {
+   "tag": "LuckinCoffeeAds",
+   "rules": 2
+  },
+  {
+   "tag": "MaiDuiDuiAds",
+   "rules": 7
+  },
+  {
+   "tag": "MeiYouAds",
+   "rules": 5
+  },
+  {
+   "tag": "MiGuVideoAds",
+   "rules": 6
+  },
+  {
+   "tag": "NBProAds",
+   "rules": 1
+  },
+  {
+   "tag": "StartUpAds",
+   "rules": 507
+  },
+  {
+   "tag": "TencentDocAds",
+   "rules": 2
+  },
+  {
+   "tag": "UmetripAds",
+   "rules": 2
+  },
+  {
+   "tag": "WeiFengAds",
+   "rules": 3
+  },
+  {
+   "tag": "XiaoHongShuAds",
+   "rules": 26
+  },
+  {
+   "tag": "XiaoHongShuBlockVideo",
+   "rules": 1
+  },
+  {
+   "tag": "XueQiuAds",
+   "rules": 12
+  },
+  {
+   "tag": "ZhiLianZhaoPinAds",
+   "rules": 7
+  },
+  {
+   "tag": "ZhongYuZaiXianAds",
+   "rules": 9
+  },
+  {
+   "tag": "iDailyAds",
+   "rules": 6
+  },
+  {
+   "tag": "123pan.ads",
+   "rules": 1
+  },
+  {
+   "tag": "bdmap.ads",
+   "rules": 10
+  },
+  {
+   "tag": "bdpan.ads",
+   "rules": 15
+  },
+  {
+   "tag": "javdbapp.ads",
+   "rules": 3
+  },
+  {
+   "tag": "missav.ads",
+   "rules": 1
+  },
+  {
+   "tag": "pikpak.fnc",
+   "rules": 1
+  },
+  {
+   "tag": "pornhub.ads",
+   "rules": 2
+  },
+  {
+   "tag": "suishouji.ads",
+   "rules": 8
+  },
+  {
+   "tag": "v2ex.ads",
+   "rules": 3
+  },
+  {
+   "tag": "zhihu.ads",
+   "rules": 45
+  }
+ ],
+ "hosts": 601,
+ "sources": 62
+}
