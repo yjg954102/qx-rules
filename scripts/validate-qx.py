@@ -147,12 +147,19 @@ def main():
                 errors.append(f'{sname} 里混入段头: {l[:50]}')
 
     # 7) filter_local 的 policy 引用
+    #    注意：`final, <策略>` 只有 2 段，必须单独处理，
+    #    否则会被 `len(p) >= 3` 跳过 —— 这个漏洞导致「未知策略组」漏检过两次。
     policy_names = {n for _, n, _ in groups} | BUILTIN | {'direct', 'reject'}
     for l in sec('[filter_local]'):
         s = l.strip()
         if not s or s.startswith((';', '#')):
             continue
         p = [x.strip() for x in s.split(',')]
+        if p[0].lower() == 'final':
+            if len(p) < 2 or p[1] not in policy_names:
+                errors.append(
+                    f'final 引用未知策略: {p[1] if len(p) > 1 else "(缺失)"}  ({s[:50]})')
+            continue
         if len(p) >= 3:
             pol = p[-1]
             if pol not in policy_names:
