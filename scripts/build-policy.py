@@ -1,15 +1,21 @@
 # -*- coding: utf-8 -*-
-"""生成 QX 策略组（可用版）：国家组支持「自动优选」。
+"""重新设计：国家组为主路径，用途组为快捷入口。
 
-核心设计 —— 双定义模式：
-  1) 选择组（static）：把国家组列出，让别的组能引用它
-       static=🚀 节点选择, 美国-自动, 香港-自动, ...
-  2) 测速组（url-latency-benchmark）：同名再定义一次，作用于节点
-       url-latency-benchmark=美国-自动, <该地区所有节点>, check-interval=...
+用户诉求：「按国家选择」—— 选一个国家后，各类服务都用该国的节点。
 
-QX 取第一次出现作为「可选策略」，benchmark 定义提供「组内自动优选最快节点」。
+设计：
+  · 🚀 节点选择     含全部节点（兜底，任何节点都能选到）
+  · 国家组（10 个） 放在最前，每个含该国【全部】节点 ← 主入口
+  · 用途组（12 个） 只引用国家组，不写死节点 ← 快捷入口
+  · 核心组（4 个）  直连 / 拦截 / 兜底
 
-节点名必须列举（该 QX 版本 server-tag-regex 实测不生效）。
+组数：4 + 10 + 12 = 26（QX 上限 38，安全）
+
+用途组的默认指向（可按需在界面改）：
+  🤖 AI → 美国         📺 油管 → 日本      🎬 流媒体 → 香港
+  💬 电报 → 新加坡      🐦 社交 → 美国      🔍 谷歌 → 日本
+  📦 微软 → 美国        🍎 苹果 → 香港      🎮 游戏 → 日本
+  📥 下载 → 美国        📰 资讯 → 美国      🛒 境外购物 → 美国
 """
 import os
 import re
@@ -24,25 +30,76 @@ NODES_URL = 'http://192.168.50.2:8109/output/qx-compatible-all.txt'
 REGIONS = [
     ('美国', r'美国|US|United States|圣何塞|洛杉矶|西雅图|芝加哥'),
     ('香港', r'香港|HK|Hong Kong|hkt|i-Cable|HGC'),
-    ('日本-专线', r'日本-专线'),
     ('日本', r'日本|JP|Japan|东京|大阪'),
-    ('新加坡-专线', r'新加坡-专线'),
     ('新加坡', r'新加坡|SG|Singapore'),
-    ('台湾', r'台湾|TW|Taiwan|中華電信|中华电信'),
-    ('韩国', r'韩国|KR|Korea|首尔'),
+    ('台湾', r'台湾|TW|Taiwan'),
     ('英国', r'英国|UK|Britain|伦敦'),
-    ('加拿大', r'加拿大|CA|Canada|多伦多|温哥华'),
+    ('加拿大', r'加拿大|CA|Canada'),
     ('越南', r'越南|VN|Vietnam'),
-    ('印度', r'印度|IN|India|孟买'),
-    ('德国', r'德国|DE|Germany|法兰克福'),
-    ('俄罗斯', r'俄罗斯|RU|Russia|莫斯科'),
-    ('土耳其', r'土耳其|TR|Turkey|伊斯坦布尔'),
-    ('意大利', r'意大利|IT|Italy|米兰'),
-    ('澳大利亚', r'澳大利亚|澳洲|AU|Australia|悉尼'),
-    ('法国', r'法国|FR|France|巴黎'),
-    ('荷兰', r'荷兰|NL|Netherlands|阿姆斯特丹'),
+    ('德国', r'德国|DE|Germany'),
+    ('其他', r''),
 ]
-STREAM_RE = r'媒体流|流媒体|专线|原生|AWS|日本东京0[6-9]'
+
+# 用途组：组名 -> (默认指向的国家组, 域名列表)
+SERVICES = [
+    ('🤖 AI', '美国',
+     ['openai.com', 'chatgpt.com', 'oaistatic.com', 'oaiusercontent.com',
+      'anthropic.com', 'claude.ai', 'gemini.google.com',
+      'generativelanguage.googleapis.com', 'copilot.microsoft.com',
+      'perplexity.ai', 'poe.com', 'mistral.ai', 'x.ai', 'groq.com',
+      'cursor.com', 'midjourney.com', 'stability.ai', 'huggingface.co',
+      'replicate.com', 'together.ai', 'openrouter.ai']),
+    ('📺 油管', '日本',
+     ['youtube.com', 'youtu.be', 'ytimg.com', 'googlevideo.com', 'yt3.ggpht.com',
+      'youtubei.googleapis.com', 'youtube-nocookie.com', 'ggpht.com',
+      'youtube.googleapis.com']),
+    ('🎬 流媒体', '香港',
+     ['netflix.com', 'nflxvideo.net', 'nflximg.net', 'nflxso.net', 'nflxext.com',
+      'disneyplus.com', 'dssott.com', 'bamgrid.com', 'hbomax.com', 'max.com',
+      'primevideo.com', 'amazonvideo.com', 'aiv-cdn.net', 'hulu.com',
+      'spotify.com', 'scdn.co', 'spotifycdn.com', 'soundcloud.com',
+      'tidal.com', 'deezer.com', 'kkbox.com', 'twitch.tv', 'ttvnw.net',
+      'crunchyroll.com', 'vrv.co', 'abema.tv', 'dazn.com']),
+    ('💬 电报', '新加坡',
+     ['telegram.org', 't.me', 'telegram.me', 'tdesktop.com', 'telegra.ph',
+      'telesco.pe', 'cdn-telegram.org', 'contest.com', 'graph.org']),
+    ('🐦 社交', '美国',
+     ['twitter.com', 'x.com', 'twimg.com', 't.co', 'facebook.com', 'fbcdn.net',
+      'instagram.com', 'cdninstagram.com', 'reddit.com', 'redd.it', 'redditmedia.com',
+      'discord.com', 'discordapp.com', 'discord.gg', 'threads.net',
+      'tiktok.com', 'tiktokcdn.com', 'linkedin.com', 'licdn.com']),
+    ('🔍 谷歌', '日本',
+     ['google.com', 'googleapis.com', 'gstatic.com', 'googleusercontent.com',
+      'gmail.com', 'googlemail.com', 'googletagmanager.com', 'google.co.jp',
+      'google.com.hk', 'google.com.tw', 'withgoogle.com', 'recaptcha.net']),
+    ('📦 微软', '美国',
+     ['microsoft.com', 'live.com', 'msn.com', 'office.com', 'office365.com',
+      'azure.com', 'azureedge.net', 'msecnd.net', 'windowsupdate.com',
+      'visualstudio.com', 'onedrive.com', 'sharepoint.com', 'outlook.com',
+      'bing.com', 'microsoftonline.com']),
+    ('🍎 苹果', '香港',
+     ['apple.com', 'icloud.com', 'icloud.com.cn', 'mzstatic.com', 'cdn-apple.com',
+      'aaplimg.com', 'apple-cloudkit.com', 'me.com', 'itunes.com', 'appstore.com']),
+    ('🎮 游戏', '日本',
+     ['steampowered.com', 'steamcommunity.com', 'steamstatic.com', 'steamcontent.com',
+      'epicgames.com', 'unrealengine.com', 'playstation.com', 'sony.com',
+      'xbox.com', 'xboxlive.com', 'nintendo.com', 'nintendo.net',
+      'battle.net', 'blizzard.com', 'riotgames.com', 'ea.com', 'ubisoft.com',
+      'rockstargames.com', 'gog.com', 'roblox.com', 'supercell.com']),
+    ('📥 下载', '美国',
+     ['github.com', 'githubusercontent.com', 'githubassets.com', 'gitlab.com',
+      'sourceforge.net', 'mega.nz', 'mediafire.com', 'dropbox.com', '1drv.ms',
+      'archive.org']),
+    ('📰 资讯', '美国',
+     ['bbc.com', 'bbc.co.uk', 'cnn.com', 'nytimes.com', 'wsj.com', 'reuters.com',
+      'bloomberg.com', 'theguardian.com', 'washingtonpost.com', 'economist.com',
+      'ft.com', 'nikkei.com', 'asahi.com', 'medium.com', 'substack.com',
+      'wikipedia.org', 'wikimedia.org']),
+    ('🛒 境外购物', '美国',
+     ['amazon.com', 'amazon.co.jp', 'amazonaws.com', 'ebay.com', 'aliexpress.com',
+      'alibaba.com', 'etsy.com', 'walmart.com', 'target.com', 'bestbuy.com',
+      'rakuten.co.jp', 'yahoo.co.jp', 'mercari.com', 'shein.com', 'temu.com']),
+]
 
 GENERAL = [
     'server_check_url=http://developers.google.cn/generate_204',
@@ -53,6 +110,13 @@ GENERAL = [
     'udp_whitelist=1-65535',
     'fallback_udp_policy=direct',
 ]
+DOMESTIC = ['weixin.qq.com', 'qq.com', 'wechat.com', 'qpic.cn', 'qlogo.cn',
+            'gtimg.cn', 'gtimg.com', 'qqmail.com', 'tencent-cloud.net', 'tencent.com',
+            'alipay.com', 'alipayobjects.com', 'taobao.com', 'tmall.com', 'alicdn.com',
+            'aliyuncs.com', 'amap.com', 'autonavi.com', 'douyin.com', 'bytedance.com',
+            'snssdk.com', 'jd.com', 'meituan.com', 'dianping.com', 'baidu.com',
+            'bdstatic.com', 'weibo.com', 'sinaimg.cn', 'zhihu.com', 'bilibili.com',
+            'hdslb.com']
 
 
 def main():
@@ -68,61 +132,48 @@ def main():
         return 1
     print(f'节点 {len(tags)} 个')
 
-    buckets = {}
-    used = set()
+    buckets, used = {}, set()
     for name, pat in REGIONS:
-        rx = re.compile(pat, re.I)
-        v = [x for x in tags if rx.search(x) and x not in used]
+        if not pat:
+            v = [x for x in tags if x not in used]
+        else:
+            rx = re.compile(pat, re.I)
+            v = [x for x in tags if rx.search(x) and x not in used]
         if v:
             buckets[name] = v
             used.update(v)
-            print(f'  {name:<12} {len(v):>3} 个')
-    stream = [x for x in tags if re.search(STREAM_RE, x, re.I)]
-    print(f'  {"流媒体":<12} {len(stream):>3} 个')
-    leftovers = [x for x in tags if x not in used]
-    if leftovers:
-        buckets['其他'] = leftovers
-        print(f'  {"其他":<12} {len(leftovers):>3} 个')
+    print('国家组: ' + ', '.join(f'{k}({len(v)})' for k, v in buckets.items()))
 
-    auto_names = [n + '-自动' for n in buckets]
-    manual_names = [n + '-手动' for n in buckets]
+    ctry = list(buckets)
+    svc_names = [n for n, _, _ in SERVICES]
 
     L = []
-    L.append('; ================= 零、选择组（供其它组引用 / 界面手动选择）=================')
-    L.append('; QX 取同名策略的第一次定义作为「可选策略」，下面的 benchmark 定义提供组内自动优选')
-    L.append('static=🚀 节点选择, ' + ', '.join(auto_names + ['🎵 流媒体', '🎯 全球直连']))
+    L.append('; ========== 核心（4）==========')
+    L.append('static=🚀 节点选择, ' + ', '.join(tags))
     L.append('static=🐟 兜底分流, 🚀 节点选择, 🎯 全球直连')
     L.append('static=🎯 全球直连, direct')
     L.append('static=🛑 广告拦截, reject')
     L.append('')
-    L.append('; ================= 一、测速组（组内自动优选最快节点）=================')
-    L.append('url-latency-benchmark=♻️ 所有节点, ' + ', '.join(tags) +
-             ', check-interval=600, tolerance=50, alive-checking=true')
-    L.append('url-latency-benchmark=🎵 流媒体, ' + ', '.join(stream or tags[:5]) +
-             ', check-interval=300, tolerance=30, alive-checking=true')
-    L.append('')
-    L.append('; ================= 二、国家/地区分组（自动优选 + 手动）=================')
+    L.append('; ========== ★国家/地区（主要选择入口，含该国全部节点）==========')
     for name, v in buckets.items():
-        # url-latency-benchmark 至少需要 2 个节点，否则语法错误；单节点组用 static
-        if len(v) >= 2:
-            L.append(f'url-latency-benchmark={name}-自动, ' + ', '.join(v) +
-                     ', check-interval=600, tolerance=50, alive-checking=true')
-        else:
-            L.append(f'static={name}-自动, ' + ', '.join(v))
-        L.append(f'static={name}-手动, ' + ', '.join(v) + ', 🎯 全球直连')
+        L.append(f'static={name}, ' + ', '.join(v))
+    L.append('')
+    L.append('; ========== 用途快捷入口（选国家组即可，此处默认指向常用国家）==========')
+    for name, default, _ in SERVICES:
+        if default not in buckets:
+            default = ctry[0]
+        L.append(f'static={name}, {default}, 🎯 全球直连')
 
-    policy = L
-    n_def = len([l for l in policy if l.strip() and not l.startswith(';')])
-    print(f'\n策略定义 {n_def} 行（{len(auto_names)} 个国家组 × 2）')
+    total = len([x for x in L if x.startswith('static=')])
+    print(f'\n策略定义 {total} 组（QX 上限 38）')
 
-    txt = open(SRC, encoding='utf-8').read().replace('\r\n', '\n')
-    lines = txt.split('\n')
+    lines = open(SRC, encoding='utf-8').read().replace('\r\n', '\n').split('\n')
     out, i = [], 0
     while i < len(lines):
         s = lines[i].strip()
         if s in ('[general]', '[policy]'):
             out.append(lines[i])
-            out.extend(GENERAL if s == '[general]' else policy)
+            out.extend(GENERAL if s == '[general]' else L)
             i += 1
             while i < len(lines) and not lines[i].startswith('['):
                 i += 1
@@ -130,14 +181,37 @@ def main():
         out.append(lines[i])
         i += 1
 
+    # 分流：用途组 -> 各自的组；用途组本身指向默认国家组
+    svc_rules = []
+    for name, _, domains in SERVICES:
+        svc_rules.append(f'; ---- {name} ----')
+        for d in domains:
+            svc_rules.append(f'host-suffix, {d}, {name}')
+
+    res, on = [], False
+    for l in out:
+        if l.strip() == '[filter_local]':
+            on = True
+            res.append(l)
+            res.append('; ===== 境外服务：按用途分流 =====')
+            res.extend(svc_rules)
+            res.append('; ===== 国内 App：直连 =====')
+            for d in DOMESTIC:
+                res.append(f'host-suffix, {d}, 🎯 全球直连')
+            res.append('geoip, cn, 🎯 全球直连')
+            res.append('final, 🐟 兜底分流')
+            continue
+        if on and l.startswith('['):
+            on = False
+        if on:
+            continue
+        res.append(l)
+
     with open(SRC, 'w', encoding='utf-8', newline='\n') as f:
-        f.write('\n'.join(out))
-    body = '\n'.join(out)
+        f.write('\n'.join(res))
+    body = '\n'.join(res)
     print(f'已写入 {SRC}  {os.path.getsize(SRC)} 字节')
-    print(f'  段头 {len(re.findall(r"(?m)^\[.+\]$", body))}')
-    print(f'  static {len(re.findall(r"(?m)^static=", body))}  '
-          f'benchmark {len(re.findall(r"(?m)^url-latency-benchmark=", body))}')
-    print(f'  CR {open(SRC,"rb").read().count(13)}')
+    print(f'  段头 {len(re.findall(chr(94) + r"\[.+\]$", body, re.M))}   static {total}')
     return 0
 
 
