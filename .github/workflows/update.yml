@@ -30,6 +30,10 @@ jobs:
         shell: pwsh
         run: ./scripts/annotate.ps1 -RepoRoot .
 
+      - name: 重建分类订阅（重写/分流/墨鱼）
+        shell: pwsh
+        run: python scripts/build-categories.py
+
       - name: 提交变更
         run: |
           set -e
