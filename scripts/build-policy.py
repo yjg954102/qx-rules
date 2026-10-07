@@ -267,9 +267,16 @@ def main():
     ap.add_argument('--nodes-url', default=DEFAULT_NODES_URL)
     ap.add_argument('--no-probe', action='store_true')
     a = ap.parse_args()
+    # 让 output/... 这类相对路径基于仓库根（脚本的上级目录）
+    os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+    # 依次尝试：命令行指定 → 路由器聚合器 → 仓库内清单
+    sources = []
+    if a.nodes_url and a.nodes_url != DEFAULT_NODES_URL:
+        sources.append(a.nodes_url)
+    sources += [u for u in NODES_SOURCES if u not in sources]
     tags, src = [], ''
-    for u in ([a.nodes_url] if a.nodes_url != DEFAULT_NODES_URL else NODES_SOURCES):
+    for u in sources:
         tags = fetch_tags(u)
         if tags:
             src = u
