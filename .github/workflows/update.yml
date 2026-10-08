@@ -11,6 +11,8 @@ on:
       - 'scripts/build-policy.py'
       - 'scripts/build-categories.py'
       - 'scripts/qx-template.conf'
+      # 工作流自身改动也要触发（否则修改本文件后无法自动验证）
+      - '.github/workflows/update.yml'
 
 permissions:
   contents: write
