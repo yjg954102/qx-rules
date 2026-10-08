@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""从 output/ 已合并的规则重建三类派生订阅，供 qx-cat.conf 使用。
+"""从 output/ 已合并的规则重建三类派生订阅，供主配置（qx-integrated.conf）使用。
 
 由 GitHub Actions 每天在 merge.ps1 / annotate.ps1 之后调用。
 
