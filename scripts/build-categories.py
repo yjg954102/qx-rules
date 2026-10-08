@@ -290,6 +290,26 @@ def main():
     c = build_moyu()
     print(f'\n合计：重写分类 {a} + 分流分类 {b} + 墨鱼 {c}')
 
+    # ---- 归一化：把输出目录里所有文件的 CRLF 转成 LF ----
+    # 有些文件不是本脚本生成的（历史遗留/手工添加），可能带 CRLF，
+    # 会让 QX 显示「0 条规则」。这里统一处理，避免因单个遗留文件让整个 CI 失败。
+    fixed = 0
+    for d in ('rewrite-category', 'filter-platform', 'moyu', 'per-app', 'per-domain'):
+        dp = os.path.join(OUT, d)
+        if not os.path.isdir(dp):
+            continue
+        for f in os.listdir(dp):
+            p = os.path.join(dp, f)
+            if not os.path.isfile(p):
+                continue
+            raw = open(p, 'rb').read()
+            if b'\r' in raw:
+                open(p, 'wb').write(raw.replace(b'\r\n', b'\n').replace(b'\r', b'\n'))
+                fixed += 1
+                print(f'  归一化 CRLF → LF: {d}/{f}')
+    if fixed:
+        print(f'  共归一化 {fixed} 个文件')
+
     # ---- 自检：确保无 CR ----
     bad = []
     for d in ('rewrite-category', 'filter-platform', 'moyu'):
