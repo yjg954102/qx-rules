@@ -55,6 +55,51 @@ jobs:
             --template scripts/qx-template.conf \
             --out qx-integrated.conf
 
+      - name: 校验上游是否真的拉到内容（新鲜度自检）
+        run: |
+          python3 - <<'PY'
+          import os, re, sys
+
+          def count(path, rx):
+              if not os.path.exists(path):
+                  return None
+              n = 0
+              for l in open(path, encoding='utf-8', errors='replace'):
+                  if re.search(rx, l):
+                      n += 1
+              return n
+
+          checks = [
+              ('output/QX-AllInOne-Filter.conf', r'(?i)^\s*(host|domain|ip-cidr|ip6-cidr|user-agent)',
+               3000, '分流规则'),
+              ('output/QX-AllInOne-Rewrite.conf', r'\surl(-and-header)?\s+\S',
+               300, '重写规则'),
+          ]
+          bad = False
+          for path, rx, minimum, label in checks:
+              n = count(path, rx)
+              if n is None:
+                  print(f'  [ERROR] {path} 不存在 —— merge.ps1 可能未产出')
+                  bad = True
+              elif n < minimum:
+                  print(f'  [ERROR] {path} 只有 {n} 条{label}（应 >= {minimum}）—— 上游可能全部拉取失败')
+                  bad = True
+              else:
+                  print(f'  OK  {path}  {n} 条{label}')
+
+          # 上游源缓存是否被更新（remote 模式每次都会重写这些文件）
+          src = 'scripts/sources'
+          if os.path.isdir(src):
+              files = [f for f in os.listdir(src) if os.path.isfile(os.path.join(src, f))]
+              print(f'  OK  上游源缓存 {len(files)} 个文件（remote 模式每次重写）')
+          else:
+              print('  [WARN] scripts/sources 不存在')
+
+          if bad:
+              sys.exit(1)
+          print('新鲜度自检通过')
+          PY
+
       - name: 校验配置（引用完整性 / 语法 / CRLF）
         run: python3 scripts/validate-qx.py qx-integrated.conf
 
