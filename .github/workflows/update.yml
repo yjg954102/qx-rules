@@ -70,14 +70,22 @@ jobs:
 
           git commit -m "chore: 自动更新合并规则 $(date -u '+%Y-%m-%d %H:%M UTC')"
 
-          # 先同步远端再推送：避免与手动上传/并发运行产生 non-fast-forward 冲突
+          # 推送：被拒时先同步远端再重试。
+          # 关键：rebase 遇冲突必须主动解决（取远端版本），否则 rebase 挂起，
+          # 后续 push 全部失败 —— 这是 2026-10-08 并发运行失败的原因。
           for i in 1 2 3 4 5; do
             if git push origin HEAD:main; then
               echo "推送成功（第 $i 次尝试）"
               exit 0
             fi
-            echo "推送被拒，先拉取远端变更后重试（第 $i 次）"
-            git pull --rebase origin main
+
+            echo "推送被拒，同步远端后重试（第 $i 次）"
+            if ! git pull --rebase origin main; then
+              echo "rebase 有冲突，改取远端版本后重试"
+              git rebase --abort 2>/dev/null || true
+              git fetch origin main
+              git reset --hard origin/main
+            fi
             sleep $((i * 3))
           done
 
