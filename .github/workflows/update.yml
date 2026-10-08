@@ -70,21 +70,21 @@ jobs:
 
           git commit -m "chore: 自动更新合并规则 $(date -u '+%Y-%m-%d %H:%M UTC')"
 
-          # 推送：被拒时先同步远端再重试。
-          # 关键：rebase 遇冲突必须主动解决（取远端版本），否则 rebase 挂起，
-          # 后续 push 全部失败 —— 这是 2026-10-08 并发运行失败的原因。
+          # 推送：被拒时先 rebase 到远端再重试。
+          # 冲突处理：输出文件是每次全量重建的产物，与远端旧版本冲突时
+          # 直接 `git rebase --skip` 丢弃那个远端提交、保留我们的新产物。
+          # （曾经用 --abort/reset，结果丢掉本地提交导致永远推不上去）
           for i in 1 2 3 4 5; do
             if git push origin HEAD:main; then
               echo "推送成功（第 $i 次尝试）"
               exit 0
             fi
 
-            echo "推送被拒，同步远端后重试（第 $i 次）"
-            if ! git pull --rebase origin main; then
-              echo "rebase 有冲突，改取远端版本后重试"
-              git rebase --abort 2>/dev/null || true
-              git fetch origin main
-              git reset --hard origin/main
+            echo "推送被拒，rebase 到远端后重试（第 $i 次）"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "rebase 冲突：跳过远端的旧产物，保留本次重建结果"
+              git rebase --skip 2>/dev/null || git rebase --abort 2>/dev/null || true
             fi
             sleep $((i * 3))
           done
