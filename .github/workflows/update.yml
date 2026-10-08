@@ -2,14 +2,22 @@ name: Update merged QX rules
 
 on:
   schedule:
-    # 每天 UTC 20:00（北京时间次日 04:00）自动重建
-    - cron: '0 20 * * *'
+    # 每天 UTC 22:00（北京时间次日 06:00）自动重建。
+    # 必须晚于路由器的节点回推（05:30 北京）—— 否则重建时读到的是前一天的
+    # 节点清单，节点分组会滞后约 22 小时。
+    - cron: '0 22 * * *'
   workflow_dispatch:
   push:
     paths:
       - 'scripts/merge.ps1'
+      - 'scripts/annotate.ps1'
       - 'scripts/build-policy.py'
       - 'scripts/build-categories.py'
+      - 'scripts/build-adguard-clash.py'
+      - 'scripts/validate-qx.py'
+      - 'scripts/fetch-moyu-full.py'
+      - 'scripts/mirror-moyu-scripts.py'
+      - 'scripts/merge-moyu.py'
       - 'scripts/qx-template.conf'
       # 工作流自身改动也要触发（否则修改本文件后无法自动验证）
       - '.github/workflows/update.yml'
@@ -24,6 +32,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -39,15 +48,26 @@ jobs:
         run: python3 scripts/build-categories.py
 
       - name: 抓取墨鱼完整版（24 VIP 解锁 + 净化）并镜像脚本
+        id: moyu
         continue-on-error: true
         run: |
+          set -o pipefail
           python3 scripts/fetch-moyu-full.py
           python3 scripts/mirror-moyu-scripts.py
           python3 scripts/merge-moyu.py
 
+      - name: 墨鱼抓取失败告警
+        if: steps.moyu.outcome == 'failure'
+        run: echo "::warning title=墨鱼抓取失败::ddgksf2013.top 不可达或结构变化，本次未更新墨鱼规则（其余流程继续）"
+
       - name: 转换 AdGuard / Clash 规则（与现有列表去重）
+        id: adguard
         continue-on-error: true
         run: python3 scripts/build-adguard-clash.py
+
+      - name: AdGuard/Clash 转换失败告警
+        if: steps.adguard.outcome == 'failure'
+        run: echo "::warning title=AdGuard转换失败::去重列表拉取失败，AdGuard/Clash 规则未更新（其余流程继续）"
 
       - name: 重建主配置（策略组 + 分流规则）
         run: |
@@ -87,13 +107,30 @@ jobs:
               else:
                   print(f'  OK  {path}  {n} 条{label}')
 
-          # 上游源缓存是否被更新（remote 模式每次都会重写这些文件）
+          # 逐源检查：scripts/sources/ 里每个上游缓存都不应为空。
+          # merge.ps1 会为成功拉取的源写缓存；某源挂了日志里能看到，但整体仍可能"成功"，
+          # 这里把失败源显式列出来并告警。
           src = 'scripts/sources'
+          empty, missing = [], []
           if os.path.isdir(src):
-              files = [f for f in os.listdir(src) if os.path.isfile(os.path.join(src, f))]
-              print(f'  OK  上游源缓存 {len(files)} 个文件（remote 模式每次重写）')
+              files = sorted(f for f in os.listdir(src) if os.path.isfile(os.path.join(src, f)))
+              for f in files:
+                  p = os.path.join(src, f)
+                  if os.path.getsize(p) < 200:
+                      empty.append(f)
+              print(f'  OK  上游源缓存 {len(files)} 个文件')
+              if empty:
+                  print(f'  [WARN] {len(empty)} 个源内容异常偏小（可能拉取失败）: {", ".join(empty[:8])}')
           else:
               print('  [WARN] scripts/sources 不存在')
+
+          # 关键产物清单
+          for p in ('output/moyu-merged/moyu-app-clean.conf',
+                    'output/moyu-full/moyu-vip-unlock.conf',
+                    'output/per-app', 'output/filter-platform',
+                    'output/rewrite-category', 'output/adguard/adguard-qx.txt'):
+              exists = os.path.exists(p)
+              print(f'  {"OK  " if exists else "[WARN]"} {p}')
 
           if bad:
               sys.exit(1)
